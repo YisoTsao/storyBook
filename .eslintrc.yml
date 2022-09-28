@@ -1,0 +1,30 @@
+env:
+  browser: true
+  es2021: true
+  node: true
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
+  - airbnb
+  - prettier
+settings:
+  react:
+    version: detect
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: latest
+  sourceType: module
+plugins:
+  - react
+rules:
+  {
+    camelcase: [1, { 'properties': 'always' }],
+    eqeqeq: [2, always],
+    import/no-extraneous-dependencies: [error, { devDependencies: ['**.config.js'] }],
+    react/function-component-definition: [2, { 'namedComponents': 'arrow-function' }],
+    no-restricted-exports: [off],
+    no-console: 1,
+    linebreak-style: ['off', 'windows'],
+    react/react-in-jsx-scope: [off],
+  }
