@@ -11,12 +11,6 @@ Object.defineProperty(exports, "BaseProgress", {
     return _ProgressBar["default"];
   }
 });
-Object.defineProperty(exports, "Modal", {
-  enumerable: true,
-  get: function get() {
-    return _Modal["default"];
-  }
-});
 Object.defineProperty(exports, "Step", {
   enumerable: true,
   get: function get() {
@@ -27,5 +21,3 @@ Object.defineProperty(exports, "Step", {
 var _ProgressBar = _interopRequireDefault(require("./ProgressBar"));
 
 var _Step = _interopRequireDefault(require("./Step"));
-
-var _Modal = _interopRequireDefault(require("./Modal"));

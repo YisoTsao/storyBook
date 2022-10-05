@@ -12,7 +12,7 @@ const Home = () => {
   console.log(API_HOST);
   return (
     <div>
-      <main>main</main>
+      <main className="p-8">main</main>
       <Step className="p-8" stepList={fakeStep} />
       <BaseProgress type="step" value="28" max="100" size="large" />
       <section>section</section>
