@@ -36,7 +36,6 @@
     "@ckeditor/ckeditor5-theme-lark": "^35.4.0",
     "@ckeditor/ckeditor5-typing": "^35.4.0",
     "@ckeditor/ckeditor5-upload": "^35.4.0",
-    "@zeit/next-css": "^1.0.1",
     "ckeditor5-custom-build": "file:./ckeditor5",
     "next": "12.3.1",
     "next-images": "^1.8.4",
