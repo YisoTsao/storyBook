@@ -1,28 +1,23 @@
 "use strict";
 
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
-
 var _react = _interopRequireDefault(require("react"));
-
 var __jsx = _react["default"].createElement;
-
 var Step = function Step(_ref) {
   var className = _ref.className,
-      stepList = _ref.stepList,
-      completeColor = _ref.completeColor,
-      notCompleteColor = _ref.notCompleteColor,
-      notCompleteCircleColor = _ref.notCompleteCircleColor,
-      lineWidth = _ref.lineWidth;
+    stepList = _ref.stepList,
+    completeColor = _ref.completeColor,
+    notCompleteColor = _ref.notCompleteColor,
+    notCompleteCircleColor = _ref.notCompleteCircleColor,
+    lineWidth = _ref.lineWidth;
   return __jsx("div", {
     className: "".concat(className, " flex w-full overflow-scroll")
   }, stepList.map(function (v, i) {
     var _stepList;
-
     return __jsx("div", {
       className: "flex items-center",
       key: Math.random().toString(36).substring(2)
@@ -33,7 +28,6 @@ var Step = function Step(_ref) {
     }));
   }));
 };
-
 var _default = Step;
 exports["default"] = _default;
 Step.defaultProps = {

@@ -1,14 +1,11 @@
 "use strict";
 
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
-
 var _styledComponents = _interopRequireDefault(require("styled-components"));
-
 var convertHeight = function convertHeight(height) {
   var heightType = '';
   if (height === 'small') heightType = '10px';
@@ -16,7 +13,6 @@ var convertHeight = function convertHeight(height) {
   if (height === 'large') heightType = '25px';
   return heightType;
 };
-
 var Progress = _styledComponents["default"].progress.withConfig({
   displayName: "StyleBaseProgress__Progress",
   componentId: "sc-o64274-0"
@@ -35,6 +31,5 @@ var Progress = _styledComponents["default"].progress.withConfig({
 }, function (props) {
   return props.height !== 'small' && props.value < props.max ? '5px 0px 0px 5px' : '5px';
 });
-
 var _default = Progress;
 exports["default"] = _default;

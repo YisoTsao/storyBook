@@ -1,7 +1,6 @@
 "use strict";
 
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -11,5 +10,4 @@ Object.defineProperty(exports, "default", {
     return _step["default"];
   }
 });
-
 var _step = _interopRequireDefault(require("./step"));
