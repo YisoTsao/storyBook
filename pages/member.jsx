@@ -5,6 +5,8 @@ const CkEditor = dynamic(() => import('../components/Ckeditor'), {
   ssr: false,
 });
 
+console.log(CkEditor);
+
 const Member = () => {
   const [content, setContent] = useState('');
 
