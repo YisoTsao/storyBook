@@ -1,140 +1,143 @@
 !(function (t) {
-  const e = (t.en = t.en || {});
-  e.dictionary = Object.assign(e.dictionary || {}, {
-    '%0 of %1': '%0 of %1',
-    'Align center': 'Align center',
-    'Align left': 'Align left',
-    'Align right': 'Align right',
-    Aquamarine: 'Aquamarine',
-    Big: 'Big',
-    Black: 'Black',
-    'Block quote': 'Block quote',
-    Blue: 'Blue',
-    Bold: 'Bold',
-    'Break text': 'Break text',
-    'Bulleted List': 'Bulleted List',
-    Cancel: 'Cancel',
-    'Cannot determine a category for the uploaded file.':
-      'Cannot determine a category for the uploaded file.',
-    'Cannot upload file:': 'Cannot upload file:',
-    'Caption for image: %0': 'Caption for image: %0',
-    'Caption for the image': 'Caption for the image',
-    'Centered image': 'Centered image',
-    'Change image text alternative': 'Change image text alternative',
-    'Choose heading': 'Choose heading',
-    Column: 'Column',
-    'Decrease indent': 'Decrease indent',
-    Default: 'Default',
-    'Delete column': 'Delete column',
-    'Delete row': 'Delete row',
-    'Dim grey': 'Dim grey',
-    'Document colors': 'Document colors',
-    Downloadable: 'Downloadable',
-    'Dropdown toolbar': 'Dropdown toolbar',
-    'Edit block': 'Edit block',
-    'Edit link': 'Edit link',
-    'Editor block content toolbar': 'Editor block content toolbar',
-    'Editor contextual toolbar': 'Editor contextual toolbar',
-    'Editor editing area: %0': 'Editor editing area: %0',
-    'Editor toolbar': 'Editor toolbar',
-    'Enter image caption': 'Enter image caption',
-    'Font Background Color': 'Font Background Color',
-    'Font Color': 'Font Color',
-    'Font Size': 'Font Size',
-    'Full size image': 'Full size image',
-    Green: 'Green',
-    Grey: 'Grey',
-    'Header column': 'Header column',
-    'Header row': 'Header row',
-    Heading: 'Heading',
-    'Heading 1': 'Heading 1',
-    'Heading 2': 'Heading 2',
-    'Heading 3': 'Heading 3',
-    'Heading 4': 'Heading 4',
-    'Heading 5': 'Heading 5',
-    'Heading 6': 'Heading 6',
-    Huge: 'Huge',
-    'Image toolbar': 'Image toolbar',
-    'image widget': 'image widget',
-    'In line': 'In line',
-    'Increase indent': 'Increase indent',
-    'Insert column left': 'Insert column left',
-    'Insert column right': 'Insert column right',
-    'Insert image': 'Insert image',
-    'Insert media': 'Insert media',
-    'Insert paragraph after block': 'Insert paragraph after block',
-    'Insert paragraph before block': 'Insert paragraph before block',
-    'Insert row above': 'Insert row above',
-    'Insert row below': 'Insert row below',
-    'Insert table': 'Insert table',
-    Italic: 'Italic',
-    Justify: 'Justify',
-    'Left aligned image': 'Left aligned image',
-    'Light blue': 'Light blue',
-    'Light green': 'Light green',
-    'Light grey': 'Light grey',
-    Link: 'Link',
-    'Link URL': 'Link URL',
-    'Media URL': 'Media URL',
-    'media widget': 'media widget',
-    'Merge cell down': 'Merge cell down',
-    'Merge cell left': 'Merge cell left',
-    'Merge cell right': 'Merge cell right',
-    'Merge cell up': 'Merge cell up',
-    'Merge cells': 'Merge cells',
-    Next: 'Next',
-    'Numbered List': 'Numbered List',
-    'Open file manager': 'Open file manager',
-    'Open in a new tab': 'Open in a new tab',
-    'Open link in new tab': 'Open link in new tab',
-    'Open media in new tab': 'Open media in new tab',
-    Orange: 'Orange',
-    Paragraph: 'Paragraph',
-    'Paste the media URL in the input.': 'Paste the media URL in the input.',
+  const e = (t.zh = t.zh || {});
+  (e.dictionary = Object.assign(e.dictionary || {}, {
+    '%0 of %1': '%0/%1',
+    'Align center': '置中對齊',
+    'Align left': '靠左對齊',
+    'Align right': '靠右對齊',
+    Aquamarine: '淺綠色',
+    Big: '大',
+    Black: '黑色',
+    'Block quote': '段落引用',
+    Blue: '藍色',
+    Bold: '粗體',
+    'Break text': '上及下',
+    'Bulleted List': '符號清單',
+    Cancel: '取消',
+    'Cannot determine a category for the uploaded file.': '無法確定上傳檔案的分類。',
+    'Cannot upload file:': '無法上傳檔案：',
+    'Caption for image: %0': '影像標題：%0',
+    'Caption for the image': '影像的標題',
+    'Centered image': '置中圖片',
+    'Change image text alternative': '修改圖片的替代文字',
+    'Choose heading': '選取標題',
+    Column: '欄',
+    'Decrease indent': '減少縮排',
+    Default: '預設',
+    'Delete column': '刪除欄',
+    'Delete row': '刪除列',
+    'Dim grey': '淡灰色',
+    'Document colors': '文件顏色',
+    Downloadable: '可下載',
+    'Dropdown toolbar': '下拉選單',
+    'Edit block': '編輯區塊',
+    'Edit link': '編輯連結',
+    'Editor block content toolbar': '編輯器區塊內容工具列',
+    'Editor contextual toolbar': '編輯器關聯式工具列',
+    'Editor editing area: %0': '編輯器編輯區：%0',
+    'Editor toolbar': '編輯器工具',
+    'Enter image caption': '輸入圖片說明',
+    'Font Background Color': '前景顏色',
+    'Font Color': '字體顏色',
+    'Font Size': '字體大小',
+    'Full size image': '完整尺寸圖片',
+    Green: '綠色',
+    Grey: '灰色',
+    'Header column': '標題欄',
+    'Header row': '標題列',
+    Heading: '標題',
+    'Heading 1': '標題 1',
+    'Heading 2': '標題 2',
+    'Heading 3': '標題 3',
+    'Heading 4': '標題 4',
+    'Heading 5': '標題 5',
+    'Heading 6': '標題 6',
+    'Horizontal line': '水平線',
+    Huge: '特大',
+    'Image toolbar': '圖片工具',
+    'image widget': '圖片小工具',
+    'Import from Word': '從 Word 匯入',
+    'In line': '行中',
+    'Increase indent': '增加縮排',
+    'Insert column left': '插入左方欄',
+    'Insert column right': '插入右方欄',
+    'Insert image': '插入圖片',
+    'Insert media': '插入影音',
+    'Insert paragraph after block': '在這個區塊後面插入一個段落',
+    'Insert paragraph before block': '在這個區塊前面插入一個段落',
+    'Insert row above': '插入上方列',
+    'Insert row below': '插入下方列',
+    'Insert table': '插入表格',
+    Italic: '斜體',
+    Justify: '左右對齊',
+    'Left aligned image': '向左對齊圖片',
+    'Light blue': '亮藍色',
+    'Light green': '亮綠色',
+    'Light grey': '亮灰色',
+    Link: '連結',
+    'Link URL': '連結˙ URL',
+    'Media URL': '影音網址',
+    'media widget': '影音小工具',
+    'Merge cell down': '合併下方儲存格',
+    'Merge cell left': '合併左方儲存格',
+    'Merge cell right': '合併右方儲存格',
+    'Merge cell up': '合併上方儲存格',
+    'Merge cells': '合併儲存格',
+    Next: '下一',
+    'Numbered List': '有序清單',
+    'Open file manager': '開啟檔案管理程式',
+    'Open in a new tab': '在新視窗開啟',
+    'Open link in new tab': '在新視窗開啟連結',
+    'Open media in new tab': '在新分頁打開媒體',
+    Orange: '橘色',
+    Paragraph: '段落',
+    'Paste the media URL in the input.': '在輸入框貼上影音網址。',
     'Press Enter to type after or press Shift + Enter to type before the widget':
-      'Press Enter to type after or press Shift + Enter to type before the widget',
-    Previous: 'Previous',
-    Purple: 'Purple',
-    Red: 'Red',
-    Redo: 'Redo',
-    'Remove color': 'Remove color',
-    'Rich Text Editor': 'Rich Text Editor',
-    'Right aligned image': 'Right aligned image',
-    Row: 'Row',
-    Save: 'Save',
-    'Select all': 'Select all',
-    'Select column': 'Select column',
-    'Select row': 'Select row',
-    'Show more items': 'Show more items',
-    'Side image': 'Side image',
-    Small: 'Small',
-    Source: 'Source',
-    'Split cell horizontally': 'Split cell horizontally',
-    'Split cell vertically': 'Split cell vertically',
-    Strikethrough: 'Strikethrough',
-    'Table toolbar': 'Table toolbar',
-    'Text alignment': 'Text alignment',
-    'Text alignment toolbar': 'Text alignment toolbar',
-    'Text alternative': 'Text alternative',
-    'The URL must not be empty.': 'The URL must not be empty.',
-    'This link has no URL': 'This link has no URL',
-    'This media URL is not supported.': 'This media URL is not supported.',
-    Tiny: 'Tiny',
-    'Tip: Paste the URL into the content to embed faster.':
-      'Tip: Paste the URL into the content to embed faster.',
-    'Toggle caption off': 'Toggle caption off',
-    'Toggle caption on': 'Toggle caption on',
-    Turquoise: 'Turquoise',
-    Underline: 'Underline',
-    Undo: 'Undo',
-    Unlink: 'Unlink',
-    'Upload failed': 'Upload failed',
-    'Upload in progress': 'Upload in progress',
-    White: 'White',
-    'Widget toolbar': 'Widget toolbar',
-    'Wrap text': 'Wrap text',
-    Yellow: 'Yellow',
-  });
+      '按下 Enter 在小工具後輸入，或按下 Shift + Enter 在小工具前輸入',
+    Previous: '上一',
+    Purple: '紫色',
+    Red: '紅色',
+    Redo: '重做',
+    'Remove color': '移除顏色',
+    'Rich Text Editor': '豐富文字編輯器',
+    'Right aligned image': '向右對齊圖片',
+    Row: '列',
+    Save: '儲存',
+    'Select all': '選取全部',
+    'Select column': '選擇欄',
+    'Select row': '選擇列',
+    'Show more items': '顯示更多',
+    'Side image': '側邊圖片',
+    Small: '小',
+    Source: '原始碼',
+    'Split cell horizontally': '水平分割儲存格',
+    'Split cell vertically': '垂直分割儲存格',
+    Strikethrough: '刪除線',
+    'Table toolbar': '表格工具',
+    'Text alignment': '文字對齊',
+    'Text alignment toolbar': '文字對齊',
+    'Text alternative': '替代文字',
+    'The URL must not be empty.': '網址不能空白。',
+    'This link has no URL': '連結沒有URL',
+    'This media URL is not supported.': '不支援此影音網址。',
+    Tiny: '特小',
+    'Tip: Paste the URL into the content to embed faster.': '提示：在內容貼上網址更快崁入。',
+    'Toggle caption off': '關閉表標題',
+    'Toggle caption on': '開啟表標題',
+    Turquoise: '藍綠色',
+    Underline: '底線',
+    Undo: '取消',
+    Unlink: '移除連結',
+    'Upload failed': '上傳失敗',
+    'Upload in progress': '正在上傳',
+    White: '白色',
+    'Widget toolbar': '小工具',
+    'Wrap text': '文繞圖',
+    Yellow: '黃色',
+  })),
+    (e.getPluralForm = function (t) {
+      return 0;
+    });
 })(window.CKEDITOR_TRANSLATIONS || (window.CKEDITOR_TRANSLATIONS = {})),
   /*!
    * @license Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
@@ -366,6 +369,31 @@
             ]);
             const a = s;
           },
+          2536: (t, e, n) => {
+            n.d(e, { Z: () => a });
+            var o = n(4015),
+              i = n.n(o),
+              r = n(3645),
+              s = n.n(r)()(i());
+            s.push([
+              t.id,
+              '.ck-editor__editable .ck-horizontal-line{display:flow-root}.ck-content hr{background:#dedede;border:0;height:4px;margin:15px 0}',
+              '',
+              {
+                version: 3,
+                sources: [
+                  'webpack://./node_modules/@ckeditor/ckeditor5-horizontal-line/theme/horizontalline.css',
+                ],
+                names: [],
+                mappings: 'AAMA,yCAEC,iBACD,CAEA,eAGC,kBAA2B,CAC3B,QAAS,CAFT,UAAW,CADX,aAID',
+                sourcesContent: [
+                  '/*\n * Copyright (c) 2003-2022, CKSource Holding sp. z o.o. All rights reserved.\n * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license\n */\n\n\n.ck-editor__editable .ck-horizontal-line {\n\t/* Necessary to render properly next to floated objects, e.g. side image case. */\n\tdisplay: flow-root;\n}\n\n.ck-content hr {\n\tmargin: 15px 0;\n\theight: 4px;\n\tbackground: hsl(0, 0%, 87%);\n\tborder: 0;\n}\n',
+                ],
+                sourceRoot: '',
+              },
+            ]);
+            const a = s;
+          },
           9048: (t, e, n) => {
             n.d(e, { Z: () => a });
             var o = n(4015),
@@ -548,6 +576,32 @@
                 sourcesContent: [
                   '/*\n * Copyright (c) 2003-2022, CKSource Holding sp. z o.o. All rights reserved.\n * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license\n */\n\n@import "@ckeditor/ckeditor5-ui/theme/mixins/_rwd.css";\n\n.ck.ck-text-alternative-form {\n\tdisplay: flex;\n\tflex-direction: row;\n\tflex-wrap: nowrap;\n\n\t& .ck-labeled-field-view {\n\t\tdisplay: inline-block;\n\t}\n\n\t& .ck-label {\n\t\tdisplay: none;\n\t}\n\n\t@mixin ck-media-phone {\n\t\tflex-wrap: wrap;\n\n\t\t& .ck-labeled-field-view {\n\t\t\tflex-basis: 100%;\n\t\t}\n\n\t\t& .ck-button {\n\t\t\tflex-basis: 50%;\n\t\t}\n\t}\n}\n',
                   '/*\n * Copyright (c) 2003-2022, CKSource Holding sp. z o.o. All rights reserved.\n * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license\n */\n\n@define-mixin ck-media-phone {\n\t@media screen and (max-width: 600px) {\n\t\t@mixin-content;\n\t}\n}\n',
+                ],
+                sourceRoot: '',
+              },
+            ]);
+            const a = s;
+          },
+          244: (t, e, n) => {
+            n.d(e, { Z: () => a });
+            var o = n(4015),
+              i = n.n(o),
+              r = n(3645),
+              s = n.n(r)()(i());
+            s.push([
+              t.id,
+              ':root{--ck-toolbar-spinner-size:18px}.ck-importword_status-pending{position:relative}.ck.ck-importword__spinner-container{display:none}.ck.ck-importword__spinner{border:2px solid var(--ck-color-text);border-radius:50%;border-top:2px solid transparent;height:var(--ck-toolbar-spinner-size);left:0;margin:0 auto;position:absolute;right:0;top:50%;transform:translateY(-50%);width:var(--ck-toolbar-spinner-size);z-index:1}.ck-importword_status-pending .ck.ck-importword__spinner-container{animation:rotate 1.5s linear infinite;display:block;height:var(--ck-toolbar-spinner-size);position:absolute;width:var(--ck-toolbar-spinner-size)}.ck-importword_status-pending .ck.ck-button__icon{color:transparent}@keyframes rotate{to{transform:rotate(1turn)}}',
+              '',
+              {
+                version: 3,
+                sources: [
+                  'webpack://./node_modules/@ckeditor/ckeditor5-import-word/theme/importword.css',
+                ],
+                names: [],
+                mappings:
+                  'AAKA,MACC,8BACD,CAEA,8BACC,iBACD,CAEA,qCACC,YACD,CAEA,2BAUC,qCAA6B,CAF7B,iBAAkB,CAElB,gCAA6B,CAH7B,qCAAsC,CAJtC,MAAO,CAEP,aAAc,CAJd,iBAAkB,CAGlB,OAAQ,CAFR,OAAQ,CASR,0BAA2B,CAL3B,oCAAqC,CAMrC,SACD,CAEA,mEAKC,qCAAsC,CAJtC,aAAc,CAGd,qCAAsC,CAFtC,iBAAkB,CAClB,oCAGD,CAEA,kDACC,iBACD,CAEA,kBACC,GACC,uBACD,CACD',
+                sourcesContent: [
+                  '/*\n * Copyright (c) 2003-2022, CKSource Holding sp. z o.o. All rights reserved.\n * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license\n */\n\n:root {\n\t--ck-toolbar-spinner-size: 18px;\n}\n\n.ck-importword_status-pending {\n\tposition: relative;\n}\n\n.ck.ck-importword__spinner-container {\n\tdisplay: none;\n}\n\n.ck.ck-importword__spinner {\n\tposition: absolute;\n\ttop: 50%;\n\tleft: 0;\n\tright: 0;\n\tmargin: 0 auto;\n\twidth: var(--ck-toolbar-spinner-size);\n\theight: var(--ck-toolbar-spinner-size);\n\tborder-radius: 50%;\n\tborder: 2px solid var(--ck-color-text);\n\tborder-top-color: transparent;\n\ttransform: translateY(-50%);\n\tz-index: 1;\n}\n\n.ck-importword_status-pending .ck.ck-importword__spinner-container {\n\tdisplay: block;\n\tposition: absolute;\n\twidth: var(--ck-toolbar-spinner-size);\n\theight: var(--ck-toolbar-spinner-size);\n\tanimation: 1.5s infinite rotate linear;\n}\n\n.ck-importword_status-pending .ck.ck-button__icon {\n\tcolor: transparent;\n}\n\n@keyframes rotate {\n\tto {\n\t\ttransform: rotate(360deg)\n\t}\n}\n',
                 ],
                 sourceRoot: '',
               },
@@ -1940,7 +1994,7 @@
       var o = {};
       return (
         (() => {
-          n.d(o, { default: () => _v });
+          n.d(o, { default: () => Fv });
           const t = (function () {
               try {
                 return navigator.userAgent.toLowerCase();
@@ -2211,8 +2265,8 @@
                 let i, r;
                 this[y] || (this[y] = {});
                 const s = this[y];
-                S(t) || I(t);
-                const a = S(t);
+                I(t) || S(t);
+                const a = I(t);
                 (i = s[a]) || (i = s[a] = { emitter: t, callbacks: {} }),
                   (r = i.callbacks[e]) || (r = i.callbacks[e] = []),
                   r.push(n),
@@ -2224,7 +2278,7 @@
               }
               stopListening(t, e, n) {
                 const o = this[y];
-                let i = t && S(t);
+                let i = t && I(t);
                 const r = o && i ? o[i] : void 0,
                   s = r && e ? r.callbacks[e] : void 0;
                 if (!(!o || (t && !r) || (e && !s)))
@@ -2321,10 +2375,10 @@
               }
             };
           }
-          function I(t, e) {
+          function S(t, e) {
             t[x] || (t[x] = e || m());
           }
-          function S(t) {
+          function I(t) {
             return t[x];
           }
           function M(t) {
@@ -2392,7 +2446,7 @@
                   return void Object.keys(t).forEach((e) => {
                     this.set(e, t[e]);
                   }, this);
-                G(this);
+                W(this);
                 const n = this[O];
                 if (t in this && !n.has(t)) throw new k('observable-set-cannot-override', this);
                 Object.defineProperty(this, t, {
@@ -2412,7 +2466,7 @@
                 if (!t.length || !$(t)) throw new k('observable-bind-wrong-properties', this);
                 if (new Set(t).size !== t.length)
                   throw new k('observable-bind-duplicate-properties', this);
-                G(this);
+                W(this);
                 const e = this[j];
                 t.forEach((t) => {
                   if (e.has(t)) throw new k('observable-bind-rebind', this);
@@ -2423,7 +2477,7 @@
                     const o = { property: t, to: [] };
                     e.set(t, o), n.set(t, o);
                   }),
-                  { to: W, toMany: q, _observable: this, _bindProperties: t, _to: [], _bindings: n }
+                  { to: q, toMany: G, _observable: this, _bindProperties: t, _to: [], _bindings: n }
                 );
               }
               unbind(...t) {
@@ -2452,7 +2506,7 @@
                     e.clear();
               }
               decorate(t) {
-                G(this);
+                W(this);
                 const e = this[t];
                 if (!e)
                   throw new k('observablemixin-cannot-decorate-undefined', this, {
@@ -2478,13 +2532,13 @@
               }
             };
           }
-          function G(t) {
+          function W(t) {
             t[O] ||
               (Object.defineProperty(t, O, { value: new Map() }),
               Object.defineProperty(t, R, { value: new Map() }),
               Object.defineProperty(t, j, { value: new Map() }));
           }
-          function W(...t) {
+          function q(...t) {
             const e = (function (...t) {
                 if (!t.length) throw new k('observable-bind-to-parse-error', null);
                 const e = { to: [] };
@@ -2546,7 +2600,7 @@
                 Y(this._observable, t);
               });
           }
-          function q(t, e, n) {
+          function G(t, e, n) {
             if (this._bindings.size > 1)
               throw new k('observable-bind-to-many-not-one-binding', this);
             this.to(
@@ -2699,12 +2753,12 @@
               n = Et(e, t);
             return !(n < 0) && (n == e.length - 1 ? e.pop() : Dt.call(e, n, 1), --this.size, !0);
           };
-          const It = function (t) {
+          const St = function (t) {
             var e = this.__data__,
               n = Et(e, t);
             return n < 0 ? void 0 : e[n][1];
           };
-          const St = function (t) {
+          const It = function (t) {
             return Et(this.__data__, t) > -1;
           };
           const Mt = function (t, e) {
@@ -2722,8 +2776,8 @@
           }
           (Nt.prototype.clear = yt),
             (Nt.prototype.delete = Tt),
-            (Nt.prototype.get = It),
-            (Nt.prototype.has = St),
+            (Nt.prototype.get = St),
+            (Nt.prototype.has = It),
             (Nt.prototype.set = Mt);
           const Bt = Nt;
           const Pt = function () {
@@ -2770,11 +2824,11 @@
             }
             return '';
           };
-          var Gt = /^\[object .+?Constructor\]$/,
-            Wt = Function.prototype,
-            qt = Object.prototype,
-            $t = Wt.toString,
-            Yt = qt.hasOwnProperty,
+          var Wt = /^\[object .+?Constructor\]$/,
+            qt = Function.prototype,
+            Gt = Object.prototype,
+            $t = qt.toString,
+            Yt = Gt.hasOwnProperty,
             Kt = RegExp(
               '^' +
                 $t
@@ -2784,7 +2838,7 @@
                 '$'
             );
           const Qt = function (t) {
-            return !(!L(t) || Vt(t)) && (Rt(t) ? Kt : Gt).test(Ut(t));
+            return !(!L(t) || Vt(t)) && (Rt(t) ? Kt : Wt).test(Ut(t));
           };
           const Zt = function (t, e) {
             return null == t ? void 0 : t[e];
@@ -2934,18 +2988,18 @@
             for (var n = -1, o = Array(t); ++n < t; ) o[n] = e(n);
             return o;
           };
-          const Ie = function (t) {
+          const Se = function (t) {
             return gt(t) && '[object Arguments]' == ht(t);
           };
-          var Se = Object.prototype,
-            Me = Se.hasOwnProperty,
-            Ne = Se.propertyIsEnumerable;
-          const Be = Ie(
+          var Ie = Object.prototype,
+            Me = Ie.hasOwnProperty,
+            Ne = Ie.propertyIsEnumerable;
+          const Be = Se(
             (function () {
               return arguments;
             })()
           )
-            ? Ie
+            ? Se
             : function (t) {
                 return gt(t) && Me.call(t, 'callee') && !Ne.call(t, 'callee');
               };
@@ -3000,22 +3054,22 @@
           const Ue = function (t) {
             return gt(t) && Ve(t.length) && !!He[ht(t)];
           };
-          const Ge = function (t) {
+          const We = function (t) {
             return function (e) {
               return t(e);
             };
           };
-          var We = 'object' == typeof exports && exports && !exports.nodeType && exports,
-            qe = We && 'object' == typeof module && module && !module.nodeType && module,
-            $e = qe && qe.exports === We && X.process;
+          var qe = 'object' == typeof exports && exports && !exports.nodeType && exports,
+            Ge = qe && 'object' == typeof module && module && !module.nodeType && module,
+            $e = Ge && Ge.exports === qe && X.process;
           const Ye = (function () {
             try {
-              var t = qe && qe.require && qe.require('util').types;
+              var t = Ge && Ge.require && Ge.require('util').types;
               return t || ($e && $e.binding && $e.binding('util'));
             } catch (t) {}
           })();
           var Ke = Ye && Ye.isTypedArray;
-          const Qe = Ke ? Ge(Ke) : Ue;
+          const Qe = Ke ? We(Ke) : Ue;
           var Ze = Object.prototype.hasOwnProperty;
           const Je = function (t, e) {
             var n = ut(t),
@@ -3134,10 +3188,10 @@
             var o = e(t);
             return ut(t) ? o : xn(o, n(t));
           };
-          const In = function (t) {
+          const Sn = function (t) {
             return Tn(t, sn, vn);
           };
-          const Sn = function (t) {
+          const In = function (t) {
             return Tn(t, hn, En);
           };
           const Mn = Jt(et, 'DataView');
@@ -3153,14 +3207,14 @@
             Vn = Ut(Xt),
             Hn = Ut(Nn),
             Un = Ut(Bn),
-            Gn = Ut(Pn),
-            Wn = ht;
-          ((Mn && Wn(new Mn(new ArrayBuffer(1))) != jn) ||
-            (Xt && Wn(new Xt()) != zn) ||
-            (Nn && Wn(Nn.resolve()) != Ln) ||
-            (Bn && Wn(new Bn()) != On) ||
-            (Pn && Wn(new Pn()) != Rn)) &&
-            (Wn = function (t) {
+            Wn = Ut(Pn),
+            qn = ht;
+          ((Mn && qn(new Mn(new ArrayBuffer(1))) != jn) ||
+            (Xt && qn(new Xt()) != zn) ||
+            (Nn && qn(Nn.resolve()) != Ln) ||
+            (Bn && qn(new Bn()) != On) ||
+            (Pn && qn(new Pn()) != Rn)) &&
+            (qn = function (t) {
               var e = ht(t),
                 n = '[object Object]' == e ? t.constructor : void 0,
                 o = n ? Ut(n) : '';
@@ -3174,12 +3228,12 @@
                     return Ln;
                   case Un:
                     return On;
-                  case Gn:
+                  case Wn:
                     return Rn;
                 }
               return e;
             });
-          const qn = Wn;
+          const Gn = qn;
           var $n = Object.prototype.hasOwnProperty;
           const Yn = function (t) {
             var e = t.length,
@@ -3262,15 +3316,15 @@
             return 'function' != typeof t.constructor || tn(t) ? {} : so(kt(t));
           };
           const co = function (t) {
-            return gt(t) && '[object Map]' == qn(t);
+            return gt(t) && '[object Map]' == Gn(t);
           };
           var lo = Ye && Ye.isMap;
-          const ho = lo ? Ge(lo) : co;
+          const ho = lo ? We(lo) : co;
           const uo = function (t) {
-            return gt(t) && '[object Set]' == qn(t);
+            return gt(t) && '[object Set]' == Gn(t);
           };
           var go = Ye && Ye.isSet;
-          const mo = go ? Ge(go) : uo;
+          const mo = go ? We(go) : uo;
           var po = '[object Arguments]',
             fo = '[object Function]',
             ko = '[object Object]',
@@ -3310,7 +3364,7 @@
             if (h) {
               if (((a = Yn(e)), !c)) return bn(e, a);
             } else {
-              var u = qn(e),
+              var u = Gn(e),
                 g = u == fo || '[object GeneratorFunction]' == u;
               if (Re(e)) return kn(e, c);
               if (u == ko || u == po || (g && !r)) {
@@ -3332,7 +3386,7 @@
                   e.forEach(function (i, r) {
                     a.set(r, t(i, n, o, r, e, s));
                   });
-            var p = h ? void 0 : (d ? (l ? Sn : In) : l ? hn : sn)(e);
+            var p = h ? void 0 : (d ? (l ? In : Sn) : l ? hn : sn)(e);
             return (
               Ce(p || e, function (i, r) {
                 p && (i = e[(r = i)]), Ee(a, r, t(i, n, o, r, e, s));
@@ -3416,7 +3470,7 @@
               listenTo(t, e, n, o = {}) {
                 if (xo(t) || Eo(t)) {
                   const i = { capture: !!o.useCapture, passive: !!o.usePassive },
-                    r = this._getProxyEmitter(t, i) || new Io(t, i);
+                    r = this._getProxyEmitter(t, i) || new So(t, i);
                   this.listenTo(r, e, n, o);
                 } else super.listenTo(t, e, n, o);
               }
@@ -3430,7 +3484,7 @@
                 return (function (t, e) {
                   const n = t[y];
                   return n && n[e] ? n[e].emitter : null;
-                })(this, So(t, e));
+                })(this, Io(t, e));
               }
               _getAllProxyEmitters(t) {
                 return [
@@ -3460,9 +3514,9 @@
           ].forEach((t) => {
             To[t] = Do.prototype[t];
           });
-          class Io extends T() {
+          class So extends T() {
             constructor(t, e) {
-              super(), I(this, So(t, e)), (this._domNode = t), (this._options = e);
+              super(), S(this, Io(t, e)), (this._domNode = t), (this._options = e);
             }
             attach(t) {
               if (this._domListeners && this._domListeners[t]) return;
@@ -3496,7 +3550,7 @@
               );
             }
           }
-          function So(t, e) {
+          function Io(t, e) {
             let n = (function (t) {
               return t['data-ck-expando'] || (t['data-ck-expando'] = m());
             })(t);
@@ -3506,7 +3560,7 @@
           let Mo;
           try {
             Mo = { window, document };
-          } catch (t) {
+          } catch (Mv) {
             Mo = { window: {}, document: {} };
           }
           const No = Mo;
@@ -3725,15 +3779,15 @@
           function Uo(t, e) {
             t instanceof HTMLTextAreaElement && (t.value = e), (t.innerHTML = e);
           }
-          function Go(t) {
+          function Wo(t) {
             return (e) => e + t;
           }
-          function Wo(t) {
+          function qo(t) {
             let e = 0;
             for (; t.previousSibling; ) (t = t.previousSibling), e++;
             return e;
           }
-          function qo(t, e, n) {
+          function Go(t, e, n) {
             t.insertBefore(n, t.childNodes[e] || null);
           }
           function $o(t) {
@@ -4361,11 +4415,11 @@
                 ')';
             return new RegExp(`${t}|${e}(?:‍${e})*`, 'ug');
           })();
-          function Ii(t, e) {
+          function Si(t, e) {
             const n = String(t).matchAll(Ti);
             return Array.from(n).some((t) => t.index < e && e < t.index + t[0].length);
           }
-          class Si extends U() {
+          class Ii extends U() {
             constructor(t) {
               super(),
                 (this.editor = t),
@@ -4723,11 +4777,11 @@
               s = e.document;
             Hi.has(s) ||
               (Hi.set(s, new Map()),
-              s.registerPostFixer((t) => Wi(s, t)),
+              s.registerPostFixer((t) => qi(s, t)),
               s.on(
                 'change:isComposing',
                 () => {
-                  e.change((t) => Wi(s, t));
+                  e.change((t) => qi(s, t));
                 },
                 { priority: 'high' }
               )),
@@ -4737,24 +4791,24 @@
                 keepOnFocus: r,
                 hostElement: i ? n : null,
               }),
-              e.change((t) => Wi(s, t));
-          }
-          function Gi(t, e) {
-            return !!e.hasClass('ck-placeholder') && (t.removeClass('ck-placeholder', e), !0);
+              e.change((t) => qi(s, t));
           }
           function Wi(t, e) {
+            return !!e.hasClass('ck-placeholder') && (t.removeClass('ck-placeholder', e), !0);
+          }
+          function qi(t, e) {
             const n = Hi.get(t),
               o = [];
             let i = !1;
-            for (const [t, r] of n) r.isDirectHost && (o.push(t), qi(e, t, r) && (i = !0));
+            for (const [t, r] of n) r.isDirectHost && (o.push(t), Gi(e, t, r) && (i = !0));
             for (const [t, r] of n) {
               if (r.isDirectHost) continue;
               const n = $i(t);
-              n && (o.includes(n) || ((r.hostElement = n), qi(e, t, r) && (i = !0)));
+              n && (o.includes(n) || ((r.hostElement = n), Gi(e, t, r) && (i = !0)));
             }
             return i;
           }
-          function qi(t, e, n) {
+          function Gi(t, e, n) {
             const { text: o, isDirectHost: i, hostElement: r } = n;
             let s = !1;
             r.getAttribute('data-placeholder') !== o &&
@@ -4775,7 +4829,7 @@
                 ? (function (t, e) {
                     return !e.hasClass('ck-placeholder') && (t.addClass('ck-placeholder', e), !0);
                   })(t, r) && (s = !0)
-                : Gi(t, r) && (s = !0),
+                : Wi(t, r) && (s = !0),
               s
             );
           }
@@ -5159,15 +5213,15 @@
           const Tr = function (t) {
             return gt(t) && rn(t);
           };
-          const Ir = function (t, e) {
+          const Sr = function (t, e) {
             if (('constructor' !== e || 'function' != typeof t[e]) && '__proto__' != e) return t[e];
           };
-          const Sr = function (t) {
+          const Ir = function (t) {
             return De(t, hn(t));
           };
           const Mr = function (t, e, n, o, i, r, s) {
-            var a = Ir(t, n),
-              c = Ir(e, n),
+            var a = Sr(t, n),
+              c = Sr(e, n),
               l = s.get(c);
             if (l) Er(t, n, l);
             else {
@@ -5189,7 +5243,7 @@
                       ? ((h = !1), (d = oo(c, !0)))
                       : (d = [])
                     : vt(c) || Be(c)
-                    ? ((d = a), Be(a) ? (d = Sr(a)) : (L(a) && !Rt(a)) || (d = ao(c)))
+                    ? ((d = a), Be(a) ? (d = Ir(a)) : (L(a) && !Rt(a)) || (d = ao(c)))
                     : (h = !1);
               }
               h && (s.set(c, d), i(d, c, o, r, s), s.delete(c)), Er(t, n, d);
@@ -5202,7 +5256,7 @@
                 function (s, a) {
                   if ((r || (r = new Ae()), L(s))) Mr(e, n, a, o, t, i, r);
                   else {
-                    var c = i ? i(Ir(e, a), s, a + '', e, n, r) : void 0;
+                    var c = i ? i(Sr(e, a), s, a + '', e, n, r) : void 0;
                     void 0 === c && (c = s), Er(e, a, c);
                   }
                 },
@@ -5277,7 +5331,7 @@
               !!('number' == o ? rn(n) && Fe(e, n.length) : 'string' == o && e in n) && xt(n[e], t)
             );
           };
-          const Gr = function (t) {
+          const Wr = function (t) {
             return Hr(function (e, n) {
               var o = -1,
                 i = n.length,
@@ -5296,10 +5350,10 @@
               return e;
             });
           };
-          const Wr = Gr(function (t, e, n) {
+          const qr = Wr(function (t, e, n) {
             Nr(t, e, n);
           });
-          const qr = function (t, e, n, o) {
+          const Gr = function (t, e, n, o) {
             if (!L(t)) return t;
             for (var i = -1, r = (e = kr(e, t)).length, s = r - 1, a = t; null != a && ++i < r; ) {
               var c = wr(e[i]),
@@ -5314,7 +5368,7 @@
             return t;
           };
           const $r = function (t, e, n) {
-            return null == t ? t : qr(t, e, n);
+            return null == t ? t : Gr(t, e, n);
           };
           class Yr {
             constructor(t) {
@@ -5433,7 +5487,7 @@
               } else Zr(n, t, e);
             }
             getNormalized(t, e) {
-              if (!t) return Wr({}, e);
+              if (!t) return qr({}, e);
               if (void 0 !== e[t]) return e[t];
               if (this._extractors.has(t)) {
                 const n = this._extractors.get(t);
@@ -5485,7 +5539,7 @@
           }
           function Zr(t, e, n) {
             let o = n;
-            L(n) && (o = Wr({}, xr(t, e), n)), $r(t, e, o);
+            L(n) && (o = qr({}, xr(t, e), n)), $r(t, e, o);
           }
           class Jr extends Qi {
             constructor(t, e, n, o) {
@@ -6746,7 +6800,7 @@
                   'node' === t ||
                   'view:node' === t;
           };
-          class Is extends T(Yi) {
+          class Ss extends T(Yi) {
             constructor(t, e) {
               super(), (this.document = t), (this._children = []), e && this._insertChild(0, e);
             }
@@ -6804,10 +6858,10 @@
               this.fire('change:' + t, e);
             }
           }
-          Is.prototype.is = function (t) {
+          Ss.prototype.is = function (t) {
             return 'documentFragment' === t || 'view:documentFragment' === t;
           };
-          class Ss {
+          class Is {
             constructor(t) {
               (this.document = t), (this._cloneGroups = new Map()), (this._slotFactory = null);
             }
@@ -6818,7 +6872,7 @@
               this.document.selection._setFocus(...t);
             }
             createDocumentFragment(t) {
-              return new Is(this.document, t);
+              return new Ss(this.document, t);
             }
             createText(t) {
               return new Zi(this.document, t);
@@ -6975,14 +7029,14 @@
             }
             remove(t) {
               const e = t instanceof as ? t : as._createOn(t);
-              if ((js(e, this.document), e.isCollapsed)) return new Is(this.document);
+              if ((js(e, this.document), e.isCollapsed)) return new Ss(this.document);
               const { start: n, end: o } = this._breakAttributesRange(e, !0),
                 i = n.parent,
                 r = o.offset - n.offset,
                 s = i._removeChildren(n.offset, r);
               for (const t of s) this._removeFromClonedElementsGroup(t);
               const a = this.mergeAttributes(n);
-              return (e.start = a), (e.end = a.clone()), new Is(this.document, s);
+              return (e.start = a), (e.end = a.clone()), new Ss(this.document, s);
             }
             clear(t, e) {
               js(t, this.document);
@@ -7343,15 +7397,15 @@
               const e = t.createElement('br');
               return (e.dataset.ckeFiller = 'true'), e;
             },
-            Gs = '⁠'.repeat(7);
-          function Ws(t) {
-            return Po(t) && t.data.substr(0, 7) === Gs;
-          }
+            Ws = '⁠'.repeat(7);
           function qs(t) {
-            return 7 == t.data.length && Ws(t);
+            return Po(t) && t.data.substr(0, 7) === Ws;
+          }
+          function Gs(t) {
+            return 7 == t.data.length && qs(t);
           }
           function $s(t) {
-            return Ws(t) ? t.data.slice(7) : t.data;
+            return qs(t) ? t.data.slice(7) : t.data;
           }
           function Ys(t, e) {
             if (e.keyCode == di.arrowleft) {
@@ -7359,7 +7413,7 @@
               if (1 == t.rangeCount && t.getRangeAt(0).collapsed) {
                 const e = t.getRangeAt(0).startContainer,
                   n = t.getRangeAt(0).startOffset;
-                Ws(e) && n <= 7 && t.collapse(e, 0);
+                qs(e) && n <= 7 && t.collapse(e, 0);
               }
             }
           }
@@ -7435,7 +7489,7 @@
                 if (t) {
                   const e = this.domConverter.viewPositionToDom(t),
                     n = e.parent.ownerDocument;
-                  Ws(e.parent)
+                  qs(e.parent)
                     ? (this._inlineFiller = e.parent)
                     : (this._inlineFiller = Js(n, e.parent, e.offset));
                 } else this._inlineFiller = null;
@@ -7481,12 +7535,12 @@
               if (1 != this.selection.rangeCount || !this.selection.isCollapsed) return !1;
               const t = this.selection.getFirstPosition(),
                 e = this.domConverter.viewPositionToDom(t);
-              return !!(e && Po(e.parent) && Ws(e.parent));
+              return !!(e && Po(e.parent) && qs(e.parent));
             }
             _removeInlineFiller() {
               const t = this._inlineFiller;
-              if (!Ws(t)) throw new k('view-renderer-filler-was-lost', this);
-              qs(t) ? t.remove() : (t.data = t.data.substr(7)), (this._inlineFiller = null);
+              if (!qs(t)) throw new k('view-renderer-filler-was-lost', this);
+              Gs(t) ? t.remove() : (t.data = t.data.substr(7)), (this._inlineFiller = null);
             }
             _needsInlineFillerAtSelection() {
               if (1 != this.selection.rangeCount || !this.selection.isCollapsed) return !1;
@@ -7512,7 +7566,7 @@
               const n = this.domConverter.findCorrespondingDomText(t);
               let o = this.domConverter.viewToDom(t).data;
               const i = e.inlineFillerPosition;
-              i && i.parent == t.parent && i.offset == t.index && (o = Gs + o), na(n, o);
+              i && i.parent == t.parent && i.offset == t.index && (o = Ws + o), na(n, o);
             }
             _updateAttrs(t) {
               const e = this.domConverter.mapViewToDom(t);
@@ -7552,7 +7606,7 @@
               l = 0;
               for (const t of c)
                 'insert' === t
-                  ? (qo(n, l, s[l]), l++)
+                  ? (Go(n, l, s[l]), l++)
                   : 'replace' === t
                   ? (na(r[l], s[l].data), l++)
                   : 'equal' === t &&
@@ -7701,10 +7755,10 @@
           function Js(t, e, n) {
             const o = e instanceof Array ? e : e.childNodes,
               i = o[n];
-            if (Po(i)) return (i.data = Gs + i.data), i;
+            if (Po(i)) return (i.data = Ws + i.data), i;
             {
-              const i = t.createTextNode(Gs);
-              return Array.isArray(e) ? o.splice(n, 0, i) : qo(e, n, i), i;
+              const i = t.createTextNode(Ws);
+              return Array.isArray(e) ? o.splice(n, 0, i) : Go(e, n, i), i;
             }
           }
           function Xs(t, e) {
@@ -7946,7 +8000,7 @@
                 const n = this.findCorrespondingDomText(e);
                 if (!n) return null;
                 let o = t.offset;
-                return Ws(n) && (o += 7), { parent: n, offset: o };
+                return qs(n) && (o += 7), { parent: n, offset: o };
               }
               {
                 let n, o, i;
@@ -7962,8 +8016,8 @@
                     return null;
                   (n = o.parentNode), (i = o.nextSibling);
                 }
-                if (Po(i) && Ws(i)) return { parent: i, offset: 7 };
-                return { parent: n, offset: o ? Wo(o) + 1 : 0 };
+                if (Po(i) && qs(i)) return { parent: i, offset: 7 };
+                return { parent: n, offset: o ? qo(o) + 1 : 0 };
               }
             }
             domToView(t, e = {}) {
@@ -7972,7 +8026,7 @@
               if (n) return n;
               if ($o(t) && e.skipComments) return null;
               if (Po(t)) {
-                if (qs(t)) return null;
+                if (Gs(t)) return null;
                 {
                   const e = this._processDataFromDomText(t);
                   return '' === e ? null : new Zi(this.document, e);
@@ -7982,7 +8036,7 @@
                 if (this.mapDomToView(t)) return this.mapDomToView(t);
                 let n;
                 if (this.isDocumentFragment(t))
-                  (n = new Is(this.document)), e.bind && this.bindDocumentFragments(t, n);
+                  (n = new Ss(this.document)), e.bind && this.bindDocumentFragments(t, n);
                 else {
                   (n = this._createViewElement(t, e)), e.bind && this.bindElements(t, n);
                   const o = t.attributes;
@@ -8032,21 +8086,21 @@
               return e && n ? new as(e, n) : null;
             }
             domPositionToView(t, e = 0) {
-              if (this.isBlockFiller(t)) return this.domPositionToView(t.parentNode, Wo(t));
+              if (this.isBlockFiller(t)) return this.domPositionToView(t.parentNode, qo(t));
               const n = this.mapDomToView(t);
               if (n && (n.is('uiElement') || n.is('rawElement'))) return ss._createBefore(n);
               if (Po(t)) {
-                if (qs(t)) return this.domPositionToView(t.parentNode, Wo(t));
+                if (Gs(t)) return this.domPositionToView(t.parentNode, qo(t));
                 const n = this.findCorrespondingViewText(t);
                 let o = e;
-                return n ? (Ws(t) && ((o -= 7), (o = o < 0 ? 0 : o)), new ss(n, o)) : null;
+                return n ? (qs(t) && ((o -= 7), (o = o < 0 ? 0 : o)), new ss(n, o)) : null;
               }
               if (0 === e) {
                 const e = this.mapDomToView(t);
                 if (e) return new ss(e, 0);
               } else {
                 const n = t.childNodes[e - 1];
-                if (Po(n) && qs(n)) return this.domPositionToView(n.parentNode, Wo(n));
+                if (Po(n) && Gs(n)) return this.domPositionToView(n.parentNode, qo(n));
                 const o = Po(n) ? this.findCorrespondingViewText(n) : this.mapDomToView(n);
                 if (o && o.parent) return new ss(o.parent, o.index + 1);
               }
@@ -8056,7 +8110,7 @@
               return this.getHostViewElement(t) || this._domToViewMapping.get(t);
             }
             findCorrespondingViewText(t) {
-              if (qs(t)) return null;
+              if (Gs(t)) return null;
               const e = this.getHostViewElement(t);
               if (e) return e;
               const n = t.previousSibling;
@@ -8164,8 +8218,8 @@
               }
             }
             _isDomSelectionPositionCorrect(t, e) {
-              if (Po(t) && Ws(t) && e < 7) return !1;
-              if (this.isElement(t) && Ws(t.childNodes[e])) return !1;
+              if (Po(t) && qs(t) && e < 7) return !1;
+              if (this.isElement(t) && qs(t.childNodes[e])) return !1;
               const n = this.mapDomToView(t);
               return !n || (!n.is('uiElement') && !n.is('rawElement'));
             }
@@ -8226,7 +8280,7 @@
               );
             }
             _checkShouldRightTrimDomText(t, e) {
-              return !e && !Ws(t);
+              return !e && !qs(t);
             }
             _getTouchingInlineViewNode(t, e) {
               const n = new rs({
@@ -8323,7 +8377,7 @@
               );
             }
           }
-          const ga = Gr(function (t, e) {
+          const ga = Wr(function (t, e) {
             De(e, hn(e), t);
           });
           class ma {
@@ -8417,7 +8471,7 @@
           };
           var Da = Math.max,
             Ta = Math.min;
-          const Ia = function (t, e, n) {
+          const Sa = function (t, e, n) {
             var o,
               i,
               r,
@@ -8479,10 +8533,10 @@
               b
             );
           };
-          class Sa extends ua {
+          class Ia extends ua {
             constructor(t) {
               super(t),
-                (this._fireSelectionChangeDoneDebounced = Ia((t) => {
+                (this._fireSelectionChangeDoneDebounced = Sa((t) => {
                   this.document.fire('selectionChangeDone', t);
                 }, 200));
             }
@@ -8625,11 +8679,11 @@
             return !1;
           };
           var Ua = Object.prototype.hasOwnProperty;
-          const Ga = function (t, e, n, o, i, r) {
+          const Wa = function (t, e, n, o, i, r) {
             var s = 1 & n,
-              a = In(t),
+              a = Sn(t),
               c = a.length;
-            if (c != In(e).length && !s) return !1;
+            if (c != Sn(e).length && !s) return !1;
             for (var l = c; l--; ) {
               var d = a[l];
               if (!(s ? d in e : Ua.call(e, d))) return !1;
@@ -8663,17 +8717,17 @@
             }
             return r.delete(t), r.delete(e), g;
           };
-          var Wa = '[object Arguments]',
-            qa = '[object Array]',
+          var qa = '[object Arguments]',
+            Ga = '[object Array]',
             $a = '[object Object]',
             Ya = Object.prototype.hasOwnProperty;
           const Ka = function (t, e, n, o, i, r) {
             var s = ut(t),
               a = ut(e),
-              c = s ? qa : qn(t),
-              l = a ? qa : qn(e),
-              d = (c = c == Wa ? $a : c) == $a,
-              h = (l = l == Wa ? $a : l) == $a,
+              c = s ? Ga : Gn(t),
+              l = a ? Ga : Gn(e),
+              d = (c = c == qa ? $a : c) == $a,
+              h = (l = l == qa ? $a : l) == $a,
               u = c == l;
             if (u && Re(t)) {
               if (!Re(e)) return !1;
@@ -8692,7 +8746,7 @@
                 return r || (r = new Ae()), i(p, f, n, o, r);
               }
             }
-            return !!u && (r || (r = new Ae()), Ga(t, e, n, o, i, r));
+            return !!u && (r || (r = new Ae()), Wa(t, e, n, o, i, r));
           };
           const Qa = function t(e, n, o, i, r) {
             return (
@@ -8757,7 +8811,7 @@
                   const t = e.findCorrespondingViewText(i.target);
                   t && !o.has(t.parent)
                     ? n.add(t)
-                    : !t && Ws(i.target) && o.add(e.mapDomToView(i.target.parentNode));
+                    : !t && qs(i.target) && o.add(e.mapDomToView(i.target.parentNode));
                 }
               }
               let i = !1;
@@ -8792,14 +8846,14 @@
                 (this.selection = this.document.selection),
                 (this.domConverter = t.domConverter),
                 (this._documents = new WeakSet()),
-                (this._fireSelectionChangeDoneDebounced = Ia((t) => {
+                (this._fireSelectionChangeDoneDebounced = Sa((t) => {
                   this.document.fire('selectionChangeDone', t);
                 }, 200)),
                 (this._clearInfiniteLoopInterval = setInterval(
                   () => this._clearInfiniteLoop(),
                   1e3
                 )),
-                (this._documentIsSelectingInactivityTimeoutDebounced = Ia(
+                (this._documentIsSelectingInactivityTimeoutDebounced = Sa(
                   () => (this.document.isSelecting = !1),
                   5e3
                 )),
@@ -9056,12 +9110,12 @@
                 (this._postFixersInProgress = !1),
                 (this._renderingDisabled = !1),
                 (this._hasChangedSinceTheLastRendering = !1),
-                (this._writer = new Ss(this.document)),
+                (this._writer = new Is(this.document)),
                 this.addObserver(Ja),
                 this.addObserver(tc),
                 this.addObserver(ec),
                 this.addObserver(fa),
-                this.addObserver(Sa),
+                this.addObserver(Ia),
                 this.addObserver(nc),
                 this.addObserver(rc),
                 this.addObserver(ic),
@@ -10731,7 +10785,7 @@
               range: Cc._createFromPositionAndShift(t.previousPosition, t.length),
             };
           }
-          class Ic extends T(cc) {
+          class Sc extends T(cc) {
             constructor(...t) {
               super(),
                 (this._lastRangeBackward = !1),
@@ -10802,7 +10856,7 @@
               let [e, n, o] = t;
               if (('object' == typeof n && ((o = n), (n = void 0)), null === e))
                 this._setRanges([]);
-              else if (e instanceof Ic) this._setRanges(e.getRanges(), e.isBackward);
+              else if (e instanceof Sc) this._setRanges(e.getRanges(), e.isBackward);
               else if (e && 'function' == typeof e.getRanges)
                 this._setRanges(e.getRanges(), e.isBackward);
               else if (e instanceof Cc) this._setRanges([e], !!o && !!o.backward);
@@ -10912,17 +10966,17 @@
               this._ranges.pop();
             }
           }
-          function Sc(t, e) {
+          function Ic(t, e) {
             return !e.has(t) && (e.add(t), t.root.document.model.schema.isBlock(t) && !!t.parent);
           }
           function Mc(t, e, n) {
-            return Sc(t, e) && Bc(t, n);
+            return Ic(t, e) && Bc(t, n);
           }
           function Nc(t, e) {
             const n = t.parent.root.document.model.schema,
               o = t.parent.getAncestors({ parentFirst: !0, includeSelf: !0 });
             let i = !1;
-            const r = o.find((t) => !i && ((i = n.isLimit(t)), !i && Sc(t, e)));
+            const r = o.find((t) => !i && ((i = n.isLimit(t)), !i && Ic(t, e)));
             return o.forEach((t) => e.add(t)), r;
           }
           function Bc(t, e) {
@@ -10937,7 +10991,7 @@
             if (!n) return !0;
             return !e.containsRange(Cc._createOn(n), !0);
           }
-          Ic.prototype.is = function (t) {
+          Sc.prototype.is = function (t) {
             return 'selection' === t || 'model:selection' === t;
           };
           class Pc extends T(Cc) {
@@ -11121,7 +11175,7 @@
               'model:documentSelection' == t
             );
           };
-          class jc extends Ic {
+          class jc extends Sc {
             constructor(t) {
               super(),
                 (this.markers = new Ai({ idProperty: 'name' })),
@@ -11411,7 +11465,7 @@
             elementToElement(t) {
               return this.add(
                 (function (t) {
-                  const e = qc(t.model),
+                  const e = Gc(t.model),
                     n = $c(t.view, 'container');
                   e.attributes.length && (e.children = !0);
                   return (o) => {
@@ -11441,7 +11495,7 @@
             elementToStructure(t) {
               return this.add(
                 (function (t) {
-                  const e = qc(t.model),
+                  const e = Gc(t.model),
                     n = $c(t.view, 'container');
                   return (
                     (e.children = !0),
@@ -11544,7 +11598,7 @@
                           o.consumable.consume(n.item, e.name);
                           const s = o.writer,
                             a = s.document.selection;
-                          if (n.item instanceof Ic || n.item instanceof Rc)
+                          if (n.item instanceof Sc || n.item instanceof Rc)
                             s.wrap(a.getFirstRange(), r);
                           else {
                             let t = o.mapper.toViewRange(n.range);
@@ -11665,16 +11719,16 @@
                       (t, e, o) => {
                         if (!e.item) return;
                         if (
-                          !(e.item instanceof Ic || e.item instanceof Rc || e.item.is('$textProxy'))
+                          !(e.item instanceof Sc || e.item instanceof Rc || e.item.is('$textProxy'))
                         )
                           return;
                         const i = Qc(n, e, o);
                         if (!i) return;
                         if (!o.consumable.consume(e.item, t.name)) return;
                         const r = o.writer,
-                          s = Gc(r, i),
+                          s = Wc(r, i),
                           a = r.document.selection;
-                        if (e.item instanceof Ic || e.item instanceof Rc)
+                        if (e.item instanceof Sc || e.item instanceof Rc)
                           r.wrap(a.getFirstRange(), s);
                         else {
                           const t = o.mapper.toViewRange(e.range),
@@ -11716,7 +11770,7 @@
                             if (n.markerRange.isCollapsed) return;
                             const i = Qc(t, n, o);
                             if (!i) return;
-                            const r = Gc(o.writer, i),
+                            const r = Wc(o.writer, i),
                               s = o.mapper.markerNameToElements(n.markerName);
                             if (s) {
                               for (const t of s)
@@ -11755,7 +11809,7 @@
                         if (!o) return;
                         const r = e.markerRange;
                         n.consumable.consume(r, t.name) &&
-                          (Wc(r, !1, n, e, o), Wc(r, !0, n, e, o), t.stop());
+                          (qc(r, !1, n, e, o), qc(r, !0, n, e, o), t.stop());
                       }),
                       { priority: t.converterPriority || 'normal' }
                     ),
@@ -11795,7 +11849,7 @@
               );
             }
           }
-          function Gc(t, e) {
+          function Wc(t, e) {
             const n = t.createAttributeElement('span', e.attributes);
             return (
               e.classes && n._addClass(e.classes),
@@ -11804,7 +11858,7 @@
               n
             );
           }
-          function Wc(t, e, n, o, i) {
+          function qc(t, e, n, o, i) {
             const r = e ? t.start : t.end,
               s = r.nodeAfter && r.nodeAfter.is('element') ? r.nodeAfter : null,
               a = r.nodeBefore && r.nodeBefore.is('element') ? r.nodeBefore : null;
@@ -11828,7 +11882,7 @@
               n.writer.insert(t, a), n.mapper.bindElementToMarker(a, o.markerName);
             })(n.mapper.toViewPosition(r), e, n, o, i);
           }
-          function qc(t) {
+          function Gc(t) {
             return (
               'string' == typeof t && (t = { name: t }),
               t.attributes
@@ -12659,11 +12713,11 @@
             }
             removeDisallowedAttributes(t, e) {
               for (const n of t)
-                if (n.is('$text')) Sl(this, n, e);
+                if (n.is('$text')) Il(this, n, e);
                 else {
                   const t = Cc._createIn(n).getPositions();
                   for (const n of t) {
-                    Sl(this, n.nodeBefore || n.parent, e);
+                    Il(this, n.nodeBefore || n.parent, e);
                   }
                 }
             }
@@ -12725,7 +12779,7 @@
                   : Array.isArray(t)
                   ? t
                   : t.getAncestors({ includeSelf: !0 })),
-                (this._items = e.map(Il));
+                (this._items = e.map(Sl));
             }
             get length() {
               return this._items.length;
@@ -12867,7 +12921,7 @@
             );
             var o;
           }
-          function Il(t) {
+          function Sl(t) {
             return 'string' == typeof t || t.is('documentFragment')
               ? {
                   name: 'string' == typeof t ? t : '$documentFragment',
@@ -12882,7 +12936,7 @@
                   getAttribute: (e) => t.getAttribute(e),
                 };
           }
-          function Sl(t, e, n) {
+          function Il(t, e, n) {
             for (const o of e.getAttributeKeys()) t.checkAttribute(e, o) || n.removeAttribute(o, e);
           }
           class Ml extends T() {
@@ -13097,7 +13151,7 @@
                 (this.stylesProcessor = e),
                 (this.htmlProcessor = new Bl(this.viewDocument)),
                 (this.processor = this.htmlProcessor),
-                (this._viewWriter = new Ss(this.viewDocument)),
+                (this._viewWriter = new Is(this.viewDocument)),
                 this.upcastDispatcher.on(
                   'text',
                   (t, e, { schema: n, consumable: o, writer: i }) => {
@@ -13178,7 +13232,7 @@
                 o = this._viewWriter;
               this.mapper.clearBindings();
               const i = Cc._createIn(t),
-                r = new Is(n);
+                r = new Ss(n);
               this.mapper.bindElements(t, r);
               const s = t.is('documentFragment')
                 ? t.markers
@@ -13377,7 +13431,7 @@
             const n = Hl(e),
               o = n.reduce((t, e) => t + e.offsetSize, 0),
               i = t.parent;
-            Gl(t);
+            Wl(t);
             const r = t.index;
             return (
               i._insertChild(r, n), Ul(i, r + n.length), Ul(i, r), new Cc(t, t.getShiftedBy(o))
@@ -13386,7 +13440,7 @@
           function Fl(t) {
             if (!t.isFlat) throw new k('operation-utils-remove-range-not-flat', this);
             const e = t.start.parent;
-            Gl(t.start), Gl(t.end);
+            Wl(t.start), Wl(t.end);
             const n = e._removeChildren(t.start.index, t.end.index - t.start.index);
             return Ul(e, t.start.index), n;
           }
@@ -13408,7 +13462,7 @@
                 o = e[t - 1];
               n instanceof hc &&
                 o instanceof hc &&
-                Wl(n, o) &&
+                ql(n, o) &&
                 (e.splice(t - 1, 2, new hc(o.data + n.data, o.getAttributes())), t--);
             }
             return e;
@@ -13416,12 +13470,12 @@
           function Ul(t, e) {
             const n = t.getChild(e - 1),
               o = t.getChild(e);
-            if (n && o && n.is('$text') && o.is('$text') && Wl(n, o)) {
+            if (n && o && n.is('$text') && o.is('$text') && ql(n, o)) {
               const i = new hc(n.data + o.data, n.getAttributes());
               t._removeChildren(e - 1, 2), t._insertChild(e - 1, i);
             }
           }
-          function Gl(t) {
+          function Wl(t) {
             const e = t.textNode,
               n = t.parent;
             if (e) {
@@ -13433,7 +13487,7 @@
               n._insertChild(i, [r, s]);
             }
           }
-          function Wl(t, e) {
+          function ql(t, e) {
             const n = t.getAttributes(),
               o = e.getAttributes();
             for (const t of n) {
@@ -13442,7 +13496,7 @@
             }
             return o.next().done;
           }
-          class ql extends Rl {
+          class Gl extends Rl {
             constructor(t, e, n, o) {
               super(o),
                 (this.sourcePosition = t.clone()),
@@ -13459,7 +13513,7 @@
                 : 'move';
             }
             clone() {
-              return new ql(
+              return new Gl(
                 this.sourcePosition,
                 this.howMany,
                 this.targetPosition,
@@ -13477,7 +13531,7 @@
                 this.targetPosition,
                 this.howMany
               );
-              return new ql(this.getMovedRangeStart(), this.howMany, t, this.baseVersion + 1);
+              return new Gl(this.getMovedRangeStart(), this.howMany, t, this.baseVersion + 1);
             }
             _validate() {
               const t = this.sourcePosition.parent,
@@ -13546,7 +13600,7 @@
             getReversed() {
               const t = this.position.root.document.graveyard,
                 e = new fc(t, [0]);
-              return new ql(this.position, this.nodes.maxOffset, e, this.baseVersion + 1);
+              return new Gl(this.position, this.nodes.maxOffset, e, this.baseVersion + 1);
             }
             _validate() {
               const t = this.position.parent;
@@ -13684,7 +13738,7 @@
             _execute() {
               Kl(this.oldValue, this.newValue) ||
                 (function (t, e, n) {
-                  Gl(t.start), Gl(t.end);
+                  Wl(t.start), Wl(t.end);
                   for (const o of t.getItems({ shallow: !0 })) {
                     const t = o.is('$textProxy') ? o.textNode : o;
                     null !== n ? t._setAttribute(e, n) : t._removeAttribute(e),
@@ -13978,7 +14032,7 @@
           (nd[Ql.className] = Ql),
             (nd[$l.className] = $l),
             (nd[Yl.className] = Yl),
-            (nd[ql.className] = ql),
+            (nd[Gl.className] = Gl),
             (nd[Zl.className] = Zl),
             (nd[Rl.className] = Rl),
             (nd[Jl.className] = Jl),
@@ -14063,7 +14117,7 @@
               for (const e of t) this.originalOperations.set(e, n || e);
             }
             updateRelation(t, e) {
-              if (t instanceof ql)
+              if (t instanceof Gl)
                 e instanceof td
                   ? t.targetPosition.isEqual(e.sourcePosition) ||
                     e.movedRange.containsPosition(t.targetPosition)
@@ -14072,7 +14126,7 @@
                     ? this._setRelation(t, e, 'insertBetween')
                     : t.targetPosition.isAfter(e.sourcePosition) &&
                       this._setRelation(t, e, 'moveTargetAfter')
-                  : e instanceof ql &&
+                  : e instanceof Gl &&
                     (t.targetPosition.isEqual(e.sourcePosition) ||
                     t.targetPosition.isBefore(e.sourcePosition)
                       ? this._setRelation(t, e, 'insertBefore')
@@ -14081,7 +14135,7 @@
                 if (e instanceof td)
                   t.splitPosition.isBefore(e.sourcePosition) &&
                     this._setRelation(t, e, 'splitBefore');
-                else if (e instanceof ql)
+                else if (e instanceof Gl)
                   if (
                     t.splitPosition.isEqual(e.sourcePosition) ||
                     t.splitPosition.isBefore(e.sourcePosition)
@@ -14112,7 +14166,7 @@
               else if (t instanceof Yl) {
                 const n = t.newRange;
                 if (!n) return;
-                if (e instanceof ql) {
+                if (e instanceof Gl) {
                   const o = Cc._createFromPositionAndShift(e.sourcePosition, e.howMany),
                     i = o.containsPosition(n.start) || o.start.isEqual(n.start),
                     r = o.containsPosition(n.end) || o.end.isEqual(n.end);
@@ -14185,7 +14239,7 @@
             const n = [];
             for (let o = 0; o < t.length; o++) {
               const i = t[o],
-                r = new ql(i.start, i.end.offset - i.start.offset, e, 0);
+                r = new Gl(i.start, i.end.offset - i.start.offset, e, 0);
               n.push(r);
               for (let e = o + 1; e < t.length; e++)
                 t[e] = t[e]._getTransformedByMove(r.sourcePosition, r.targetPosition, r.howMany)[0];
@@ -14236,7 +14290,7 @@
                 n.map((e) => new Ql(e, t.key, t.oldValue, t.newValue, t.baseVersion))
               );
             }),
-            rd(Ql, ql, (t, e) => {
+            rd(Ql, Gl, (t, e) => {
               const n = (function (t, e) {
                 const n = Cc._createFromPositionAndShift(e.sourcePosition, e.howMany);
                 let o = null,
@@ -14305,7 +14359,7 @@
             ),
             rd(
               $l,
-              ql,
+              Gl,
               (t, e) => ((t.position = t.position._getTransformedByMoveOperation(e)), [t])
             ),
             rd(
@@ -14343,7 +14397,7 @@
                 [t]
               )
             ),
-            rd(Yl, ql, (t, e, n) => {
+            rd(Yl, Gl, (t, e, n) => {
               if (
                 (t.oldRange &&
                   (t.oldRange = Cc._createFromRanges(t.oldRange._getTransformedByMoveOperation(e))),
@@ -14428,7 +14482,7 @@
                 if ((i && !o) || (!(o && !i) && n.aIsStrong)) {
                   const n = e.targetPosition._getTransformedByMergeOperation(e),
                     o = t.targetPosition._getTransformedByMergeOperation(e);
-                  return [new ql(n, t.howMany, o, 0)];
+                  return [new Gl(n, t.howMany, o, 0)];
                 }
                 return [new Zl(0)];
               }
@@ -14441,7 +14495,7 @@
                 [t]
               );
             }),
-            rd(td, ql, (t, e, n) => {
+            rd(td, Gl, (t, e, n) => {
               const o = Cc._createFromPositionAndShift(e.sourcePosition, e.howMany);
               return 'remove' == e.type &&
                 !n.bWasUndone &&
@@ -14496,7 +14550,7 @@
                 [t]
               );
             }),
-            rd(ql, $l, (t, e) => {
+            rd(Gl, $l, (t, e) => {
               const n = Cc._createFromPositionAndShift(
                 t.sourcePosition,
                 t.howMany
@@ -14509,7 +14563,7 @@
                 [t]
               );
             }),
-            rd(ql, ql, (t, e, n) => {
+            rd(Gl, Gl, (t, e, n) => {
               const o = Cc._createFromPositionAndShift(t.sourcePosition, t.howMany),
                 i = Cc._createFromPositionAndShift(e.sourcePosition, e.howMany);
               let r,
@@ -14598,7 +14652,7 @@
                 0 === l.length ? [new Zl(t.baseVersion)] : md(l, r)
               );
             }),
-            rd(ql, ed, (t, e, n) => {
+            rd(Gl, ed, (t, e, n) => {
               let o = t.targetPosition.clone();
               (t.targetPosition.isEqual(e.insertionPosition) &&
                 e.graveyardPosition &&
@@ -14629,7 +14683,7 @@
               }
               return md(r, o);
             }),
-            rd(ql, td, (t, e, n) => {
+            rd(Gl, td, (t, e, n) => {
               const o = Cc._createFromPositionAndShift(t.sourcePosition, t.howMany);
               if (
                 e.deletionPosition.hasSameParentAs(t.sourcePosition) &&
@@ -14647,7 +14701,7 @@
                   let o = e.graveyardPosition.clone(),
                     i = e.targetPosition._getTransformedByMergeOperation(e);
                   t.howMany > 1 &&
-                    (n.push(new ql(t.sourcePosition, t.howMany - 1, t.targetPosition, 0)),
+                    (n.push(new Gl(t.sourcePosition, t.howMany - 1, t.targetPosition, 0)),
                     (o = o._getTransformedByMove(
                       t.sourcePosition,
                       t.targetPosition,
@@ -14659,12 +14713,12 @@
                       t.howMany - 1
                     )));
                   const r = e.deletionPosition._getCombined(t.sourcePosition, t.targetPosition),
-                    s = new ql(o, 1, r, 0),
+                    s = new Gl(o, 1, r, 0),
                     a = s.getMovedRangeStart().path.slice();
                   a.push(0);
                   const c = new fc(s.targetPosition.root, a);
                   i = i._getTransformedByMove(o, r, 1);
-                  const l = new ql(i, e.howMany, c, 0);
+                  const l = new Gl(i, e.howMany, c, 0);
                   return n.push(s), n.push(l), n;
                 }
               const i = Cc._createFromPositionAndShift(
@@ -14692,7 +14746,7 @@
             ),
             rd(
               Jl,
-              ql,
+              Gl,
               (t, e) => ((t.position = t.position._getTransformedByMoveOperation(e)), [t])
             ),
             rd(Jl, Jl, (t, e, n) => {
@@ -14762,7 +14816,7 @@
                 [t]
               );
             }),
-            rd(ed, ql, (t, e, n) => {
+            rd(ed, Gl, (t, e, n) => {
               const o = Cc._createFromPositionAndShift(e.sourcePosition, e.howMany);
               if (t.graveyardPosition) {
                 const i =
@@ -14773,7 +14827,7 @@
                     i = o.path.slice();
                   i.push(0);
                   const r = new fc(o.root, i);
-                  return [new ql(n, t.howMany, r, 0)];
+                  return [new Gl(n, t.howMany, r, 0)];
                 }
                 t.graveyardPosition = t.graveyardPosition._getTransformedByMoveOperation(e);
               }
@@ -14851,9 +14905,9 @@
                   const n = [];
                   return (
                     e.howMany &&
-                      n.push(new ql(e.moveTargetPosition, e.howMany, e.splitPosition, 0)),
+                      n.push(new Gl(e.moveTargetPosition, e.howMany, e.splitPosition, 0)),
                     t.howMany &&
-                      n.push(new ql(t.splitPosition, t.howMany, t.moveTargetPosition, 0)),
+                      n.push(new Gl(t.splitPosition, t.howMany, t.moveTargetPosition, 0)),
                     n
                   );
                 }
@@ -14869,7 +14923,7 @@
                 const n = e.insertionPosition.path.slice();
                 n.push(0);
                 const o = new fc(e.insertionPosition.root, n);
-                return [t, new ql(t.insertionPosition, 1, o, 0)];
+                return [t, new Gl(t.insertionPosition, 1, o, 0)];
               }
               return (
                 t.splitPosition.hasSameParentAs(e.splitPosition) &&
@@ -15651,14 +15705,14 @@
               return this._markers.values();
             }
             has(t) {
-              const e = t instanceof Id ? t.name : t;
+              const e = t instanceof Sd ? t.name : t;
               return this._markers.has(e);
             }
             get(t) {
               return this._markers.get(t) || null;
             }
             _set(t, e, n = !1, o = !1) {
-              const i = t instanceof Id ? t.name : t;
+              const i = t instanceof Sd ? t.name : t;
               if (i.includes(',')) throw new k('markercollection-incorrect-marker-name', this);
               const r = this._markers.get(i);
               if (r) {
@@ -15674,7 +15728,7 @@
                 );
               }
               const s = Pc.fromRange(e),
-                a = new Id(i, s, n, o);
+                a = new Sd(i, s, n, o);
               return (
                 this._markers.set(i, a),
                 this.fire(`update:${i}`, a, null, e, { ...a.getData(), range: null }),
@@ -15682,7 +15736,7 @@
               );
             }
             _remove(t) {
-              const e = t instanceof Id ? t.name : t,
+              const e = t instanceof Sd ? t.name : t,
                 n = this._markers.get(e);
               return (
                 !!n &&
@@ -15693,7 +15747,7 @@
               );
             }
             _refresh(t) {
-              const e = t instanceof Id ? t.name : t,
+              const e = t instanceof Sd ? t.name : t,
                 n = this._markers.get(e);
               if (!n) throw new k('markercollection-refresh-marker-not-exists', this);
               const o = n.getRange();
@@ -15716,7 +15770,7 @@
               t.stopListening(), t._detachLiveRange();
             }
           }
-          class Id extends T(cc) {
+          class Sd extends T(cc) {
             constructor(t, e, n, o) {
               super(),
                 (this.name = t),
@@ -15767,10 +15821,10 @@
                 (this._liveRange = null);
             }
           }
-          Id.prototype.is = function (t) {
+          Sd.prototype.is = function (t) {
             return 'marker' === t || 'model:marker' === t;
           };
-          class Sd extends Rl {
+          class Id extends Rl {
             constructor(t, e) {
               super(null), (this.sourcePosition = t.clone()), (this.howMany = e);
             }
@@ -15986,7 +16040,7 @@
               if ((this._addOperationForAffectedMarkers('move', t), !Od(t.root, o.root)))
                 throw new k('writer-move-different-document', this);
               const i = t.root.document ? t.root.document.version : null,
-                r = new ql(t.start, t.end.offset - t.start.offset, o, i);
+                r = new Gl(t.start, t.end.offset - t.start.offset, o, i);
               this.batch.addOperation(r), this.model.applyOperation(r);
             }
             remove(t) {
@@ -16244,8 +16298,8 @@
             if (t.root.document) {
               const n = o.document,
                 r = new fc(n.graveyard, [0]);
-              i = new ql(t, e, r, n.version);
-            } else i = new Sd(t, e);
+              i = new Gl(t, e, r, n.version);
+            } else i = new Id(t, e);
             n.addOperation(i), o.applyOperation(i);
           }
           function Od(t, e) {
@@ -16381,7 +16435,7 @@
               )
                 return void (function (t, e) {
                   const n = t.model.schema.getLimitElement(e);
-                  t.remove(t.createRangeIn(n)), qd(t, t.createPositionAt(n, 0), e);
+                  t.remove(t.createRangeIn(n)), Gd(t, t.createPositionAt(n, 0), e);
                 })(t, e);
               const r = {};
               if (!n.doNotAutoparagraph) {
@@ -16416,7 +16470,7 @@
                 n.leaveUnmerged ||
                   (!(function (t, e, n) {
                     const o = t.model;
-                    if (!Wd(t.model.schema, e, n)) return;
+                    if (!qd(t.model.schema, e, n)) return;
                     const [i, r] = (function (t, e) {
                       const n = t.getAncestors(),
                         o = e.getAncestors();
@@ -16427,7 +16481,7 @@
                     if (!i || !r) return;
                     !o.hasContent(i, { ignoreMarkers: !0 }) &&
                     o.hasContent(r, { ignoreMarkers: !0 })
-                      ? Gd(t, e, n, i.parent)
+                      ? Wd(t, e, n, i.parent)
                       : Ud(t, e, n, i.parent);
                   })(t, s, a),
                   i.removeDisallowedAttributes(s.parent.getChildren(), t)),
@@ -16438,7 +16492,7 @@
                       o = t.checkChild(e, 'paragraph');
                     return !n && o;
                   })(i, s) &&
-                  qd(t, s, e, r),
+                  Gd(t, s, e, r),
                 s.detach(),
                 a.detach();
             });
@@ -16457,10 +16511,10 @@
                 const e = n.parent;
                 (n = t.createPositionBefore(e)), t.remove(e);
               }
-              Wd(t.model.schema, e, n) && Ud(t, e, n, o);
+              qd(t.model.schema, e, n) && Ud(t, e, n, o);
             }
           }
-          function Gd(t, e, n, o) {
+          function Wd(t, e, n, o) {
             const i = e.parent,
               r = n.parent;
             if (i != o && r != o) {
@@ -16482,10 +16536,10 @@
                     t.setAttributes(Object.fromEntries(o.getAttributes()), n),
                     t.merge(e);
                 })(t, n),
-                Wd(t.model.schema, e, n) && Gd(t, e, n, o);
+                qd(t.model.schema, e, n) && Wd(t, e, n, o);
             }
           }
-          function Wd(t, e, n) {
+          function qd(t, e, n) {
             const o = e.parent,
               i = n.parent;
             return (
@@ -16499,7 +16553,7 @@
               })(e, n, t)
             );
           }
-          function qd(t, e, n, o = {}) {
+          function Gd(t, e, n, o = {}) {
             const i = t.createElement('paragraph');
             t.model.schema.setAllowedAttributes(i, o, t),
               t.insert(i, e),
@@ -16760,7 +16814,7 @@
               throw new k('insertobject-element-not-an-object', t, { object: e });
             let r;
             r = n
-              ? n instanceof Ic || n instanceof Rc
+              ? n instanceof Sc || n instanceof Rc
                 ? n
                 : t.createSelection(n, o)
               : t.document.selection;
@@ -16828,7 +16882,7 @@
                     if (o) {
                       const i = o.data;
                       let r = t.position.offset - o.startOffset;
-                      for (; Ei(i, r) || ('character' == e && Di(i, r)) || (n && Ii(i, r)); )
+                      for (; Ei(i, r) || ('character' == e && Di(i, r)) || (n && Si(i, r)); )
                         t.next(), (r = t.position.offset - o.startOffset);
                     }
                     return t.position;
@@ -16939,7 +16993,7 @@
                 return t.change((i) => {
                   let r;
                   (r = n
-                    ? n instanceof Ic || n instanceof Rc
+                    ? n instanceof Sc || n instanceof Rc
                       ? n
                       : i.createSelection(n, o)
                     : t.document.selection),
@@ -17109,7 +17163,7 @@
               return Cc._createOn(t);
             }
             createSelection(...t) {
-              return new Ic(...t);
+              return new Sc(...t);
             }
             createBatch(t) {
               return new bd(t);
@@ -17162,7 +17216,7 @@
               this.document = t;
             }
             createDocumentFragment(t) {
-              return new Is(this.document, t);
+              return new Ss(this.document, t);
             }
             createElement(t, e, n) {
               return new Jr(this.document, t, e, n);
@@ -17635,20 +17689,20 @@
               for (const t of this._components.values()) yield t.originalName;
             }
             add(t, e) {
-              this._components.set(Ih(t), { callback: e, originalName: t });
+              this._components.set(Sh(t), { callback: e, originalName: t });
             }
             create(t) {
               if (!this.has(t)) throw new k('componentfactory-item-missing', this, { name: t });
-              return this._components.get(Ih(t)).callback(this.editor.locale);
+              return this._components.get(Sh(t)).callback(this.editor.locale);
             }
             has(t) {
-              return this._components.has(Ih(t));
+              return this._components.has(Sh(t));
             }
           }
-          function Ih(t) {
+          function Sh(t) {
             return String(t).toLowerCase();
           }
-          class Sh extends Ai {
+          class Ih extends Ai {
             constructor(t = []) {
               super(t, { idProperty: 'viewUid' }),
                 this.on('add', (t, e, n) => {
@@ -17737,7 +17791,7 @@
             }
             static extend(t, e) {
               if (t._isRendered) throw new k('template-extend-render', [this, t]);
-              Wh(t, Vh(Fh(e)));
+              qh(t, Vh(Fh(e)));
             }
             _renderNode(t) {
               let e;
@@ -17790,7 +17844,7 @@
                     .map((t) => (t && t.value) || t)
                     .reduce((t, e) => t.concat(e), [])
                     .reduce(Uh, '');
-                  qh(t) || e.setAttributeNS(s, o, t);
+                  Gh(t) || e.setAttributeNS(s, o, t);
                 }
               }
             }
@@ -17842,7 +17896,7 @@
               const o = n.revertData;
               Lh(t, e, n);
               const i = t
-                .filter((t) => !qh(t))
+                .filter((t) => !Gh(t))
                 .filter((t) => t.observable)
                 .map((o) => o.activateAttributeListener(t, e, n));
               o && o.bindings.push(i);
@@ -17904,7 +17958,7 @@
               super(t), (this.valueIfTrue = t.valueIfTrue);
             }
             getValue(t) {
-              return !qh(super.getValue(t)) && (this.valueIfTrue || !0);
+              return !Gh(super.getValue(t)) && (this.valueIfTrue || !0);
             }
           }
           function zh(t) {
@@ -17918,7 +17972,7 @@
             })(t, n);
             let i;
             (i = 1 == t.length && t[0] instanceof Ph ? o[0] : o.reduce(Uh, '')),
-              qh(i) ? e.remove() : e.set(i);
+              Gh(i) ? e.remove() : e.set(i);
           }
           function Oh(t) {
             return {
@@ -17991,28 +18045,28 @@
             t[e] = fi(t[e]);
           }
           function Uh(t, e) {
-            return qh(e) ? t : qh(t) ? e : `${t} ${e}`;
-          }
-          function Gh(t, e) {
-            for (const n in e) t[n] ? t[n].push(...e[n]) : (t[n] = e[n]);
+            return Gh(e) ? t : Gh(t) ? e : `${t} ${e}`;
           }
           function Wh(t, e) {
+            for (const n in e) t[n] ? t[n].push(...e[n]) : (t[n] = e[n]);
+          }
+          function qh(t, e) {
             if (
               (e.attributes &&
-                (t.attributes || (t.attributes = {}), Gh(t.attributes, e.attributes)),
+                (t.attributes || (t.attributes = {}), Wh(t.attributes, e.attributes)),
               e.eventListeners &&
                 (t.eventListeners || (t.eventListeners = {}),
-                Gh(t.eventListeners, e.eventListeners)),
+                Wh(t.eventListeners, e.eventListeners)),
               e.text && t.text.push(...e.text),
               e.children && e.children.length)
             ) {
               if (t.children.length != e.children.length)
                 throw new k('ui-template-extend-children-mismatch', t);
               let n = 0;
-              for (const o of e.children) Wh(t.children[n++], o);
+              for (const o of e.children) qh(t.children[n++], o);
             }
           }
-          function qh(t) {
+          function Gh(t) {
             return !t && 0 !== t;
           }
           function $h(t) {
@@ -18022,7 +18076,7 @@
             return t instanceof Mh;
           }
           function Kh(t) {
-            return t instanceof Sh;
+            return t instanceof Ih;
           }
           function Qh(t) {
             return L(t[0]) && t[0].ns;
@@ -18059,7 +18113,7 @@
                 : (this._bindTemplate = Mh.bind(this, this));
             }
             createCollection(t) {
-              const e = new Sh(t);
+              const e = new Ih(t);
               return this._viewCollections.add(e), e;
             }
             registerChild(t) {
@@ -18098,7 +18152,7 @@
             };
           ji()(eu.Z, nu);
           eu.Z.locals;
-          const ou = Go('px'),
+          const ou = Wo('px'),
             iu = No.document.body;
           class ru extends tu {
             constructor(t) {
@@ -18463,7 +18517,7 @@
                 (this._resizeObserver = null),
                 (this._currentElementWithTooltip = null),
                 (this._currentTooltipPosition = null),
-                (this._pinTooltipDebounced = Ia(this._pinTooltip, 600)),
+                (this._pinTooltipDebounced = Sa(this._pinTooltip, 600)),
                 this.listenTo(No.document, 'mouseenter', this._onEnterOrFocus.bind(this), {
                   useCapture: !0,
                 }),
@@ -18903,7 +18957,7 @@
                 })
               );
           }
-          class vu extends Sh {
+          class vu extends Ih {
             constructor(t, e = []) {
               super(e), (this.locale = t);
             }
@@ -19060,7 +19114,7 @@
             };
           ji()(Du.Z, Tu);
           Du.Z.locals;
-          class Iu extends tu {
+          class Su extends tu {
             constructor(t) {
               super(t);
               const e = this.bindTemplate,
@@ -19175,16 +19229,16 @@
                 : '';
             }
           }
-          var Su = n(9681),
+          var Iu = n(9681),
             Mu = {
               injectType: 'singletonStyleTag',
               attributes: { 'data-cke': !0 },
               insert: 'head',
               singleton: !0,
             };
-          ji()(Su.Z, Mu);
-          Su.Z.locals;
-          class Nu extends Iu {
+          ji()(Iu.Z, Mu);
+          Iu.Z.locals;
+          class Nu extends Su {
             constructor(t) {
               super(t),
                 (this.isToggleable = !0),
@@ -19218,7 +19272,7 @@
                   view: { name: 'span', styles: { color: `${t.color}` } },
                 };
           }
-          class Pu extends Iu {
+          class Pu extends Su {
             constructor(t) {
               super(t);
               const e = this.bindTemplate;
@@ -19319,7 +19373,7 @@
           }
           const Ru =
             '<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="M.941 4.523a.75.75 0 1 1 1.06-1.06l3.006 3.005 3.005-3.005a.75.75 0 1 1 1.06 1.06l-3.549 3.55a.75.75 0 0 1-1.168-.136L.941 4.523z"/></svg>';
-          class ju extends Iu {
+          class ju extends Su {
             constructor(t) {
               super(t),
                 (this.arrowView = this._createArrowView()),
@@ -19413,7 +19467,7 @@
               this.actionView.focus();
             }
             _createActionView() {
-              const t = new Iu();
+              const t = new Su();
               return (
                 t
                   .bind(
@@ -19436,7 +19490,7 @@
               );
             }
             _createArrowView() {
-              const t = new Iu(),
+              const t = new Su(),
                 e = t.bindTemplate;
               return (
                 (t.icon = Ru),
@@ -19496,16 +19550,16 @@
               }
             }
           }
-          var Gu = n(3488),
-            Wu = {
+          var Wu = n(3488),
+            qu = {
               injectType: 'singletonStyleTag',
               attributes: { 'data-cke': !0 },
               insert: 'head',
               singleton: !0,
             };
-          ji()(Gu.Z, Wu);
-          Gu.Z.locals;
-          class qu extends tu {
+          ji()(Wu.Z, qu);
+          Wu.Z.locals;
+          class Gu extends tu {
             constructor(t, e, n) {
               super(t);
               const o = this.bindTemplate;
@@ -19550,7 +19604,7 @@
                 this.on('change:isOpen', (t, e, n) => {
                   n &&
                     ('auto' === this.panelPosition
-                      ? (this.panelView.position = qu._getOptimalPosition({
+                      ? (this.panelView.position = Gu._getOptimalPosition({
                           element: this.panelView.element,
                           target: this.buttonView.element,
                           fitInViewport: !0,
@@ -19586,13 +19640,13 @@
                 southMiddleWest: a,
                 northMiddleEast: c,
                 northMiddleWest: l,
-              } = qu.defaultPanelPositions;
+              } = Gu.defaultPanelPositions;
               return 'rtl' !== this.locale.uiLanguageDirection
                 ? [n, o, s, a, t, i, r, c, l, e]
                 : [o, n, a, s, t, r, i, l, c, e];
             }
           }
-          (qu.defaultPanelPositions = {
+          (Gu.defaultPanelPositions = {
             south: (t, e) => ({ top: t.bottom, left: t.left - (e.width - t.width) / 2, name: 's' }),
             southEast: (t) => ({ top: t.bottom, left: t.left, name: 'se' }),
             southWest: (t, e) => ({ top: t.bottom, left: t.left - e.width + t.width, name: 'sw' }),
@@ -19628,7 +19682,7 @@
               name: 'nmw',
             }),
           }),
-            (qu._getOptimalPosition = Ko);
+            (Gu._getOptimalPosition = Ko);
           class $u {
             constructor(t) {
               if (
@@ -20127,7 +20181,7 @@
           function pg(t, e = ju) {
             const n = new e(t),
               o = new Uu(t),
-              i = new qu(t, n, o);
+              i = new Gu(t, n, o);
             return (
               n.bind('isEnabled').to(i),
               n instanceof Hu
@@ -20204,7 +20258,7 @@
                 const e = new lg(n);
                 let o;
                 return (
-                  (o = 'button' === t.type ? new Iu(n) : new Nu(n)),
+                  (o = 'button' === t.type ? new Su(n) : new Nu(n)),
                   o.bind(...Object.keys(t.model)).to(t.model),
                   o.delegate('execute').to(e),
                   e.children.add(o),
@@ -20383,23 +20437,23 @@
             }
           }
           var Tg = n(5523),
-            Ig = {
+            Sg = {
               injectType: 'singletonStyleTag',
               attributes: { 'data-cke': !0 },
               insert: 'head',
               singleton: !0,
             };
-          ji()(Tg.Z, Ig);
+          ji()(Tg.Z, Sg);
           Tg.Z.locals;
-          var Sg = n(6985),
+          var Ig = n(6985),
             Mg = {
               injectType: 'singletonStyleTag',
               attributes: { 'data-cke': !0 },
               insert: 'head',
               singleton: !0,
             };
-          ji()(Sg.Z, Mg);
-          Sg.Z.locals;
+          ji()(Ig.Z, Mg);
+          Ig.Z.locals;
           class Ng extends tu {
             constructor(t) {
               super(t),
@@ -20632,8 +20686,8 @@
             };
           ji()(Hg.Z, Ug);
           Hg.Z.locals;
-          const Gg = Go('px');
-          class Wg extends Si {
+          const Wg = Wo('px');
+          class qg extends Ii {
             static get pluginName() {
               return 'ContextualBalloon';
             }
@@ -20725,7 +20779,7 @@
               t[e] || (e = t.length - 1), this.showStack(this._getStackId(t[e]));
             }
             _createRotatorView() {
-              const t = new qg(this.editor.locale),
+              const t = new Gg(this.editor.locale),
                 e = this.editor.locale.t;
               return (
                 this.view.content.add(t),
@@ -20791,7 +20845,7 @@
               );
             }
           }
-          class qg extends tu {
+          class Gg extends tu {
             constructor(t) {
               super(t);
               const e = t.t,
@@ -20850,7 +20904,7 @@
               this.content.clear();
             }
             _createButtonView(t, e) {
-              const n = new Iu(this.locale);
+              const n = new Su(this.locale);
               return n.set({ label: t, icon: e, tooltip: !0 }), n;
             }
           }
@@ -20870,10 +20924,10 @@
                   attributes: {
                     class: ['ck-fake-panel', n.to('numberOfPanels', (t) => (t ? '' : 'ck-hidden'))],
                     style: {
-                      top: n.to('top', Gg),
-                      left: n.to('left', Gg),
-                      width: n.to('width', Gg),
-                      height: n.to('height', Gg),
+                      top: n.to('top', Wg),
+                      left: n.to('left', Wg),
+                      width: n.to('width', Wg),
+                      height: n.to('height', Wg),
                     },
                   },
                   children: this.content,
@@ -20911,7 +20965,7 @@
             };
           ji()(Yg.Z, Kg);
           Yg.Z.locals;
-          const Qg = Go('px');
+          const Qg = Wo('px');
           class Zg extends tu {
             constructor(t) {
               super(t);
@@ -20996,7 +21050,7 @@
                     (this._marginLeft = null));
             }
           }
-          Go('px');
+          Wo('px');
           var Jg = n(6706),
             Xg = {
               injectType: 'singletonStyleTag',
@@ -21005,8 +21059,8 @@
               singleton: !0,
             };
           ji()(Jg.Z, Xg);
-          Jg.Z.locals, Go('px');
-          Go('px');
+          Jg.Z.locals, Wo('px');
+          Wo('px');
           const { pilcrow: tm } = bu;
           class em extends gu {
             constructor(t, e) {
@@ -21254,7 +21308,7 @@
             }
             observe() {}
           }
-          class hm extends Si {
+          class hm extends Ii {
             static get pluginName() {
               return 'Input';
             }
@@ -21471,7 +21525,7 @@
             }
             observe() {}
           }
-          class _m extends Si {
+          class _m extends Ii {
             static get pluginName() {
               return 'Delete';
             }
@@ -21527,7 +21581,7 @@
               this.editor.plugins.has('UndoEditing') && (this._undoOnBackspace = !0);
             }
           }
-          class Am extends Si {
+          class Am extends Ii {
             static get requires() {
               return [hm, _m];
             }
@@ -21589,7 +21643,7 @@
               }
             }
           }
-          class ym extends Si {
+          class ym extends Ii {
             static get pluginName() {
               return 'TwoStepCaretMovement';
             }
@@ -21694,10 +21748,10 @@
             }
             return !1;
           }
-          var Im = /[\\^$.*+?()[\]{}|]/g,
-            Sm = RegExp(Im.source);
+          var Sm = /[\\^$.*+?()[\]{}|]/g,
+            Im = RegExp(Sm.source);
           const Mm = function (t) {
-              return (t = fr(t)) && Sm.test(t) ? t.replace(Im, '\\$&') : t;
+              return (t = fr(t)) && Im.test(t) ? t.replace(Sm, '\\$&') : t;
             },
             Nm = {
               copyright: { from: '(c)', to: '©' },
@@ -21873,7 +21927,7 @@
               .filter((t) => void 0 !== t[0] && void 0 !== t[1])
               .map((e) => n.createRange(t.getShiftedBy(e[0]), t.getShiftedBy(e[1])));
           }
-          function Gm(t, e) {
+          function Wm(t, e) {
             return (n, o) => {
               if (!t.commands.get(e).isEnabled) return !1;
               const i = t.model.schema.getValidRanges(o, e);
@@ -21881,9 +21935,9 @@
               n.removeSelectionAttribute(e);
             };
           }
-          const Wm = ['left', 'right', 'center', 'justify'];
-          function qm(t) {
-            return Wm.includes(t);
+          const qm = ['left', 'right', 'center', 'justify'];
+          function Gm(t) {
+            return qm.includes(t);
           }
           function $m(t, e) {
             return 'rtl' == e.contentLanguageDirection ? 'right' === t : 'left' === t;
@@ -21895,7 +21949,7 @@
                   return (e = 'string' == typeof t ? { name: t } : t), e;
                 })
                 .filter((t) => {
-                  const e = !!Wm.includes(t.name);
+                  const e = !!qm.includes(t.name);
                   return e || b('alignment-config-name-not-recognized', { option: t }), e;
                 }),
               n = e.filter((t) => !!t.className).length;
@@ -21954,20 +22008,20 @@
               return this.editor.model.schema.checkAttribute(t, Km);
             }
           }
-          class Zm extends Si {
+          class Zm extends Ii {
             static get pluginName() {
               return 'AlignmentEditing';
             }
             constructor(t) {
               super(t),
-                t.config.define('alignment', { options: [...Wm.map((t) => ({ name: t }))] });
+                t.config.define('alignment', { options: [...qm.map((t) => ({ name: t }))] });
             }
             init() {
               const t = this.editor,
                 e = t.locale,
                 n = t.model.schema,
                 o = Ym(t.config.get('alignment.options')).filter(
-                  (t) => qm(t.name) && !$m(t.name, e)
+                  (t) => Gm(t.name) && !$m(t.name, e)
                 ),
                 i = o.some((t) => !!t.className);
               n.extend('$block', { allowAttributes: 'alignment' }),
@@ -22023,7 +22077,7 @@
             ['center', bu.alignCenter],
             ['justify', bu.alignJustify],
           ]);
-          class Xm extends Si {
+          class Xm extends Ii {
             get localizedOptionTitles() {
               const t = this.editor.t;
               return {
@@ -22043,7 +22097,7 @@
                 o = Ym(t.config.get('alignment.options'));
               o
                 .map((t) => t.name)
-                .filter(qm)
+                .filter(Gm)
                 .forEach((t) => this._addButton(t)),
                 e.add('alignment', (i) => {
                   const r = pg(i),
@@ -22071,7 +22125,7 @@
               const e = this.editor;
               e.ui.componentFactory.add(`alignment:${t}`, (n) => {
                 const o = e.commands.get('alignment'),
-                  i = new Iu(n);
+                  i = new Su(n);
                 return (
                   i.set({
                     label: this.localizedOptionTitles[t],
@@ -22141,7 +22195,7 @@
             }
             observe() {}
           }
-          class rp extends Si {
+          class rp extends Ii {
             static get pluginName() {
               return 'Enter';
             }
@@ -22209,7 +22263,7 @@
           function cp(t, e) {
             return !t.is('rootElement') && (e.isLimit(t) || cp(t.parent, e));
           }
-          class lp extends Si {
+          class lp extends Ii {
             static get pluginName() {
               return 'ShiftEnter';
             }
@@ -22221,10 +22275,12 @@
                 i = o.document;
               e.register('softBreak', { allowWhere: '$text', isInline: !0 }),
                 n.for('upcast').elementToElement({ model: 'softBreak', view: 'br' }),
-                n.for('downcast').elementToElement({
-                  model: 'softBreak',
-                  view: (t, { writer: e }) => e.createEmptyElement('br'),
-                }),
+                n
+                  .for('downcast')
+                  .elementToElement({
+                    model: 'softBreak',
+                    view: (t, { writer: e }) => e.createEmptyElement('br'),
+                  }),
                 o.addObserver(ip),
                 t.commands.add('shiftEnter', new sp(t)),
                 this.listenTo(
@@ -22317,7 +22373,7 @@
               o = t.checkChild(['$root', 'blockQuote'], e);
             return n && o;
           }
-          class mp extends Si {
+          class mp extends Ii {
             static get pluginName() {
               return 'BlockQuoteEditing';
             }
@@ -22396,7 +22452,7 @@
             };
           ji()(pp.Z, fp);
           pp.Z.locals;
-          class kp extends Si {
+          class kp extends Ii {
             static get pluginName() {
               return 'BlockQuoteUI';
             }
@@ -22405,7 +22461,7 @@
                 e = t.t;
               t.ui.componentFactory.add('blockQuote', (n) => {
                 const o = t.commands.get('blockQuote'),
-                  i = new Iu(n);
+                  i = new Su(n);
                 return (
                   i.set({ label: e('Block quote'), icon: bu.quote, tooltip: !0, isToggleable: !0 }),
                   i.bind('isOn', 'isEnabled').to(o, 'value', 'isEnabled'),
@@ -22461,7 +22517,7 @@
             }
           }
           const wp = 'bold';
-          class _p extends Si {
+          class _p extends Ii {
             static get pluginName() {
               return 'BoldEditing';
             }
@@ -22489,7 +22545,7 @@
             }
           }
           const Ap = 'bold';
-          class Cp extends Si {
+          class Cp extends Ii {
             static get pluginName() {
               return 'BoldUI';
             }
@@ -22498,7 +22554,7 @@
                 e = t.t;
               t.ui.componentFactory.add(Ap, (n) => {
                 const o = t.commands.get(Ap),
-                  i = new Iu(n);
+                  i = new Su(n);
                 return (
                   i.set({
                     label: e('Bold'),
@@ -22516,7 +22572,7 @@
               });
             }
           }
-          class vp extends Si {
+          class vp extends Ii {
             static get pluginName() {
               return 'CKBoxUI';
             }
@@ -22526,7 +22582,7 @@
               const e = t.t;
               t.ui.componentFactory.add('ckbox', (n) => {
                 const o = t.commands.get('ckbox'),
-                  i = new Iu(n);
+                  i = new Su(n);
                 return (
                   i.set({
                     label: e('Open file manager'),
@@ -22654,7 +22710,7 @@
                       return t
                         .map((t) => ({
                           id: t.data.id,
-                          type: Ip(t) ? 'image' : 'link',
+                          type: Sp(t) ? 'image' : 'link',
                           attributes: Tp(t, n, e),
                         }))
                         .filter((t) => ('image' === t.type ? o : i));
@@ -22706,7 +22762,7 @@
             }
           }
           function Tp(t, e, n) {
-            if (Ip(t)) {
+            if (Sp(t)) {
               const { imageFallbackUrl: o, imageSources: i } = yp({
                 token: e,
                 origin: n,
@@ -22720,13 +22776,13 @@
                 imageTextAlternative: t.data.metadata.description || '',
               };
             }
-            return { linkName: t.data.name, linkHref: Sp(t, e, n) };
+            return { linkName: t.data.name, linkHref: Ip(t, e, n) };
           }
-          function Ip(t) {
+          function Sp(t) {
             const e = t.data.metadata;
             return !!e && e.width && e.height;
           }
-          function Sp(t, e, n) {
+          function Ip(t, e, n) {
             const o = xp(e),
               i = new URL(`${o}/assets/${t.data.id}/file`, n);
             return i.searchParams.set('download', 'true'), i.toString();
@@ -22771,7 +22827,7 @@
               this._reader.abort();
             }
           }
-          class Np extends Si {
+          class Np extends Ii {
             static get pluginName() {
               return 'FileRepository';
             }
@@ -22929,7 +22985,7 @@
           class Pp extends tu {
             constructor(t) {
               super(t),
-                (this.buttonView = new Iu(t)),
+                (this.buttonView = new Su(t)),
                 (this._fileInputView = new zp(t)),
                 this._fileInputView.bind('acceptedType').to(this),
                 this._fileInputView.bind('allowMultipleFiles').to(this),
@@ -22975,7 +23031,7 @@
               this.element.click();
             }
           }
-          class Lp extends Si {
+          class Lp extends Ii {
             static get requires() {
               return ['ImageUploadEditing', 'ImageUploadProgress', Np, jp];
             }
@@ -23135,7 +23191,7 @@
           function Rp(t) {
             return t.match(/\.(?<ext>[^.]+)$/).groups.ext;
           }
-          class jp extends Si {
+          class jp extends Ii {
             static get pluginName() {
               return 'CKBoxEditing';
             }
@@ -23256,13 +23312,15 @@
                 t.conversion
                   .for('downcast')
                   .attributeToAttribute({ model: 'ckboxImageId', view: 'data-ckbox-resource-id' }),
-                t.conversion.for('upcast').elementToAttribute({
-                  model: {
-                    key: 'ckboxImageId',
-                    value: (t) => t.getAttribute('data-ckbox-resource-id'),
-                  },
-                  view: { attributes: { 'data-ckbox-resource-id': /[\s\S]+/ } },
-                });
+                t.conversion
+                  .for('upcast')
+                  .elementToAttribute({
+                    model: {
+                      key: 'ckboxImageId',
+                      value: (t) => t.getAttribute('data-ckbox-resource-id'),
+                    },
+                    view: { attributes: { 'data-ckbox-resource-id': /[\s\S]+/ } },
+                  });
             }
             _initFixers() {
               const t = this.editor,
@@ -23338,8 +23396,8 @@
             );
           }
           const Up = { autoRefresh: !0 },
-            Gp = 36e5;
-          class Wp {
+            Wp = 36e5;
+          class qp {
             constructor(t, e = Up) {
               if (!t) throw new k('token-missing-token-url', this);
               e.initValue && this._validateTokenValue(e.initValue),
@@ -23405,18 +23463,18 @@
               try {
                 const [, t] = this.value.split('.'),
                   { exp: e } = JSON.parse(atob(t));
-                if (!e) return Gp;
+                if (!e) return Wp;
                 return Math.floor((1e3 * e - Date.now()) / 2);
               } catch (t) {
-                return Gp;
+                return Wp;
               }
             }
             static create(t, e = Up) {
-              return new Wp(t, e).init();
+              return new qp(t, e).init();
             }
           }
-          d(Wp, U);
-          const qp = Wp,
+          d(qp, U);
+          const Gp = qp,
             $p = /^data:(\S*?);base64,/;
           class Yp {
             constructor(t, e, n) {
@@ -23528,7 +23586,7 @@
               return 'CloudServicesCore';
             }
             createToken(t, e) {
-              return new qp(t, e);
+              return new Gp(t, e);
             }
             createUploadGateway(t, e) {
               return new Kp(t, e);
@@ -23608,7 +23666,7 @@
             }
             return e;
           }
-          class tf extends Si {
+          class tf extends Ii {
             static get pluginName() {
               return 'ClipboardPipeline';
             }
@@ -23894,7 +23952,7 @@
               'image/svg+xml'
             ).firstChild,
             vf = 'ck-widget__type-around_disabled';
-          class yf extends Si {
+          class yf extends Ii {
             static get pluginName() {
               return 'WidgetTypeAround';
             }
@@ -24390,15 +24448,15 @@
             return null;
           }
           var Tf = n(6507),
-            If = {
+            Sf = {
               injectType: 'singletonStyleTag',
               attributes: { 'data-cke': !0 },
               insert: 'head',
               singleton: !0,
             };
-          ji()(Tf.Z, If);
+          ji()(Tf.Z, Sf);
           Tf.Z.locals;
-          class Sf extends Si {
+          class If extends Ii {
             static get pluginName() {
               return 'Widget';
             }
@@ -24606,9 +24664,9 @@
           function Mf(t, e) {
             return !!e && Array.from(t.getAncestors()).includes(e);
           }
-          class Nf extends Si {
+          class Nf extends Ii {
             static get requires() {
-              return [Wg];
+              return [qg];
             }
             static get pluginName() {
               return 'WidgetToolbarRepository';
@@ -25022,7 +25080,7 @@
             return (
               L(n) &&
                 ((o = 'leading' in n ? !!n.leading : o), (i = 'trailing' in n ? !!n.trailing : i)),
-              Ia(t, e, { leading: o, maxWait: e, trailing: i })
+              Sa(t, e, { leading: o, maxWait: e, trailing: i })
             );
           };
           var Ff = n(390),
@@ -25034,12 +25092,12 @@
             };
           ji()(Ff.Z, Vf);
           Ff.Z.locals;
-          class Hf extends Si {
+          class Hf extends Ii {
             static get pluginName() {
               return 'DragDrop';
             }
             static get requires() {
-              return [tf, Sf];
+              return [tf, If];
             }
             init() {
               const t = this.editor,
@@ -25048,8 +25106,8 @@
                 (this._draggingUid = ''),
                 (this._draggableElement = null),
                 (this._updateDropMarkerThrottled = jf((t) => this._updateDropMarker(t), 40)),
-                (this._removeDropMarkerDelayed = Wf(() => this._removeDropMarker(), 40)),
-                (this._clearDraggableAttributesDelayed = Wf(
+                (this._removeDropMarkerDelayed = qf(() => this._removeDropMarker(), 40)),
+                (this._clearDraggableAttributesDelayed = qf(
                   () => this._clearDraggableAttributes(),
                   40
                 )),
@@ -25089,7 +25147,7 @@
                 (o, i) => {
                   const s = n.selection;
                   if (i.target && i.target.is('editableElement')) return void i.preventDefault();
-                  const a = i.target ? qf(i.target) : null;
+                  const a = i.target ? Gf(i.target) : null;
                   if (a) {
                     const n = t.editing.mapper.toModelElement(a);
                     (this._draggedRange = Pc.fromRange(e.createRangeOn(n))),
@@ -25169,7 +25227,7 @@
                     (this._draggedRange = null),
                     (this._draggingUid = ''));
                   if (
-                    'move' == Gf(n.dataTransfer) &&
+                    'move' == Wf(n.dataTransfer) &&
                     this._draggedRange &&
                     this._draggedRange.containsRange(o, !0)
                   )
@@ -25194,7 +25252,7 @@
                   'contentInsertion',
                   (t, e) => {
                     if (!this.isEnabled || 'drop' !== e.method) return;
-                    const n = 'move' == Gf(e.dataTransfer),
+                    const n = 'move' == Wf(e.dataTransfer),
                       o = !e.resultRange || !e.resultRange.isCollapsed;
                     this._finalizeDragging(o && n);
                   },
@@ -25208,7 +25266,7 @@
               this.listenTo(n, 'mousedown', (o, r) => {
                 if (i.isAndroid || !r) return;
                 this._clearDraggableAttributesDelayed.cancel();
-                let s = qf(r.target);
+                let s = Gf(r.target);
                 if (i.isBlink && !t.isReadOnly && !s && !n.selection.isCollapsed) {
                   const t = n.selection.getSelectedElement();
                   (t && cf(t)) || (s = n.selection.editableElement);
@@ -25234,10 +25292,12 @@
             }
             _setupDropMarker() {
               const t = this.editor;
-              t.conversion.for('editingDowncast').markerToHighlight({
-                model: 'drop-target',
-                view: { classes: ['ck-clipboard-drop-target-range'] },
-              }),
+              t.conversion
+                .for('editingDowncast')
+                .markerToHighlight({
+                  model: 'drop-target',
+                  view: { classes: ['ck-clipboard-drop-target-range'] },
+                }),
                 t.conversion.for('editingDowncast').markerToElement({
                   model: 'drop-target',
                   view: (e, { writer: n }) => {
@@ -25350,14 +25410,14 @@
                   return o.getNearestSelectionRange(i, 'forward');
                 })(t, c);
           }
-          function Gf(t) {
+          function Wf(t) {
             return i.isGecko
               ? t.dropEffect
               : ['all', 'copyMove'].includes(t.effectAllowed)
               ? 'move'
               : 'copy';
           }
-          function Wf(t, e) {
+          function qf(t, e) {
             let n;
             function o(...i) {
               o.cancel(), (n = setTimeout(() => t(...i), e));
@@ -25369,14 +25429,14 @@
               o
             );
           }
-          function qf(t) {
+          function Gf(t) {
             if (t.is('editableElement')) return null;
             if (t.hasClass('ck-widget__selection-handle')) return t.findAncestor(cf);
             if (cf(t)) return t;
             const e = t.findAncestor((t) => cf(t) || t.is('editableElement'));
             return cf(e) ? e : null;
           }
-          class $f extends Si {
+          class $f extends Ii {
             static get pluginName() {
               return 'PastePlainText';
             }
@@ -25414,7 +25474,7 @@
                 });
             }
           }
-          class Yf extends Si {
+          class Yf extends Ii {
             static get pluginName() {
               return 'Clipboard';
             }
@@ -25443,7 +25503,7 @@
             return t.isLimit(e) && (t.checkChild(e, '$text') || t.checkChild(e, 'paragraph'));
           }
           const Zf = gi('Ctrl+A');
-          class Jf extends Si {
+          class Jf extends Ii {
             static get pluginName() {
               return 'SelectAllEditing';
             }
@@ -25456,7 +25516,7 @@
                 });
             }
           }
-          class Xf extends Si {
+          class Xf extends Ii {
             static get pluginName() {
               return 'SelectAllUI';
             }
@@ -25464,7 +25524,7 @@
               const t = this.editor;
               t.ui.componentFactory.add('selectAll', (e) => {
                 const n = t.commands.get('selectAll'),
-                  o = new Iu(e),
+                  o = new Su(e),
                   i = e.t;
                 return (
                   o.set({
@@ -25482,7 +25542,7 @@
               });
             }
           }
-          class tk extends Si {
+          class tk extends Ii {
             static get requires() {
               return [Jf, Xf];
             }
@@ -25596,7 +25656,7 @@
                 this.refresh();
             }
           }
-          class sk extends Si {
+          class sk extends Ii {
             static get pluginName() {
               return 'UndoEditing';
             }
@@ -25639,7 +25699,7 @@
               '<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="m5.042 9.367 2.189 1.837a.75.75 0 0 1-.965 1.149l-3.788-3.18a.747.747 0 0 1-.21-.284.75.75 0 0 1 .17-.945L6.23 4.762a.75.75 0 1 1 .964 1.15L4.863 7.866h8.917A.75.75 0 0 1 14 7.9a4 4 0 1 1-1.477 7.718l.344-1.489a2.5 2.5 0 1 0 1.094-4.73l.008-.032H5.042z"/></svg>',
             ck =
               '<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="m14.958 9.367-2.189 1.837a.75.75 0 0 0 .965 1.149l3.788-3.18a.747.747 0 0 0 .21-.284.75.75 0 0 0-.17-.945L13.77 4.762a.75.75 0 1 0-.964 1.15l2.331 1.955H6.22A.75.75 0 0 0 6 7.9a4 4 0 1 0 1.477 7.718l-.344-1.489A2.5 2.5 0 1 1 6.039 9.4l-.008-.032h8.927z"/></svg>';
-          class lk extends Si {
+          class lk extends Ii {
             static get pluginName() {
               return 'UndoUI';
             }
@@ -25656,7 +25716,7 @@
               const i = this.editor;
               i.ui.componentFactory.add(t, (r) => {
                 const s = i.commands.get(t),
-                  a = new Iu(r);
+                  a = new Su(r);
                 return (
                   a.set({ label: e, icon: o, keystroke: n, tooltip: !0 }),
                   a.bind('isEnabled').to(s, 'isEnabled'),
@@ -25668,7 +25728,7 @@
               });
             }
           }
-          class dk extends Si {
+          class dk extends Ii {
             static get requires() {
               return [sk, lk];
             }
@@ -25754,7 +25814,7 @@
                 (this.columns = n),
                 (this.documentColors = new uk()),
                 (this.documentColorsCount = r),
-                (this._focusables = new Sh()),
+                (this._focusables = new Ih()),
                 (this._focusCycler = new $u({
                   focusables: this._focusables,
                   focusTracker: this.focusTracker,
@@ -25829,7 +25889,7 @@
               this._focusCycler.focusLast();
             }
             _createRemoveColorButton() {
-              const t = new Iu();
+              const t = new Su();
               return (
                 t.set({ withText: !0, icon: bu.eraser, label: this.removeButtonLabel }),
                 (t.class = 'ck-color-table__remove-color'),
@@ -25894,7 +25954,7 @@
               super(t, bk);
             }
           }
-          class Ck extends Si {
+          class Ck extends Ii {
             static get pluginName() {
               return 'FontBackgroundColorEditing';
             }
@@ -25921,10 +25981,12 @@
                   columns: 5,
                 }),
                 t.data.addStyleProcessorRules(yh),
-                t.conversion.for('upcast').elementToAttribute({
-                  view: { name: 'span', styles: { 'background-color': /[\s\S]+/ } },
-                  model: { key: bk, value: wk('background-color') },
-                }),
+                t.conversion
+                  .for('upcast')
+                  .elementToAttribute({
+                    view: { name: 'span', styles: { 'background-color': /[\s\S]+/ } },
+                    model: { key: bk, value: wk('background-color') },
+                  }),
                 t.conversion
                   .for('downcast')
                   .attributeToElement({ model: bk, view: _k('background-color') }),
@@ -25933,7 +25995,7 @@
                 t.model.schema.setAttributeProperties(bk, { isFormatting: !0, copyOnEnter: !0 });
             }
           }
-          class vk extends Si {
+          class vk extends Ii {
             constructor(t, { commandName: e, icon: n, componentName: o, dropdownLabel: i }) {
               super(t),
                 (this.commandName = e),
@@ -26052,7 +26114,7 @@
               super(t, kk);
             }
           }
-          class Ek extends Si {
+          class Ek extends Ii {
             static get pluginName() {
               return 'FontColorEditing';
             }
@@ -26078,14 +26140,18 @@
                   ],
                   columns: 5,
                 }),
-                t.conversion.for('upcast').elementToAttribute({
-                  view: { name: 'span', styles: { color: /[\s\S]+/ } },
-                  model: { key: kk, value: wk('color') },
-                }),
-                t.conversion.for('upcast').elementToAttribute({
-                  view: { name: 'font', attributes: { color: /^#?\w+$/ } },
-                  model: { key: kk, value: (t) => t.getAttribute('color') },
-                }),
+                t.conversion
+                  .for('upcast')
+                  .elementToAttribute({
+                    view: { name: 'span', styles: { color: /[\s\S]+/ } },
+                    model: { key: kk, value: wk('color') },
+                  }),
+                t.conversion
+                  .for('upcast')
+                  .elementToAttribute({
+                    view: { name: 'font', attributes: { color: /^#?\w+$/ } },
+                    model: { key: kk, value: (t) => t.getAttribute('color') },
+                  }),
                 t.conversion.for('downcast').attributeToElement({ model: kk, view: _k('color') }),
                 t.commands.add(kk, new xk(t)),
                 t.model.schema.extend('$text', { allowAttributes: kk }),
@@ -26111,14 +26177,14 @@
               super(t, fk);
             }
           }
-          function Ik(t) {
+          function Sk(t) {
             return t
               .map((t) =>
                 (function (t) {
                   if (((e = t), 'object' == typeof e && e.title && e.model && e.view)) return Mk(t);
                   var e;
                   const n = (function (t) {
-                    return Sk[t] || Sk[t.model];
+                    return Ik[t] || Ik[t.model];
                   })(t);
                   if (n) return Mk(n);
                   if ('default' === t) return { model: void 0, title: 'Default' };
@@ -26142,7 +26208,7 @@
               )
               .filter((t) => !!t);
           }
-          const Sk = {
+          const Ik = {
             get tiny() {
               return {
                 title: 'Tiny',
@@ -26185,7 +26251,7 @@
             'xx-large',
             'xxx-large',
           ];
-          class Bk extends Si {
+          class Bk extends Ii {
             static get pluginName() {
               return 'FontSizeEditing';
             }
@@ -26201,7 +26267,7 @@
               t.model.schema.extend('$text', { allowAttributes: fk }),
                 t.model.schema.setAttributeProperties(fk, { isFormatting: !0, copyOnEnter: !0 });
               const e = t.config.get('fontSize.supportAllValues'),
-                n = Ik(this.editor.config.get('fontSize.options')).filter((t) => t.model),
+                n = Sk(this.editor.config.get('fontSize.options')).filter((t) => t.model),
                 o = (function (t, e) {
                   const n = { model: { key: t, values: [] }, view: {}, upcastAlso: {} };
                   for (const t of e)
@@ -26238,10 +26304,12 @@
                     );
                 },
               }),
-                e.conversion.for('upcast').elementToAttribute({
-                  model: { key: fk, value: (t) => t.getStyle('font-size') },
-                  view: { name: 'span', styles: { 'font-size': /.*/ } },
-                });
+                e.conversion
+                  .for('upcast')
+                  .elementToAttribute({
+                    model: { key: fk, value: (t) => t.getStyle('font-size') },
+                    view: { name: 'span', styles: { 'font-size': /.*/ } },
+                  });
             }
             _prepareCompatibilityConverter() {
               this.editor.conversion.for('upcast').elementToAttribute({
@@ -26270,7 +26338,7 @@
             };
           ji()(Pk.Z, zk);
           Pk.Z.locals;
-          class Lk extends Si {
+          class Lk extends Ii {
             static get pluginName() {
               return 'FontSizeUI';
             }
@@ -26334,7 +26402,7 @@
                   Big: e('Big'),
                   Huge: e('Huge'),
                 };
-              return Ik(t.config.get(fk).options).map((t) => {
+              return Sk(t.config.get(fk).options).map((t) => {
                 const e = n[t.title];
                 return e && e != t.title && (t = Object.assign({}, t, { title: e })), t;
               });
@@ -26378,7 +26446,7 @@
               });
             }
           }
-          class Fk extends Si {
+          class Fk extends Ii {
             static get pluginName() {
               return 'Paragraph';
             }
@@ -26389,16 +26457,18 @@
                 t.commands.add('insertParagraph', new jk(t)),
                 e.schema.register('paragraph', { inheritAllFrom: '$block' }),
                 t.conversion.elementToElement({ model: 'paragraph', view: 'p' }),
-                t.conversion.for('upcast').elementToElement({
-                  model: (t, { writer: e }) =>
-                    Fk.paragraphLikeElements.has(t.name)
-                      ? t.isEmpty
-                        ? null
-                        : e.createElement('paragraph')
-                      : null,
-                  view: /.+/,
-                  converterPriority: 'low',
-                });
+                t.conversion
+                  .for('upcast')
+                  .elementToElement({
+                    model: (t, { writer: e }) =>
+                      Fk.paragraphLikeElements.has(t.name)
+                        ? t.isEmpty
+                          ? null
+                          : e.createElement('paragraph')
+                        : null,
+                    view: /.+/,
+                    converterPriority: 'low',
+                  });
             }
           }
           Fk.paragraphLikeElements = new Set([
@@ -26443,7 +26513,7 @@
             return n.checkChild(t.parent, e) && !n.isObject(t);
           }
           const Uk = 'paragraph';
-          class Gk extends Si {
+          class Wk extends Ii {
             static get pluginName() {
               return 'HeadingEditing';
             }
@@ -26501,23 +26571,25 @@
                 });
             }
             _addDefaultH1Conversion(t) {
-              t.conversion.for('upcast').elementToElement({
-                model: 'heading1',
-                view: 'h1',
-                converterPriority: p.get('low') + 1,
-              });
+              t.conversion
+                .for('upcast')
+                .elementToElement({
+                  model: 'heading1',
+                  view: 'h1',
+                  converterPriority: p.get('low') + 1,
+                });
             }
           }
-          var Wk = n(3230),
-            qk = {
+          var qk = n(3230),
+            Gk = {
               injectType: 'singletonStyleTag',
               attributes: { 'data-cke': !0 },
               insert: 'head',
               singleton: !0,
             };
-          ji()(Wk.Z, qk);
-          Wk.Z.locals;
-          class $k extends Si {
+          ji()(qk.Z, Gk);
+          qk.Z.locals;
+          class $k extends Ii {
             static get pluginName() {
               return 'HeadingUI';
             }
@@ -26633,7 +26705,7 @@
               ? 'imageBlock'
               : 'imageInline';
           }
-          class Jk extends Si {
+          class Jk extends Ii {
             static get pluginName() {
               return 'ImageUtils';
             }
@@ -26742,7 +26814,7 @@
                 : 'imageBlock'
               : 'imageInline';
           }
-          class tb extends Si {
+          class tb extends Ii {
             static get requires() {
               return [Jk];
             }
@@ -26786,7 +26858,7 @@
                   'ck-button-cancel',
                   'cancel'
                 )),
-                (this._focusables = new Sh()),
+                (this._focusables = new Ih()),
                 (this._focusCycler = new $u({
                   focusables: this._focusables,
                   focusTracker: this.focusTracker,
@@ -26815,7 +26887,7 @@
               super.destroy(), this.focusTracker.destroy(), this.keystrokes.destroy();
             }
             _createButton(t, e, n, o) {
-              const i = new Iu(this.locale);
+              const i = new Su(this.locale);
               return (
                 i.set({ label: t, icon: e, tooltip: !0 }),
                 i.extendTemplate({ attributes: { class: n } }),
@@ -26848,9 +26920,9 @@
               ],
             };
           }
-          class ab extends Si {
+          class ab extends Ii {
             static get requires() {
-              return [Wg];
+              return [qg];
             }
             static get pluginName() {
               return 'ImageTextAlternativeUI';
@@ -26866,7 +26938,7 @@
                 e = t.t;
               t.ui.componentFactory.add('imageTextAlternative', (n) => {
                 const o = t.commands.get('imageTextAlternative'),
-                  i = new Iu(n);
+                  i = new Su(n);
                 return (
                   i.set({
                     label: e('Change image text alternative'),
@@ -26948,7 +27020,7 @@
               return this._balloon.hasView(this._form);
             }
           }
-          class cb extends Si {
+          class cb extends Ii {
             static get requires() {
               return [tb, ab];
             }
@@ -27036,7 +27108,7 @@
               });
             }
           }
-          class gb extends Si {
+          class gb extends Ii {
             static get requires() {
               return [Jk];
             }
@@ -27097,7 +27169,7 @@
                 : null;
             }
           }
-          class pb extends Si {
+          class pb extends Ii {
             static get requires() {
               return [gb, Jk, tf];
             }
@@ -27123,10 +27195,12 @@
               n
                 .for('dataDowncast')
                 .elementToStructure({ model: 'imageBlock', view: (t, { writer: e }) => Kk(e) }),
-                n.for('editingDowncast').elementToStructure({
-                  model: 'imageBlock',
-                  view: (t, { writer: n }) => o.toImageWidget(Kk(n), n, e('image widget')),
-                }),
+                n
+                  .for('editingDowncast')
+                  .elementToStructure({
+                    model: 'imageBlock',
+                    view: (t, { writer: n }) => o.toImageWidget(Kk(n), n, e('image widget')),
+                  }),
                 n
                   .for('downcast')
                   .add(db(o, 'imageBlock', 'src'))
@@ -27190,15 +27264,15 @@
             };
           ji()(fb.Z, kb);
           fb.Z.locals;
-          class bb extends Si {
+          class bb extends Ii {
             static get requires() {
-              return [pb, Sf, cb];
+              return [pb, If, cb];
             }
             static get pluginName() {
               return 'ImageBlock';
             }
           }
-          class wb extends Si {
+          class wb extends Ii {
             static get requires() {
               return [gb, Jk, tf];
             }
@@ -27225,10 +27299,12 @@
                 e = t.t,
                 n = t.conversion,
                 o = t.plugins.get('ImageUtils');
-              n.for('dataDowncast').elementToElement({
-                model: 'imageInline',
-                view: (t, { writer: e }) => e.createEmptyElement('img'),
-              }),
+              n
+                .for('dataDowncast')
+                .elementToElement({
+                  model: 'imageInline',
+                  view: (t, { writer: e }) => e.createEmptyElement('img'),
+                }),
                 n.for('editingDowncast').elementToStructure({
                   model: 'imageInline',
                   view: (t, { writer: n }) =>
@@ -27249,14 +27325,16 @@
                   .add(db(o, 'imageInline', 'src'))
                   .add(db(o, 'imageInline', 'alt'))
                   .add(lb(o, 'imageInline')),
-                n.for('upcast').elementToElement({
-                  view: Qk(t, 'imageInline'),
-                  model: (t, { writer: e }) =>
-                    e.createElement(
-                      'imageInline',
-                      t.hasAttribute('src') ? { src: t.getAttribute('src') } : null
-                    ),
-                });
+                n
+                  .for('upcast')
+                  .elementToElement({
+                    view: Qk(t, 'imageInline'),
+                    model: (t, { writer: e }) =>
+                      e.createElement(
+                        'imageInline',
+                        t.hasAttribute('src') ? { src: t.getAttribute('src') } : null
+                      ),
+                  });
             }
             _setupClipboardIntegration() {
               const t = this.editor,
@@ -27286,9 +27364,9 @@
               });
             }
           }
-          class _b extends Si {
+          class _b extends Ii {
             static get requires() {
-              return [wb, Sf, cb];
+              return [wb, If, cb];
             }
             static get pluginName() {
               return 'ImageInline';
@@ -27341,7 +27419,7 @@
                 t.remove(r);
             }
           }
-          class Cb extends Si {
+          class Cb extends Ii {
             static get pluginName() {
               return 'ImageCaptionUtils';
             }
@@ -27362,7 +27440,7 @@
               return 'figcaption' == t.name && e.isBlockImageView(t.parent) ? { name: !0 } : null;
             }
           }
-          class vb extends Si {
+          class vb extends Ii {
             static get requires() {
               return [Jk, Cb];
             }
@@ -27393,15 +27471,19 @@
                 n = t.plugins.get('ImageUtils'),
                 o = t.plugins.get('ImageCaptionUtils'),
                 i = t.t;
-              t.conversion.for('upcast').elementToElement({
-                view: (t) => o.matchImageCaptionViewElement(t),
-                model: 'caption',
-              }),
-                t.conversion.for('dataDowncast').elementToElement({
+              t.conversion
+                .for('upcast')
+                .elementToElement({
+                  view: (t) => o.matchImageCaptionViewElement(t),
                   model: 'caption',
-                  view: (t, { writer: e }) =>
-                    n.isBlockImage(t.parent) ? e.createContainerElement('figcaption') : null,
                 }),
+                t.conversion
+                  .for('dataDowncast')
+                  .elementToElement({
+                    model: 'caption',
+                    view: (t, { writer: e }) =>
+                      n.isBlockImage(t.parent) ? e.createContainerElement('figcaption') : null,
+                  }),
                 t.conversion.for('editingDowncast').elementToElement({
                   model: 'caption',
                   view: (t, { writer: o }) => {
@@ -27462,7 +27544,7 @@
               });
             }
           }
-          class yb extends Si {
+          class yb extends Ii {
             static get requires() {
               return [Cb];
             }
@@ -27476,7 +27558,7 @@
                 o = t.t;
               t.ui.componentFactory.add('toggleImageCaption', (i) => {
                 const r = t.commands.get('toggleImageCaption'),
-                  s = new Iu(i);
+                  s = new Su(i);
                 return (
                   s.set({ icon: bu.caption, tooltip: !0, isToggleable: !0 }),
                   s.bind('isOn', 'isEnabled').to(r, 'value', 'isEnabled'),
@@ -27554,8 +27636,8 @@
           }
           const {
               objectFullWidth: Tb,
-              objectInline: Ib,
-              objectLeft: Sb,
+              objectInline: Sb,
+              objectLeft: Ib,
               objectRight: Mb,
               objectCenter: Nb,
               objectBlockLeft: Bb,
@@ -27566,7 +27648,7 @@
                 return {
                   name: 'inline',
                   title: 'In line',
-                  icon: Ib,
+                  icon: Sb,
                   modelElements: ['imageInline'],
                   isDefault: !0,
                 };
@@ -27575,7 +27657,7 @@
                 return {
                   name: 'alignLeft',
                   title: 'Left aligned image',
-                  icon: Sb,
+                  icon: Ib,
                   modelElements: ['imageBlock', 'imageInline'],
                   className: 'image-style-align-left',
                 };
@@ -27640,9 +27722,9 @@
               left: Bb,
               right: Pb,
               center: Nb,
-              inlineLeft: Sb,
+              inlineLeft: Ib,
               inlineRight: Mb,
-              inline: Ib,
+              inline: Sb,
             },
             Ob = [
               {
@@ -27737,7 +27819,7 @@
           function Fb(t, e) {
             for (const n of e) if (n.name === t) return n;
           }
-          class Vb extends Si {
+          class Vb extends Ii {
             static get pluginName() {
               return 'ImageStyleEditing';
             }
@@ -27838,7 +27920,7 @@
             };
           ji()(Hb.Z, Ub);
           Hb.Z.locals;
-          class Gb extends Si {
+          class Wb extends Ii {
             static get requires() {
               return [Vb];
             }
@@ -27861,12 +27943,12 @@
             init() {
               const t = this.editor.plugins,
                 e = this.editor.config.get('image.toolbar') || [],
-                n = Wb(
+                n = qb(
                   t.get('ImageStyleEditing').normalizedStyles,
                   this.localizedDefaultStylesTitles
                 );
               for (const t of n) this._createButton(t);
-              const o = Wb(
+              const o = qb(
                 [...e.filter(L), ...jb.getDefaultDropdownDefinitions(t)],
                 this.localizedDefaultStylesTitles
               );
@@ -27878,7 +27960,7 @@
                 let i;
                 const { defaultItem: r, items: s, title: a } = t,
                   c = s
-                    .filter((t) => e.find(({ name: e }) => qb(e) === t))
+                    .filter((t) => e.find(({ name: e }) => Gb(e) === t))
                     .map((t) => {
                       const e = n.create(t);
                       return t === r && (i = e), e;
@@ -27917,9 +27999,9 @@
             }
             _createButton(t) {
               const e = t.name;
-              this.editor.ui.componentFactory.add(qb(e), (n) => {
+              this.editor.ui.componentFactory.add(Gb(e), (n) => {
                 const o = this.editor.commands.get('imageStyle'),
-                  i = new Iu(n);
+                  i = new Su(n);
                 return (
                   i.set({ label: t.title, icon: t.icon, tooltip: !0, isToggleable: !0 }),
                   i.bind('isEnabled').to(o, 'isEnabled'),
@@ -27933,11 +28015,11 @@
               this.editor.execute('imageStyle', { value: t }), this.editor.editing.view.focus();
             }
           }
-          function Wb(t, e) {
+          function qb(t, e) {
             for (const n of t) e[n.title] && (n.title = e[n.title]);
             return t;
           }
-          function qb(t) {
+          function Gb(t) {
             return `imageStyle:${t}`;
           }
           function $b(t, e) {
@@ -27995,7 +28077,7 @@
               ? e.match(/data:(image\/\w+);base64/)[1].toLowerCase()
               : 'image/jpeg';
           }
-          class Jb extends Si {
+          class Jb extends Ii {
             static get pluginName() {
               return 'ImageUploadUI';
             }
@@ -28052,7 +28134,7 @@
             };
           ji()(ow.Z, iw);
           ow.Z.locals;
-          class rw extends Si {
+          class rw extends Ii {
             static get pluginName() {
               return 'ImageUploadProgress';
             }
@@ -28185,7 +28267,7 @@
               i && r.insertImage({ ...e, uploadId: i.id }, n);
             }
           }
-          class uw extends Si {
+          class uw extends Ii {
             static get requires() {
               return [Np, Rg, tf, Jk];
             }
@@ -28209,10 +28291,12 @@
                 s = new hw(t);
               t.commands.add('uploadImage', s),
                 t.commands.add('imageUpload', s),
-                n.for('upcast').attributeToAttribute({
-                  view: { name: 'img', key: 'uploadId' },
-                  model: 'uploadId',
-                }),
+                n
+                  .for('upcast')
+                  .attributeToAttribute({
+                    view: { name: 'img', key: 'uploadId' },
+                    model: 'uploadId',
+                  }),
                 this.listenTo(t.editing.view.document, 'clipboardInput', (e, n) => {
                   if (
                     ((o = n.dataTransfer),
@@ -28380,7 +28464,7 @@
               .filter((t) => n.isImage(t.item))
               .map((t) => t.item);
           }
-          class mw extends Si {
+          class mw extends Ii {
             static get pluginName() {
               return 'IndentEditing';
             }
@@ -28393,7 +28477,7 @@
               '<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3.75c0 .414.336.75.75.75h14.5a.75.75 0 1 0 0-1.5H2.75a.75.75 0 0 0-.75.75zm5 6c0 .414.336.75.75.75h9.5a.75.75 0 1 0 0-1.5h-9.5a.75.75 0 0 0-.75.75zM2.75 16.5h14.5a.75.75 0 1 0 0-1.5H2.75a.75.75 0 1 0 0 1.5zM1.632 6.95 5.02 9.358a.4.4 0 0 1-.013.661l-3.39 2.207A.4.4 0 0 1 1 11.892V7.275a.4.4 0 0 1 .632-.326z"/></svg>',
             fw =
               '<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3.75c0 .414.336.75.75.75h14.5a.75.75 0 1 0 0-1.5H2.75a.75.75 0 0 0-.75.75zm5 6c0 .414.336.75.75.75h9.5a.75.75 0 1 0 0-1.5h-9.5a.75.75 0 0 0-.75.75zM2.75 16.5h14.5a.75.75 0 1 0 0-1.5H2.75a.75.75 0 1 0 0 1.5zm1.618-9.55L.98 9.358a.4.4 0 0 0 .013.661l3.39 2.207A.4.4 0 0 0 5 11.892V7.275a.4.4 0 0 0-.632-.326z"/></svg>';
-          class kw extends Si {
+          class kw extends Ii {
             static get pluginName() {
               return 'IndentUI';
             }
@@ -28410,7 +28494,7 @@
               const o = this.editor;
               o.ui.componentFactory.add(t, (i) => {
                 const r = o.commands.get(t),
-                  s = new Iu(i);
+                  s = new Su(i);
                 return (
                   s.set({ label: e, icon: n, tooltip: !0 }),
                   s.bind('isOn', 'isEnabled').to(r, 'value', 'isEnabled'),
@@ -28423,7 +28507,7 @@
             }
           }
           const bw = 'italic';
-          class ww extends Si {
+          class ww extends Ii {
             static get pluginName() {
               return 'ItalicEditing';
             }
@@ -28441,7 +28525,7 @@
             }
           }
           const _w = 'italic';
-          class Aw extends Si {
+          class Aw extends Ii {
             static get pluginName() {
               return 'ItalicUI';
             }
@@ -28450,7 +28534,7 @@
                 e = t.t;
               t.ui.componentFactory.add(_w, (n) => {
                 const o = t.commands.get(_w),
-                  i = new Iu(n);
+                  i = new Su(n);
                 return (
                   i.set({
                     label: e('Italic'),
@@ -28543,16 +28627,16 @@
           };
           var Dw = '\\ud800-\\udfff',
             Tw = '[' + Dw + ']',
-            Iw = '[\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff]',
-            Sw = '\\ud83c[\\udffb-\\udfff]',
+            Sw = '[\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff]',
+            Iw = '\\ud83c[\\udffb-\\udfff]',
             Mw = '[^' + Dw + ']',
             Nw = '(?:\\ud83c[\\udde6-\\uddff]){2}',
             Bw = '[\\ud800-\\udbff][\\udc00-\\udfff]',
-            Pw = '(?:' + Iw + '|' + Sw + ')' + '?',
+            Pw = '(?:' + Sw + '|' + Iw + ')' + '?',
             zw = '[\\ufe0e\\ufe0f]?',
             Lw = zw + Pw + ('(?:\\u200d(?:' + [Mw, Nw, Bw].join('|') + ')' + zw + Pw + ')*'),
-            Ow = '(?:' + [Mw + Iw + '?', Iw, Nw, Bw, Tw].join('|') + ')',
-            Rw = RegExp(Sw + '(?=' + Sw + ')|' + Ow + Lw, 'g');
+            Ow = '(?:' + [Mw + Sw + '?', Sw, Nw, Bw, Tw].join('|') + ')',
+            Rw = RegExp(Iw + '(?=' + Iw + ')|' + Ow + Lw, 'g');
           const jw = function (t) {
             return t.match(Rw) || [];
           };
@@ -28570,10 +28654,10 @@
             })('toUpperCase'),
             Hw = /[\u0000-\u0020\u00A0\u1680\u180E\u2000-\u2029\u205f\u3000]/g,
             Uw = /^(?:(?:https?|ftps?|mailto):|[^a-z]|[a-z+.-]+(?:[^a-z+.:-]|$))/i,
-            Gw =
+            Ww =
               /^[\S]+@((?![-_])(?:[-\w\u00a1-\uffff]{0,63}[^-_]\.))+(?:[a-z\u00a1-\uffff]{2,})$/i,
-            Ww = /^((\w+:(\/{2,})?)|(\W))/i,
-            qw = 'Ctrl+K';
+            qw = /^((\w+:(\/{2,})?)|(\W))/i,
+            Gw = 'Ctrl+K';
           function $w(t, { writer: e }) {
             const n = e.createAttributeElement('a', { href: t }, { priority: 5 });
             return e.setCustomProperty('link', !0, n), n;
@@ -28590,13 +28674,13 @@
             return !!t && e.checkAttribute(t.name, 'linkHref');
           }
           function Qw(t, e) {
-            const n = ((o = t), Gw.test(o) ? 'mailto:' : e);
+            const n = ((o = t), Ww.test(o) ? 'mailto:' : e);
             var o;
             const i = !!n && !Zw(t);
             return t && i ? n + t : t;
           }
           function Zw(t) {
-            return Ww.test(t);
+            return qw.test(t);
           }
           function Jw(t) {
             window.open(t, '_blank', 'noopener');
@@ -28738,7 +28822,7 @@
           n_.Z.locals;
           const i_ = 'automatic',
             r_ = /^(https?:)?\/\//;
-          class s_ extends Si {
+          class s_ extends Ii {
             static get pluginName() {
               return 'LinkEditing';
             }
@@ -28757,10 +28841,12 @@
                 t.conversion
                   .for('editingDowncast')
                   .attributeToElement({ model: 'linkHref', view: (t, e) => $w(Yw(t), e) }),
-                t.conversion.for('upcast').elementToAttribute({
-                  view: { name: 'a', attributes: { href: !0 } },
-                  model: { key: 'linkHref', value: (t) => t.getAttribute('href') },
-                }),
+                t.conversion
+                  .for('upcast')
+                  .elementToAttribute({
+                    view: { name: 'a', attributes: { href: !0 } },
+                    model: { key: 'linkHref', value: (t) => t.getAttribute('href') },
+                  }),
                 t.commands.add('link', new Xw(t)),
                 t.commands.add('unlink', new t_(t));
               const e = (function (t, e) {
@@ -28850,10 +28936,12 @@
                       }
                     },
                   }),
-                  e.conversion.for('upcast').elementToAttribute({
-                    view: { name: 'a', ...t._createPattern() },
-                    model: { key: t.id },
-                  });
+                  e.conversion
+                    .for('upcast')
+                    .elementToAttribute({
+                      view: { name: 'a', ...t._createPattern() },
+                      model: { key: t.id },
+                    });
               });
             }
             _enableLinkOpen() {
@@ -29052,7 +29140,7 @@
                 )),
                 (this._manualDecoratorSwitches = this._createManualDecoratorSwitches(e)),
                 (this.children = this._createFormChildren(e.manualDecorators)),
-                (this._focusables = new Sh()),
+                (this._focusables = new Ih()),
                 (this._focusCycler = new $u({
                   focusables: this._focusables,
                   focusTracker: this.focusTracker,
@@ -29099,7 +29187,7 @@
               return (e.label = t('Link URL')), e;
             }
             _createButton(t, e, n, o) {
-              const i = new Iu(this.locale);
+              const i = new Su(this.locale);
               return (
                 i.set({ label: t, icon: e, tooltip: !0 }),
                 i.extendTemplate({ attributes: { class: n } }),
@@ -29165,7 +29253,7 @@
                 )),
                 (this.editButtonView = this._createButton(e('Edit link'), bu.pencil, 'edit')),
                 this.set('href'),
-                (this._focusables = new Sh()),
+                (this._focusables = new Ih()),
                 (this._focusCycler = new $u({
                   focusables: this._focusables,
                   focusTracker: this.focusTracker,
@@ -29195,13 +29283,13 @@
               this._focusCycler.focusFirst();
             }
             _createButton(t, e, n) {
-              const o = new Iu(this.locale);
+              const o = new Su(this.locale);
               return (
                 o.set({ label: t, icon: e, tooltip: !0 }), o.delegate('execute').to(this, n), o
               );
             }
             _createPreviewButton() {
-              const t = new Iu(this.locale),
+              const t = new Su(this.locale),
                 e = this.bindTemplate,
                 n = this.t;
               return (
@@ -29223,9 +29311,9 @@
             }
           }
           const f_ = 'link-ui';
-          class k_ extends Si {
+          class k_ extends Ii {
             static get requires() {
-              return [Wg];
+              return [qg];
             }
             static get pluginName() {
               return 'LinkUI';
@@ -29235,19 +29323,21 @@
               t.editing.view.addObserver(oh),
                 (this.actionsView = this._createActionsView()),
                 (this.formView = this._createFormView()),
-                (this._balloon = t.plugins.get(Wg)),
+                (this._balloon = t.plugins.get(qg)),
                 this._createToolbarLinkButton(),
                 this._enableUserBalloonInteractions(),
                 t.conversion
                   .for('editingDowncast')
                   .markerToHighlight({ model: f_, view: { classes: ['ck-fake-link-selection'] } }),
-                t.conversion.for('editingDowncast').markerToElement({
-                  model: f_,
-                  view: {
-                    name: 'span',
-                    classes: ['ck-fake-link-selection', 'ck-fake-link-selection_collapsed'],
-                  },
-                });
+                t.conversion
+                  .for('editingDowncast')
+                  .markerToElement({
+                    model: f_,
+                    view: {
+                      name: 'span',
+                      classes: ['ck-fake-link-selection', 'ck-fake-link-selection_collapsed'],
+                    },
+                  });
             }
             destroy() {
               super.destroy(), this.formView.destroy();
@@ -29270,7 +29360,7 @@
                 e.keystrokes.set('Esc', (t, e) => {
                   this._hideUI(), e();
                 }),
-                e.keystrokes.set(qw, (t, e) => {
+                e.keystrokes.set(Gw, (t, e) => {
                   this._addFormView(), e();
                 }),
                 e
@@ -29303,17 +29393,17 @@
               const t = this.editor,
                 e = t.commands.get('link'),
                 n = t.t;
-              t.keystrokes.set(qw, (t, n) => {
+              t.keystrokes.set(Gw, (t, n) => {
                 n(), e.isEnabled && this._showUI(!0);
               }),
                 t.ui.componentFactory.add('link', (t) => {
-                  const o = new Iu(t);
+                  const o = new Su(t);
                   return (
                     (o.isEnabled = !0),
                     (o.label = n('Link')),
                     (o.icon =
                       '<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="m11.077 15 .991-1.416a.75.75 0 1 1 1.229.86l-1.148 1.64a.748.748 0 0 1-.217.206 5.251 5.251 0 0 1-8.503-5.955.741.741 0 0 1 .12-.274l1.147-1.639a.75.75 0 1 1 1.228.86L4.933 10.7l.006.003a3.75 3.75 0 0 0 6.132 4.294l.006.004zm5.494-5.335a.748.748 0 0 1-.12.274l-1.147 1.639a.75.75 0 1 1-1.228-.86l.86-1.23a3.75 3.75 0 0 0-6.144-4.301l-.86 1.229a.75.75 0 0 1-1.229-.86l1.148-1.64a.748.748 0 0 1 .217-.206 5.251 5.251 0 0 1 8.503 5.955zm-4.563-2.532a.75.75 0 0 1 .184 1.045l-3.155 4.505a.75.75 0 1 1-1.229-.86l3.155-4.506a.75.75 0 0 1 1.045-.184z"/></svg>'),
-                    (o.keystroke = qw),
+                    (o.keystroke = Gw),
                     (o.tooltip = !0),
                     (o.isToggleable = !0),
                     o.bind('isEnabled').to(e, 'isEnabled'),
@@ -29507,7 +29597,7 @@
             '(^|\\s)(((?:(?:(?:https?|ftp):)?\\/\\/)(?:\\S+(?::\\S*)?@)?(?:(?:[1-9]\\d?|1\\d\\d|2[01]\\d|22[0-3])(?:\\.(?:1?\\d{1,2}|2[0-4]\\d|25[0-5])){2}(?:\\.(?:[1-9]\\d?|1\\d\\d|2[0-4]\\d|25[0-4]))|(((?!www\\.)|(www\\.))(?![-_])(?:[-_a-z0-9\\u00a1-\\uffff]{1,63}\\.)+(?:[a-z\\u00a1-\\uffff]{2,63})))(?::\\d{2,5})?(?:[/?#]\\S*)?)|((www.|(\\S+@))((?![-_])(?:[-_a-z0-9\\u00a1-\\uffff]{1,63}\\.))+(?:[a-z\\u00a1-\\uffff]{2,63})))$',
             'i'
           );
-          class __ extends Si {
+          class __ extends Ii {
             static get requires() {
               return [_m];
             }
@@ -29742,7 +29832,7 @@
               r = n.mapper,
               s = n.writer;
             let a = r.toViewPosition(o.createPositionBefore(t));
-            const c = S_(t.previousSibling, {
+            const c = I_(t.previousSibling, {
                 sameIndent: !0,
                 smallerIndent: !0,
                 listIndent: t.getAttribute('listIndent'),
@@ -29760,7 +29850,7 @@
                 })(t);
               a = e ? s.createPositionBefore(e) : s.createPositionAt(t, 'end');
             } else a = r.toViewPosition(o.createPositionBefore(t));
-            if (((a = I_(a)), s.insert(a, i), l && 'listItem' == l.name)) {
+            if (((a = S_(a)), s.insert(a, i), l && 'listItem' == l.name)) {
               const t = r.toViewElement(l),
                 n = s.createRange(s.createPositionAt(t, 0), a).getWalker({ ignoreElementEnd: !0 });
               for (const t of n)
@@ -29795,10 +29885,10 @@
               ? null
               : t.mergeContainers(t.createPositionAfter(e));
           }
-          function I_(t) {
+          function S_(t) {
             return t.getLastMatchingPosition((t) => t.item.is('uiElement'));
           }
-          function S_(t, e) {
+          function I_(t, e) {
             const n = !!e.sameIndent,
               o = !!e.smallerIndent,
               i = e.listIndent;
@@ -29813,7 +29903,7 @@
           function M_(t, e, n, o) {
             t.ui.componentFactory.add(e, (i) => {
               const r = t.commands.get(e),
-                s = new Iu(i);
+                s = new Su(i);
               return (
                 s.set({ label: n, icon: o, tooltip: !0, isToggleable: !0 }),
                 s.bind('isOn', 'isEnabled').to(r, 'value', 'isEnabled'),
@@ -29857,7 +29947,7 @@
               !this.isEmpty && ('ul' == this.getChild(0).name || 'ol' == this.getChild(0).name);
             return this.isEmpty || t ? 0 : es.call(this);
           }
-          class L_ extends Si {
+          class L_ extends Ii {
             static get pluginName() {
               return 'ListUtils';
             }
@@ -30000,7 +30090,7 @@
               }
             }
           }
-          function G_(t, e, n) {
+          function W_(t, e, n) {
             if (n.consumable.test(e.viewItem, { name: !0 })) {
               if (0 === e.viewItem.childCount) return;
               const t = [...e.viewItem.getChildren()];
@@ -30008,7 +30098,7 @@
               for (const e of t) n && !K_(e) && e._remove(), K_(e) && (n = !0);
             }
           }
-          function W_(t) {
+          function q_(t) {
             return (e, n) => {
               if (n.isPhantom) return;
               const o = n.modelPosition.nodeBefore;
@@ -30029,7 +30119,7 @@
               }
             };
           }
-          function q_(t, [e, n, o]) {
+          function G_(t, [e, n, o]) {
             let i,
               r = e.is('documentFragment') ? e.getChild(0) : e;
             if (
@@ -30061,7 +30151,7 @@
             return n.value.item;
           }
           function Y_(t, e, n, o, i, r) {
-            const s = S_(e.nodeBefore, {
+            const s = I_(e.nodeBefore, {
                 sameIndent: !0,
                 smallerIndent: !0,
                 listIndent: t,
@@ -30080,7 +30170,7 @@
                 d = a.toViewPosition(t);
               }
             else d = n;
-            d = I_(d);
+            d = S_(d);
             for (const t of [...o.getChildren()])
               K_(t) &&
                 ((d = c.move(c.createRangeOn(t), d).end),
@@ -30090,7 +30180,7 @@
           function K_(t) {
             return t.is('element', 'ol') || t.is('element', 'ul');
           }
-          class Q_ extends Si {
+          class Q_ extends Ii {
             static get pluginName() {
               return 'ListEditing';
             }
@@ -30191,7 +30281,7 @@
               ),
                 n.mapper.registerViewToModelLength('li', Z_),
                 e.mapper.registerViewToModelLength('li', Z_),
-                n.mapper.on('modelToViewPosition', W_(n.view)),
+                n.mapper.on('modelToViewPosition', q_(n.view)),
                 n.mapper.on(
                   'viewToModelPosition',
                   ((o = t.model),
@@ -30222,7 +30312,7 @@
                     }
                   })
                 ),
-                e.mapper.on('modelToViewPosition', W_(n.view)),
+                e.mapper.on('modelToViewPosition', q_(n.view)),
                 t.conversion.for('editingDowncast').add((e) => {
                   e.on('insert', F_, { priority: 'high' }),
                     e.on('insert:listItem', O_(t.model)),
@@ -30287,10 +30377,10 @@
                 t.conversion.for('upcast').add((t) => {
                   t.on('element:ul', U_, { priority: 'high' }),
                     t.on('element:ol', U_, { priority: 'high' }),
-                    t.on('element:li', G_, { priority: 'high' }),
+                    t.on('element:li', W_, { priority: 'high' }),
                     t.on('element:li', H_);
                 }),
-                t.model.on('insertContent', q_, { priority: 'high' }),
+                t.model.on('insertContent', G_, { priority: 'high' }),
                 t.commands.add('numberedList', new C_(t, 'numbered')),
                 t.commands.add('bulletedList', new C_(t, 'bulleted')),
                 t.commands.add('indentList', new x_(t, 'forward')),
@@ -30350,7 +30440,7 @@
               if ('ul' == n.name || 'ol' == n.name) for (const t of n.getChildren()) e += Z_(t);
             return e;
           }
-          class J_ extends Si {
+          class J_ extends Ii {
             static get pluginName() {
               return 'ListUI';
             }
@@ -30547,7 +30637,7 @@
             };
           ji()(sA.Z, aA);
           sA.Z.locals;
-          class cA extends Si {
+          class cA extends Ii {
             static get pluginName() {
               return 'MediaEmbedEditing';
             }
@@ -30683,7 +30773,7 @@
             }
           }
           const lA = /^(?:http(s)?:\/\/)?[\w-]+\.[\w-.~:/?#[\]@!$&'()*+,;=%]+$/;
-          class dA extends Si {
+          class dA extends Ii {
             static get requires() {
               return [Yf, _m, dk];
             }
@@ -30776,7 +30866,7 @@
                   'ck-button-cancel',
                   'cancel'
                 )),
-                (this._focusables = new Sh()),
+                (this._focusables = new Ih()),
                 (this._focusCycler = new $u({
                   focusables: this._focusables,
                   focusTracker: this.focusTracker,
@@ -30859,7 +30949,7 @@
               );
             }
             _createButton(t, e, n, o) {
-              const i = new Iu(this.locale);
+              const i = new Su(this.locale);
               return (
                 i.set({ label: t, icon: e, tooltip: !0 }),
                 i.extendTemplate({ attributes: { class: n } }),
@@ -30868,7 +30958,7 @@
               );
             }
           }
-          class mA extends Si {
+          class mA extends Ii {
             static get requires() {
               return [cA];
             }
@@ -31240,7 +31330,7 @@
           }
           const DA = /<meta\s*name="?generator"?\s*content="?microsoft\s*word\s*\d+"?\/?>/i,
             TA = /xmlns:o="urn:schemas-microsoft-com/i;
-          class IA {
+          class SA {
             constructor(t) {
               this.document = t;
             }
@@ -31252,7 +31342,7 @@
               wA(e, n), xA(e, t.dataTransfer.getData('text/rtf')), (t.content = e);
             }
           }
-          function SA(t) {
+          function IA(t) {
             return t.replace(/<span(?: class="Apple-converted-space"|)>(\s+)<\/span>/g, (t, e) =>
               1 === e.length
                 ? ' '
@@ -31264,7 +31354,7 @@
           function MA(t, e) {
             const n = new DOMParser(),
               o = (function (t) {
-                return SA(SA(t))
+                return IA(IA(t))
                   .replace(
                     /(<span\s+style=['"]mso-spacerun:yes['"]>[^\S\r\n]*?)[\r\n]+([^\S\r\n]*<\/span>)/g,
                     '$1$2'
@@ -31482,7 +31572,7 @@
             }
             return e;
           }
-          class GA {
+          class WA {
             constructor(t, e = {}) {
               (this._table = t),
                 (this._startRow = void 0 !== e.row ? e.row : e.startRow || 0),
@@ -31547,7 +31637,7 @@
               return void 0 !== this._endColumn && this._column > this._endColumn;
             }
             _formatOutValue(t, e = this._row, n = this._column) {
-              return { done: !1, value: new WA(this, t, e, n) };
+              return { done: !1, value: new qA(this, t, e, n) };
             }
             _shouldSkipSlot() {
               const t = this._skipRows.has(this._row),
@@ -31571,7 +31661,7 @@
               this._spannedCells.get(t).set(e, n);
             }
           }
-          class WA {
+          class qA {
             constructor(t, e, n, o) {
               (this.cell = e),
                 (this.row = t._row),
@@ -31601,7 +31691,7 @@
               );
             }
           }
-          function qA(t, e = {}) {
+          function GA(t, e = {}) {
             return (n, { writer: o }) => {
               const i = n.getAttribute('headingRows') || 0,
                 r = [];
@@ -31639,7 +31729,7 @@
               const o = e.parent,
                 i = o.parent,
                 r = i.getChildIndex(o),
-                s = new GA(i, { row: r }),
+                s = new WA(i, { row: r }),
                 a = i.getAttribute('headingRows') || 0,
                 c = i.getAttribute('headingColumns') || 0;
               for (const o of s)
@@ -31756,7 +31846,7 @@
               c = r - o + 1;
             for (let t = 0; t < c; t++) n.insertElement('tableRow', a, 'end');
             const l = [
-              ...new GA(t, {
+              ...new WA(t, {
                 startRow: o,
                 endRow: r,
                 startColumn: i,
@@ -31795,7 +31885,7 @@
           }
           function eC(t, e, n = 0) {
             const o = [],
-              i = new GA(t, { startRow: n, endRow: e - 1 });
+              i = new WA(t, { startRow: n, endRow: e - 1 });
             for (const t of i) {
               const { row: n, cellHeight: i } = t;
               n < e && e <= n + i - 1 && o.push(t);
@@ -31813,7 +31903,7 @@
             const l = parseInt(t.getAttribute('colspan') || 1);
             l > 1 && (a.colspan = l);
             const d = r + s,
-              h = [...new GA(i, { startRow: r, endRow: d, includeAllSlots: !0 })];
+              h = [...new WA(i, { startRow: r, endRow: d, includeAllSlots: !0 })];
             let u,
               g = null;
             for (const e of h) {
@@ -31825,7 +31915,7 @@
           }
           function oC(t, e) {
             const n = [],
-              o = new GA(t);
+              o = new WA(t);
             for (const t of o) {
               const { column: o, cellWidth: i } = t;
               o < e && e <= o + i - 1 && n.push(t);
@@ -31855,7 +31945,7 @@
           function sC(t, e) {
             const n = e.getColumns(t),
               o = new Array(n).fill(0);
-            for (const { column: e } of new GA(t)) o[e]++;
+            for (const { column: e } of new WA(t)) o[e]++;
             const i = o.reduce((t, e, n) => (e ? t : [...t, n]), []);
             if (i.length > 0) {
               const n = i[i.length - 1];
@@ -31880,7 +31970,7 @@
           }
           function lC(t, e) {
             const n = Array.from(
-              new GA(t, { startColumn: e.firstColumn, endColumn: e.lastColumn, row: e.lastRow })
+              new WA(t, { startColumn: e.firstColumn, endColumn: e.lastColumn, row: e.lastRow })
             );
             if (n.every(({ cellHeight: t }) => 1 === t)) return e.lastRow;
             const o = n[0].cellHeight - 1;
@@ -31888,7 +31978,7 @@
           }
           function dC(t, e) {
             const n = Array.from(
-              new GA(t, { startRow: e.firstRow, endRow: e.lastRow, column: e.lastColumn })
+              new WA(t, { startRow: e.firstRow, endRow: e.lastRow, column: e.lastColumn })
             );
             if (n.every(({ cellWidth: t }) => 1 === t)) return e.lastColumn;
             const o = n[0].cellWidth - 1;
@@ -31965,7 +32055,7 @@
                     if (a && (c || l)) return;
                     const d = parseInt(t.getAttribute('rowspan') || 1),
                       h = 'down' == e ? r + d : r,
-                      u = [...new GA(i, { endRow: h })],
+                      u = [...new WA(i, { endRow: h })],
                       g = u.find((e) => e.cell === t),
                       m = g.column,
                       p = u.find(
@@ -32045,7 +32135,7 @@
                   return o.isBefore(i) ? r : r.reverse();
                 })(this.editor.model.document.selection, t),
                 o = e.parent.parent,
-                i = [...new GA(o)],
+                i = [...new WA(o)],
                 r = {
                   first: i.find((t) => t.cell === e).column,
                   last: i.find((t) => t.cell === n).column,
@@ -32123,7 +32213,7 @@
               });
             }
           }
-          class kC extends Si {
+          class kC extends Ii {
             static get pluginName() {
               return 'TableUtils';
             }
@@ -32134,7 +32224,7 @@
               const e = t.parent,
                 n = e.parent,
                 o = n.getChildIndex(e),
-                i = new GA(n, { row: o });
+                i = new WA(n, { row: o });
               for (const { cell: e, row: n, column: o } of i)
                 if (e === t) return { row: n, column: o };
             }
@@ -32164,7 +32254,7 @@
                 if ((n > o && RA('headingRows', n + i, t, e, 0), !r && (0 === o || o === a)))
                   return void bC(e, t, o, i, c);
                 const l = r ? Math.max(o, s) : o,
-                  d = new GA(t, { endRow: l }),
+                  d = new WA(t, { endRow: l }),
                   h = new Array(c).fill(1);
                 for (const { row: t, column: n, cellHeight: a, cellWidth: c, cell: l } of d) {
                   const d = t + a - 1,
@@ -32197,7 +32287,7 @@
                     n.is('element', 'tableRow') && wC(i, e, e.createPositionAt(n, o ? 'end' : 0));
                   return;
                 }
-                const s = new GA(t, { column: o, includeAllSlots: !0 });
+                const s = new WA(t, { column: o, includeAllSlots: !0 });
                 for (const t of s) {
                   const {
                     row: n,
@@ -32230,7 +32320,7 @@
                 const { cellsToMove: n, cellsToTrim: o } = (function (t, e, n) {
                   const o = new Map(),
                     i = [];
-                  for (const { row: r, column: s, cellHeight: a, cell: c } of new GA(t, {
+                  for (const { row: r, column: s, cellHeight: a, cell: c } of new WA(t, {
                     endRow: n,
                   })) {
                     const t = r + a - 1;
@@ -32247,7 +32337,7 @@
                 })(t, r, s);
                 if (n.size) {
                   !(function (t, e, n, o) {
-                    const i = new GA(t, { includeAllSlots: !0, row: e }),
+                    const i = new WA(t, { includeAllSlots: !0, row: e }),
                       r = [...i],
                       s = t.getChild(e);
                     let a;
@@ -32284,7 +32374,7 @@
                   }
                 })(t, { first: o, last: r }, e);
                 for (let n = r; n >= o; n--)
-                  for (const { cell: o, column: i, cellWidth: r } of [...new GA(t)])
+                  for (const { cell: o, column: i, cellWidth: r } of [...new WA(t)])
                     i <= n && r > 1 && i + r > n
                       ? RA('colspan', r - 1, o, e)
                       : i === n && e.remove(o);
@@ -32306,7 +32396,7 @@
                 }
                 if (r < e) {
                   const s = e - r,
-                    a = [...new GA(o)],
+                    a = [...new WA(o)],
                     { column: c } = a.find(({ cell: e }) => e === t),
                     l = a.filter(
                       ({ cell: e, cellWidth: n, column: o }) =>
@@ -32329,7 +32419,7 @@
                 a = parseInt(t.getAttribute('colspan') || 1);
               n.change((n) => {
                 if (s > 1) {
-                  const o = [...new GA(i, { startRow: r, endRow: r + s - 1, includeAllSlots: !0 })],
+                  const o = [...new WA(i, { startRow: r, endRow: r + s - 1, includeAllSlots: !0 })],
                     { newCellsSpan: c, updatedSpan: l } = _C(s, e);
                   RA('rowspan', l, t, n);
                   const { column: d } = o.find(({ cell: e }) => e === t),
@@ -32345,7 +32435,7 @@
                 }
                 if (s < e) {
                   const o = e - s,
-                    c = [...new GA(i, { startRow: 0, endRow: r })];
+                    c = [...new WA(i, { startRow: 0, endRow: r })];
                   for (const { cell: e, cellHeight: i, row: s } of c)
                     if (e !== t && s + i > r) {
                       const t = i + o;
@@ -32371,7 +32461,7 @@
               );
             }
             createTableWalker(t, e = {}) {
-              return new GA(t, e);
+              return new WA(t, e);
             }
             getSelectedTableCells(t) {
               const e = [];
@@ -32399,7 +32489,7 @@
             }
             getColumnIndexes(t) {
               const e = t[0].findAncestor('table'),
-                n = [...new GA(e)].filter((e) => t.includes(e.cell)).map((t) => t.column);
+                n = [...new WA(e)].filter((e) => t.includes(e.cell)).map((t) => t.column);
               return this._getFirstLastIndexesObject(n);
             }
             isSelectionRectangular(t) {
@@ -32558,7 +32648,7 @@
                 c = Math.min(s.column, a.column),
                 l = Math.max(s.column, a.column),
                 d = [];
-              for (const t of new GA(r, { startColumn: c, endColumn: l }))
+              for (const t of new WA(r, { startColumn: c, endColumn: l }))
                 d.push(e.createRangeOn(t.cell));
               e.change((t) => {
                 t.setSelection(d);
@@ -32577,13 +32667,13 @@
                     ('tableRow' != e.name && 'tableCell' != e.name) ||
                       (n = e.position.findAncestor('table')),
                     MC(e) && (n = e.range.start.findAncestor('table')),
-                    n && !i.has(n) && ((o = IC(n, t) || o), (o = SC(n, t) || o), i.add(n));
+                    n && !i.has(n) && ((o = SC(n, t) || o), (o = IC(n, t) || o), i.add(n));
                 }
                 return o;
               })(e, t)
             );
           }
-          function IC(t, e) {
+          function SC(t, e) {
             let n = !1;
             const o = (function (t) {
               const e = parseInt(t.getAttribute('headingRows') || 0),
@@ -32592,7 +32682,7 @@
                   0
                 ),
                 o = [];
-              for (const { row: i, cell: r, cellHeight: s } of new GA(t)) {
+              for (const { row: i, cell: r, cellHeight: s } of new WA(t)) {
                 if (s < 2) continue;
                 const t = i < e ? e : n;
                 if (i + s > t) {
@@ -32608,11 +32698,11 @@
             }
             return n;
           }
-          function SC(t, e) {
+          function IC(t, e) {
             let n = !1;
             const o = (function (t) {
                 const e = new Array(t.childCount).fill(0);
-                for (const { rowIndex: n } of new GA(t, { includeAllSlots: !0 })) e[n]++;
+                for (const { rowIndex: n } of new WA(t, { includeAllSlots: !0 })) e[n]++;
                 return e;
               })(t),
               i = [];
@@ -32695,7 +32785,7 @@
             };
           ji()(RC.Z, jC);
           RC.Z.locals;
-          class FC extends Si {
+          class FC extends Ii {
             static get pluginName() {
               return 'TableEditing';
             }
@@ -32736,14 +32826,18 @@
                   });
                 }),
                 o.for('upcast').add(VA()),
-                o.for('editingDowncast').elementToStructure({
-                  model: { name: 'table', attributes: ['headingRows'] },
-                  view: qA(i, { asWidget: !0 }),
-                }),
-                o.for('dataDowncast').elementToStructure({
-                  model: { name: 'table', attributes: ['headingRows'] },
-                  view: qA(i),
-                }),
+                o
+                  .for('editingDowncast')
+                  .elementToStructure({
+                    model: { name: 'table', attributes: ['headingRows'] },
+                    view: GA(i, { asWidget: !0 }),
+                  }),
+                o
+                  .for('dataDowncast')
+                  .elementToStructure({
+                    model: { name: 'table', attributes: ['headingRows'] },
+                    view: GA(i),
+                  }),
                 o.for('upcast').elementToElement({ model: 'tableRow', view: 'tr' }),
                 o.for('upcast').add((t) => {
                   t.on(
@@ -32754,11 +32848,13 @@
                     { priority: 'high' }
                   );
                 }),
-                o.for('downcast').elementToElement({
-                  model: 'tableRow',
-                  view: (t, { writer: e }) =>
-                    t.isEmpty ? e.createEmptyElement('tr') : e.createContainerElement('tr'),
-                }),
+                o
+                  .for('downcast')
+                  .elementToElement({
+                    model: 'tableRow',
+                    view: (t, { writer: e }) =>
+                      t.isEmpty ? e.createEmptyElement('tr') : e.createContainerElement('tr'),
+                  }),
                 o.for('upcast').elementToElement({ model: 'tableCell', view: 'td' }),
                 o.for('upcast').elementToElement({ model: 'tableCell', view: 'th' }),
                 o.for('upcast').add(HA('td')),
@@ -32767,24 +32863,30 @@
                   .for('editingDowncast')
                   .elementToElement({ model: 'tableCell', view: $A({ asWidget: !0 }) }),
                 o.for('dataDowncast').elementToElement({ model: 'tableCell', view: $A() }),
-                o.for('editingDowncast').elementToElement({
-                  model: 'paragraph',
-                  view: YA({ asWidget: !0 }),
-                  converterPriority: 'high',
-                }),
+                o
+                  .for('editingDowncast')
+                  .elementToElement({
+                    model: 'paragraph',
+                    view: YA({ asWidget: !0 }),
+                    converterPriority: 'high',
+                  }),
                 o
                   .for('dataDowncast')
                   .elementToElement({ model: 'paragraph', view: YA(), converterPriority: 'high' }),
                 o.for('downcast').attributeToAttribute({ model: 'colspan', view: 'colspan' }),
-                o.for('upcast').attributeToAttribute({
-                  model: { key: 'colspan', value: VC('colspan') },
-                  view: 'colspan',
-                }),
+                o
+                  .for('upcast')
+                  .attributeToAttribute({
+                    model: { key: 'colspan', value: VC('colspan') },
+                    view: 'colspan',
+                  }),
                 o.for('downcast').attributeToAttribute({ model: 'rowspan', view: 'rowspan' }),
-                o.for('upcast').attributeToAttribute({
-                  model: { key: 'rowspan', value: VC('rowspan') },
-                  view: 'rowspan',
-                }),
+                o
+                  .for('upcast')
+                  .attributeToAttribute({
+                    model: { key: 'rowspan', value: VC('rowspan') },
+                    view: 'rowspan',
+                  }),
                 t.data.mapper.on('modelToViewPosition', (t, e) => {
                   const n = e.modelPosition.parent,
                     o = e.modelPosition.nodeBefore;
@@ -32837,7 +32939,7 @@
                       if (!n) continue;
                       const i = n.getAttribute('headingRows') || 0,
                         r = n.getAttribute('headingColumns') || 0,
-                        s = new GA(n);
+                        s = new WA(n);
                       for (const t of s) {
                         const n = t.row < i || t.column < r ? 'th' : 'td',
                           s = e.mapper.toViewElement(t.cell);
@@ -32878,7 +32980,7 @@
             };
           ji()(HC.Z, UC);
           HC.Z.locals;
-          class GC extends tu {
+          class WC extends tu {
             constructor(t) {
               super(t);
               const e = this.bindTemplate;
@@ -32955,7 +33057,7 @@
               });
             }
             _createGridButton(t, e, n, o) {
-              const i = new Iu(t);
+              const i = new Su(t);
               return (
                 i.set({ label: o, class: 'ck-insert-table-dropdown-grid-box' }),
                 i.extendTemplate({ attributes: { 'data-row': e, 'data-column': n } }),
@@ -32973,7 +33075,7 @@
               return this.createCollection(t);
             }
           }
-          class WC extends Si {
+          class qC extends Ii {
             static get pluginName() {
               return 'TableUI';
             }
@@ -32994,7 +33096,7 @@
                   }),
                   i.on('change:isOpen', () => {
                     r ||
-                      ((r = new GC(n)),
+                      ((r = new WC(n)),
                       i.panelView.children.add(r),
                       r.delegate('execute').to(i),
                       i.on('execute', () => {
@@ -33164,11 +33266,11 @@
               const n = this.editor,
                 o = [],
                 i = new Ai();
-              for (const t of e) qC(t, n, o, i);
+              for (const t of e) GC(t, n, o, i);
               return kg(t, i, n.ui.componentFactory), o;
             }
           }
-          function qC(t, e, n, o) {
+          function GC(t, e, n, o) {
             const i = (t.model = new jg(t.model)),
               { commandName: r, bindIsOn: s } = t.model;
             if ('button' === t.type || 'switchbutton' === t.type) {
@@ -33189,7 +33291,7 @@
             };
           ji()($C.Z, YC);
           $C.Z.locals;
-          class KC extends Si {
+          class KC extends Ii {
             static get pluginName() {
               return 'TableSelection';
             }
@@ -33333,7 +33435,7 @@
                 c = Math.max(o.column, i.column),
                 l = new Array(s - r + 1).fill(null).map(() => []),
                 d = { startRow: r, endRow: s, startColumn: a, endColumn: c };
-              for (const { row: e, cell: n } of new GA(t.findAncestor('table'), d))
+              for (const { row: e, cell: n } of new WA(t.findAncestor('table'), d))
                 l[e - r].push(n);
               const h = i.row < o.row,
                 u = i.column < o.column;
@@ -33344,7 +33446,7 @@
               );
             }
           }
-          class QC extends Si {
+          class QC extends Ii {
             static get pluginName() {
               return 'TableClipboard';
             }
@@ -33441,11 +33543,11 @@
               const { width: r, height: s } = e,
                 a = (function (t, e, n) {
                   const o = new Array(n).fill(null).map(() => new Array(e).fill(null));
-                  for (const { column: e, row: n, cell: i } of new GA(t)) o[n][e] = i;
+                  for (const { column: e, row: n, cell: i } of new WA(t)) o[n][e] = i;
                   return o;
                 })(t, r, s),
                 c = [
-                  ...new GA(n, {
+                  ...new WA(n, {
                     startRow: o.firstRow,
                     endRow: o.lastRow,
                     startColumn: o.firstColumn,
@@ -33521,7 +33623,7 @@
               { first: i, last: r } = n;
             return (t >= i && t <= r) || (t < i && o >= i);
           }
-          class ev extends Si {
+          class ev extends Ii {
             static get pluginName() {
               return 'TableKeyboard';
             }
@@ -33636,7 +33738,7 @@
             _navigateFromCellInDirection(t, e, n = !1) {
               const o = this.editor.model,
                 i = t.findAncestor('table'),
-                r = [...new GA(i, { includeAllSlots: !0 })],
+                r = [...new WA(i, { includeAllSlots: !0 })],
                 { row: s, column: a } = r[r.length - 1],
                 c = r.find(({ cell: e }) => e == t);
               let { row: l, column: d } = c;
@@ -33680,7 +33782,7 @@
               this.fire(t.type, t);
             }
           }
-          class ov extends Si {
+          class ov extends Ii {
             static get pluginName() {
               return 'TableMouse';
             }
@@ -33790,7 +33892,7 @@
             return !!t.getCustomProperty('table') && cf(t);
           }
           const dv = 'underline';
-          class hv extends Si {
+          class hv extends Ii {
             static get pluginName() {
               return 'UnderlineEditing';
             }
@@ -33808,7 +33910,7 @@
             }
           }
           const uv = 'underline';
-          class gv extends Si {
+          class gv extends Ii {
             static get pluginName() {
               return 'UnderlineUI';
             }
@@ -33817,7 +33919,7 @@
                 e = t.t;
               t.ui.componentFactory.add(uv, (n) => {
                 const o = t.commands.get(uv),
-                  i = new Iu(n);
+                  i = new Su(n);
                 return (
                   i.set({
                     label: e('Underline'),
@@ -33836,7 +33938,7 @@
             }
           }
           const mv = 'strikethrough';
-          class pv extends Si {
+          class pv extends Ii {
             static get pluginName() {
               return 'StrikethroughEditing';
             }
@@ -33854,7 +33956,7 @@
             }
           }
           const fv = 'strikethrough';
-          class kv extends Si {
+          class kv extends Ii {
             static get pluginName() {
               return 'StrikethroughUI';
             }
@@ -33863,7 +33965,7 @@
                 e = t.t;
               t.ui.componentFactory.add(fv, (n) => {
                 const o = t.commands.get(fv),
-                  i = new Iu(n);
+                  i = new Su(n);
                 return (
                   i.set({
                     label: e('Strikethrough'),
@@ -33881,7 +33983,397 @@
               });
             }
           }
-          const bv = {
+          class bv extends Ni {
+            refresh() {
+              const t = this.editor.model,
+                e = t.schema,
+                n = t.document.selection;
+              this.isEnabled = (function (t, e, n) {
+                const o = (function (t, e) {
+                  const n = mf(t, e),
+                    o = n.start.parent;
+                  if (o.isEmpty && !o.is('element', '$root')) return o.parent;
+                  return o;
+                })(t, n);
+                return e.checkChild(o, 'horizontalLine');
+              })(n, e, t);
+            }
+            execute() {
+              const t = this.editor.model;
+              t.change((e) => {
+                const n = e.createElement('horizontalLine');
+                t.insertObject(n, null, null, { setSelection: 'after' });
+              });
+            }
+          }
+          var wv = n(2536),
+            _v = {
+              injectType: 'singletonStyleTag',
+              attributes: { 'data-cke': !0 },
+              insert: 'head',
+              singleton: !0,
+            };
+          ji()(wv.Z, _v);
+          wv.Z.locals;
+          class Av extends Ii {
+            static get pluginName() {
+              return 'HorizontalLineEditing';
+            }
+            init() {
+              const t = this.editor,
+                e = t.model.schema,
+                n = t.t,
+                o = t.conversion;
+              e.register('horizontalLine', { inheritAllFrom: '$blockObject' }),
+                o
+                  .for('dataDowncast')
+                  .elementToElement({
+                    model: 'horizontalLine',
+                    view: (t, { writer: e }) => e.createEmptyElement('hr'),
+                  }),
+                o.for('editingDowncast').elementToStructure({
+                  model: 'horizontalLine',
+                  view: (t, { writer: e }) => {
+                    const o = n('Horizontal line'),
+                      i = e.createContainerElement('div', null, e.createEmptyElement('hr'));
+                    return (
+                      e.addClass('ck-horizontal-line', i),
+                      e.setCustomProperty('hr', !0, i),
+                      (function (t, e, n) {
+                        return e.setCustomProperty('horizontalLine', !0, t), lf(t, e, { label: n });
+                      })(i, e, o)
+                    );
+                  },
+                }),
+                o.for('upcast').elementToElement({ view: 'hr', model: 'horizontalLine' }),
+                t.commands.add('horizontalLine', new bv(t));
+            }
+          }
+          class Cv extends Ii {
+            static get pluginName() {
+              return 'HorizontalLineUI';
+            }
+            init() {
+              const t = this.editor,
+                e = t.t;
+              t.ui.componentFactory.add('horizontalLine', (n) => {
+                const o = t.commands.get('horizontalLine'),
+                  i = new Su(n);
+                return (
+                  i.set({
+                    label: e('Horizontal line'),
+                    icon: '<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 9h16v2H2z"/></svg>',
+                    tooltip: !0,
+                  }),
+                  i.bind('isEnabled').to(o, 'isEnabled'),
+                  this.listenTo(i, 'execute', () => {
+                    t.execute('horizontalLine'), t.editing.view.focus();
+                  }),
+                  i
+                );
+              });
+            }
+          }
+          var vv = n(244),
+            yv = {
+              injectType: 'singletonStyleTag',
+              attributes: { 'data-cke': !0 },
+              insert: 'head',
+              singleton: !0,
+            };
+          ji()(vv.Z, yv);
+          vv.Z.locals;
+          class xv extends Ii {
+            static get pluginName() {
+              return 'ImportWordUI';
+            }
+            init() {
+              const t = this.editor,
+                e = t.t;
+              t.ui.componentFactory.add('importWord', (n) => {
+                const o = t.commands.get('importWord'),
+                  i = new Pp(n);
+                i.set({
+                  acceptedType:
+                    'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+                }),
+                  i.buttonView.set({
+                    label: e('Import from Word'),
+                    icon: '<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path clip-rule="evenodd" d="m14 0 5 4.5v8.892l-1.5-1.8V6.5h-5v-5h-8v3H3V0h11Zm0 2v3h3.3L14 2Z"/><path d="M10.74 18a2.76 2.76 0 0 1-.469-.5H3V19h9.25v-.374A2.737 2.737 0 0 1 10.74 18Z"/><path clip-rule="evenodd" d="M8.5 6a1.5 1.5 0 0 1 1.493 1.356L10 7.5v7a1.5 1.5 0 0 1-1.356 1.493L8.5 16h-7a1.5 1.5 0 0 1-1.493-1.356L0 14.5v-7a1.5 1.5 0 0 1 1.356-1.493L1.5 6h7ZM7.483 8.795l-.042.088-.986 2.534-.947-2.528-.043-.092a.601.601 0 0 0-1.042.008l-.042.093-.883 2.465-.937-2.475-.042-.089a.6.6 0 0 0-1.107.42l.027.093 1.514 4 .044.092a.6.6 0 0 0 1.041-.01l.041-.092.88-2.458.925 2.467.046.096a.602.602 0 0 0 1.032 0l.043-.09 1.554-4 .028-.093a.6.6 0 0 0-1.104-.43v.001ZM11.674 15.407a.75.75 0 1 0 1.152.96L14 14.96V20h1.5v-5.04l1.174 1.408a.75.75 0 1 0 1.152-.96l-2.346-2.816a.95.95 0 0 0-1.46 0l-2.346 2.815Z"/></g><defs><clipPath id="a"><path d="M0 0h20v20H0z"/></clipPath></defs></svg>',
+                    tooltip: !0,
+                  }),
+                  i.buttonView.bind('isOn', 'isEnabled').to(o, 'isBusy', 'isEnabled'),
+                  i.buttonView.extendTemplate({
+                    attributes: {
+                      class: [i.buttonView.bindTemplate.if('isOn', 'ck-importword_status-pending')],
+                    },
+                  });
+                const r = new tu();
+                return (
+                  r.setTemplate({
+                    tag: 'span',
+                    attributes: { class: ['ck', 'ck-importword__spinner-container'] },
+                    children: [
+                      { tag: 'span', attributes: { class: ['ck', 'ck-importword__spinner'] } },
+                    ],
+                  }),
+                  i.buttonView.children.add(r),
+                  i.on('done', (e, n) => {
+                    t.execute('importWord', n[0], {}), t.editing.view.focus();
+                  }),
+                  i
+                );
+              });
+            }
+          }
+          class Ev extends Ni {
+            constructor(t) {
+              super(t),
+                this.set('isBusy', !1),
+                (this._importMarker = null),
+                (this._undoStepBatch = null),
+                (this._abortController = null),
+                this.on(
+                  'dataInsert',
+                  (e, n) => {
+                    const o = new DataTransfer();
+                    o.setData('text/html', n.html);
+                    const i = this._importMarker.getRange();
+                    this.editor.model.enqueueChange(this._undoStepBatch, (e) => {
+                      this._importMarker.stopListening(),
+                        e.setSelection(i),
+                        t.editing.view.document.fire('clipboardInput', { dataTransfer: o });
+                    });
+                  },
+                  { priority: 'low' }
+                );
+            }
+            refresh() {
+              this.isEnabled = this.i();
+            }
+            execute(t, e = {}) {
+              if (this.isBusy) return;
+              const n = this.editor.config.get('importWord'),
+                o = {
+                  url: n.converterUrl,
+                  file: t,
+                  serviceConfig: { ...e, default_styles: n.defaultStyles },
+                };
+              return (
+                this.s(),
+                this._sendImportRequest(o)
+                  .then(this.o.bind(this))
+                  .catch(this.h.bind(this))
+                  .finally(this.l.bind(this))
+              );
+            }
+            i() {
+              if (this.isBusy) return !1;
+              const t = this.editor.model,
+                e = t.schema,
+                n = Ci(t.document.selection.getSelectedBlocks());
+              return !!n && e.checkChild(n.parent, 'paragraph');
+            }
+            s() {
+              const t = this.editor,
+                e = t.model,
+                n = e.document.selection;
+              (this._abortController = new AbortController()),
+                (this._undoStepBatch = t.model.createBatch()),
+                e.enqueueChange(this._undoStepBatch, (t) => {
+                  n.isCollapsed || e.deleteContent(n, { leaveUnmerged: !0 });
+                  const o = n.getFirstPosition(),
+                    i = Ci(n.getSelectedBlocks());
+                  let r;
+                  (r =
+                    i.is('element', 'paragraph') && i.isEmpty
+                      ? o
+                      : o.isAtStart
+                      ? e.createPositionBefore(i)
+                      : o.isAtEnd
+                      ? e.createPositionAfter(i)
+                      : t.split(o).position),
+                    (this._importMarker = t.addMarker('importWord:' + m(), {
+                      usingOperation: !1,
+                      affectsData: !1,
+                      range: new Cc(r),
+                    })),
+                    this._importMarker.on('change:range', () => {
+                      '$graveyard' === this._importMarker.getRange().root.rootName &&
+                        this._abortController.abort();
+                    });
+                }),
+                (this.isBusy = !0),
+                this.refresh();
+            }
+            l() {
+              const t = this.editor.model;
+              t.markers.has(this._importMarker) &&
+                t.enqueueChange(this._undoStepBatch, (t) => {
+                  t.removeMarker(this._importMarker);
+                }),
+                (this._importMarker = null),
+                (this._undoStepBatch = null),
+                (this._abortController = null),
+                (this.isBusy = !1),
+                this.refresh();
+            }
+            _sendImportRequest({ url: t, file: e, serviceConfig: n }) {
+              const o = this.editor.plugins.get('ImportWordEditing').getToken(),
+                i = new FormData();
+              i.set('config', JSON.stringify(n)), i.set('file', e);
+              const r = {
+                method: 'POST',
+                headers: {},
+                body: i,
+                signal: this._abortController.signal,
+              };
+              return o && (r.headers.Authorization = o.value), fetch(t, r);
+            }
+            o(t) {
+              return t.ok
+                ? t.json().then((t) => {
+                    this.editor.model.markers.has(this._importMarker) &&
+                      '$graveyard' !== this._importMarker.getRange().root.rootName &&
+                      this.fire('dataInsert', t);
+                  })
+                : Promise.reject();
+            }
+            h() {
+              if (this._abortController.signal.aborted)
+                return void b('import-word-plugin-import-cancelled');
+              const t = this.editor,
+                e = (0, t.t)('An error occurred while importing the Word file.');
+              t.plugins.get('Notification').showWarning(e),
+                w('import-word-plugin-conversion-failed');
+            }
+          }
+          const Dv = [
+            'pluginName',
+            'importWord',
+            'plugins',
+            'https://docx-converter.cke-cs.com/v2/convert/docx-html',
+            'requires',
+            'commands',
+            'editor',
+            'CloudServices',
+            'getToken',
+            'add',
+            'token',
+            'cloudServices',
+            'config',
+            'get',
+          ];
+          var Tv, Sv;
+          (Tv = Dv),
+            (Sv = 433),
+            (function (t) {
+              for (; --t; ) Tv.push(Tv.shift());
+            })(++Sv);
+          const Iv = function (t, e) {
+            return Dv[(t -= 0)];
+          };
+          class Mv extends Ii {
+            static get [Iv('0x1')]() {
+              return 'ImportWordEditing';
+            }
+            static get [Iv('0x5')]() {
+              return [Rg, tf, 'CloudServices'];
+            }
+            constructor(t) {
+              super(t), (this.m = null);
+            }
+            async init() {
+              const t = this[Iv('0x7')];
+              t[Iv('0xd')].define(Iv('0x2'), {
+                converterUrl: Iv('0x4'),
+                tokenUrl: (t[Iv('0xd')][Iv('0x0')](Iv('0xc')) || {}).tokenUrl,
+                defaultStyles: !1,
+              }),
+                t[Iv('0x6')][Iv('0xa')]('importWord', new Ev(t));
+              const { tokenUrl: e } = t.config[Iv('0x0')](Iv('0x2'));
+              if (e) {
+                const { tokenUrl: n } = t[Iv('0xd')][Iv('0x0')]('cloudServices') || {};
+                this.m =
+                  e === n
+                    ? t[Iv('0x3')][Iv('0x0')]('CloudServices')[Iv('0xb')]
+                    : await t[Iv('0x3')].get(Iv('0x8')).registerTokenUrl(e);
+              }
+            }
+            [Iv('0x9')]() {
+              return this.m;
+            }
+          }
+          var Nv,
+            Bv,
+            Pv = ['pluginName', 'requires', 'ImportWord'];
+          (Nv = Pv),
+            (Bv = 274),
+            (function (t) {
+              for (; --t; ) Nv.push(Nv.shift());
+            })(++Bv);
+          var zv = function (t, e) {
+            return Pv[(t -= 0)];
+          };
+          class Lv extends Ii {
+            static get [zv('0x2')]() {
+              return zv('0x1');
+            }
+            static get [zv('0x0')]() {
+              return [Mv, xv];
+            }
+          }
+          console.log('https://dev-api-crm.sunggang.com.tw'),
+            console.log('https://onegobolineassert.s3.ap-northeast-1.amazonaws.com');
+          class Ov {
+            constructor(t) {
+              this.loader = t;
+            }
+            upload() {
+              return this.loader.file.then(
+                (t) =>
+                  new Promise((e, n) => {
+                    this._initRequest(n, t), this._initListeners(e, n, t), this._sendRequest(t);
+                  })
+              );
+            }
+            abort() {
+              this.xhr && this.xhr.abort();
+            }
+            _initRequest(t, e) {
+              const n = (this.xhr = new XMLHttpRequest());
+              (n.withCredentials = !0),
+                n.open('POST', 'https://dev-api-crm.sunggang.com.tw/events/poster');
+            }
+            _initListeners(t, e, n) {
+              const { xhr: o } = this,
+                { loader: i } = this,
+                r = `Couldn't upload file: ${n.name}.`;
+              o.addEventListener('error', () => e(r)),
+                o.addEventListener('abort', () => e()),
+                o.addEventListener('load', () => {
+                  const { response: n } = o;
+                  if (!n.status) return e(n && n.errmsg ? n.errmsg : r);
+                  t({
+                    default: `https://onegobolineassert.s3.ap-northeast-1.amazonaws.com/events/${n.data}`,
+                  });
+                }),
+                o.upload &&
+                  o.upload.addEventListener('progress', (t) => {
+                    t.lengthComputable && ((i.uploadTotal = t.total), (i.uploaded = t.loaded));
+                  });
+            }
+            _sendRequest(t) {
+              const e = new FormData();
+              e.append('poster', t, t.name);
+              const n = JSON.parse(localStorage.getItem('sg-auth-storage'));
+              this.xhr.setRequestHeader('Content-Type', 'multipart/form-data'),
+                this.xhr.setRequestHeader('Authorization', n?.state?.access_token),
+                console.log(e),
+                this.xhr.send(e);
+            }
+          }
+          const Rv = {
             columns: 9,
             documentColors: 9,
             colors: [
@@ -34004,9 +34496,9 @@
               { color: 'hsl(330, 100%, 90%)', label: 'hsl(330, 100%, 90%)' },
             ],
           };
-          class wv extends rm {}
-          (wv.builtinPlugins = [
-            class extends Si {
+          class jv extends rm {}
+          (jv.builtinPlugins = [
+            class extends Ii {
               static get requires() {
                 return [_m];
               }
@@ -34034,21 +34526,21 @@
               _addBasicStylesAutoformats() {
                 const t = this.editor.commands;
                 if (t.get('bold')) {
-                  const t = Gm(this.editor, 'bold');
+                  const t = Wm(this.editor, 'bold');
                   Hm(this.editor, this, /(?:^|\s)(\*\*)([^*]+)(\*\*)$/g, t),
                     Hm(this.editor, this, /(?:^|\s)(__)([^_]+)(__)$/g, t);
                 }
                 if (t.get('italic')) {
-                  const t = Gm(this.editor, 'italic');
+                  const t = Wm(this.editor, 'italic');
                   Hm(this.editor, this, /(?:^|\s)(\*)([^*_]+)(\*)$/g, t),
                     Hm(this.editor, this, /(?:^|\s)(_)([^_]+)(_)$/g, t);
                 }
                 if (t.get('code')) {
-                  const t = Gm(this.editor, 'code');
+                  const t = Wm(this.editor, 'code');
                   Hm(this.editor, this, /(`)([^`]+)(`)$/g, t);
                 }
                 if (t.get('strikethrough')) {
-                  const t = Gm(this.editor, 'strikethrough');
+                  const t = Wm(this.editor, 'strikethrough');
                   Hm(this.editor, this, /(~~)([^~]+)(~~)$/g, t);
                 }
               }
@@ -34084,7 +34576,7 @@
                   Vm(this.editor, this, /^---$/, 'horizontalLine');
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
                 return [Zm, Xm];
               }
@@ -34092,7 +34584,7 @@
                 return 'Alignment';
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
                 return [mp, kp];
               }
@@ -34100,7 +34592,7 @@
                 return 'BlockQuote';
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
                 return [_p, Cp];
               }
@@ -34108,7 +34600,7 @@
                 return 'Bold';
               }
             },
-            class extends Si {
+            class extends Ii {
               static get pluginName() {
                 return 'CKBox';
               }
@@ -34151,7 +34643,7 @@
                 for (const t of this._tokens.values()) t.destroy();
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
                 return [Yf, rp, tk, lp, Am, dk];
               }
@@ -34159,7 +34651,7 @@
                 return 'Essentials';
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
                 return [Ck, yk];
               }
@@ -34167,7 +34659,7 @@
                 return 'FontBackgroundColor';
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
                 return [Ek, Dk];
               }
@@ -34175,15 +34667,15 @@
                 return 'FontColor';
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
-                return [Gk, $k];
+                return [Wk, $k];
               }
               static get pluginName() {
                 return 'Heading';
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
                 return [bb, _b];
               }
@@ -34191,7 +34683,7 @@
                 return 'Image';
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
                 return [vb, yb];
               }
@@ -34199,15 +34691,15 @@
                 return 'ImageCaption';
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
-                return [Vb, Gb];
+                return [Vb, Wb];
               }
               static get pluginName() {
                 return 'ImageStyle';
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
                 return [Nf, Jk];
               }
@@ -34226,7 +34718,7 @@
                 });
               }
             },
-            class extends Si {
+            class extends Ii {
               static get pluginName() {
                 return 'ImageUpload';
               }
@@ -34234,7 +34726,7 @@
                 return [uw, Jb, rw];
               }
             },
-            class extends Si {
+            class extends Ii {
               static get pluginName() {
                 return 'Indent';
               }
@@ -34242,7 +34734,7 @@
                 return [mw, kw];
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
                 return [ww, Aw];
               }
@@ -34250,7 +34742,7 @@
                 return 'Italic';
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
                 return [s_, k_, __];
               }
@@ -34258,7 +34750,7 @@
                 return 'Link';
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
                 return [Q_, J_];
               }
@@ -34266,16 +34758,16 @@
                 return 'List';
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
-                return [cA, mA, dA, Sf];
+                return [cA, mA, dA, If];
               }
               static get pluginName() {
                 return 'MediaEmbed';
               }
             },
             Fk,
-            class extends Si {
+            class extends Ii {
               static get pluginName() {
                 return 'PasteFromOffice';
               }
@@ -34286,7 +34778,7 @@
                 const t = this.editor,
                   e = t.editing.view.document,
                   n = [];
-                n.push(new IA(e)),
+                n.push(new SA(e)),
                   n.push(new yA(e)),
                   t.plugins.get('ClipboardPipeline').on(
                     'inputTransformation',
@@ -34309,7 +34801,7 @@
                   );
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
                 return [gb, Jk];
               }
@@ -34415,7 +34907,7 @@
                   );
               }
             },
-            class extends Si {
+            class extends Ii {
               static get pluginName() {
                 return 'SourceEditing';
               }
@@ -34433,7 +34925,7 @@
                 const t = this.editor,
                   e = t.t;
                 t.ui.componentFactory.add('sourceEditing', (n) => {
-                  const o = new Iu(n);
+                  const o = new Su(n);
                   return (
                     o.set({
                       label: e('Source'),
@@ -34575,15 +35067,15 @@
                 return t && !t._hasExternalElement;
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
-                return [FC, WC, KC, ov, ev, QC, Sf];
+                return [FC, qC, KC, ov, ev, QC, If];
               }
               static get pluginName() {
                 return 'Table';
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
                 return [Nf];
               }
@@ -34610,7 +35102,7 @@
                     });
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
                 return ['Delete', 'Input'];
               }
@@ -34681,7 +35173,7 @@
                   i.bind('isEnabled').to(this);
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
                 return [hv, gv];
               }
@@ -34689,7 +35181,7 @@
                 return 'Underline';
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
                 return [pv, kv];
               }
@@ -34697,7 +35189,7 @@
                 return 'Strikethrough';
               }
             },
-            class extends Si {
+            class extends Ii {
               static get requires() {
                 return [Bk, Lk];
               }
@@ -34705,13 +35197,31 @@
                 return 'FontSize';
               }
               normalizeSizeOptions(t) {
-                return Ik(t);
+                return Sk(t);
               }
             },
+            class extends Ii {
+              static get requires() {
+                return [Av, Cv, If];
+              }
+              static get pluginName() {
+                return 'HorizontalLine';
+              }
+            },
+            Lv,
           ]),
-            (wv.defaultConfig = {
+            (jv.defaultConfig = {
+              extraPlugins: [
+                function (t) {
+                  t.plugins.get('FileRepository').createUploadAdapter = (t) => new Ov(t);
+                },
+              ],
               toolbar: {
                 items: [
+                  'undo',
+                  'redo',
+                  '|',
+                  'ImportWord',
                   'heading',
                   '|',
                   'fontColor',
@@ -34724,11 +35234,10 @@
                   'blockQuote',
                   'insertTable',
                   'mediaEmbed',
-                  'undo',
-                  'redo',
                   '|',
                   'strikethrough',
                   'underline',
+                  'horizontalLine',
                   'alignment',
                   'bulletedList',
                   'numberedList',
@@ -34741,9 +35250,9 @@
                 ],
                 shouldNotGroupWhenFull: !0,
               },
-              fontColor: { ...bv },
-              fontBackgroundColor: { ...bv },
               language: 'zh',
+              fontColor: { ...Rv },
+              fontBackgroundColor: { ...Rv },
               fontSize: {
                 options: [
                   9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 23, 25, 27, 29, 31, 33, 35,
@@ -34768,9 +35277,8 @@
                   'tableProperties',
                 ],
               },
-              language: 'zh',
             });
-          const _v = wv;
+          const Fv = jv;
         })(),
         (o = o.default)
       );

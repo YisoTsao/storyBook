@@ -41,7 +41,7 @@ class MyUploadAdapter {
   // Initializes the XMLHttpRequest object using the URL passed to the constructor.
   _initRequest(reject, file) {
     const xhr = (this.xhr = new XMLHttpRequest());
-    // xhr.withCredentials = true;
+    xhr.withCredentials = true;
     // Note that your request may look different. It is up to you and your editor
     // integration to choose the right communication channel. This example uses
     // a POST request with JSON as a data structure but your configuration
@@ -85,8 +85,13 @@ class MyUploadAdapter {
     //   return;
     // }
 
-    xhr.open('POST', `${process.env.SG_API}/events/poster`, true);
-    xhr.responseType = 'json';
+    xhr.open(
+      'POST',
+      `${
+        process.env.NODE_ENV === 'development' ? 'http://localhost:8010/proxy' : process.env.SG_API
+      }/events/poster`
+    );
+    // xhr.responseType = "json";
   }
   // Initializes XMLHttpRequest listeners.
   _initListeners(resolve, reject, file) {
@@ -146,9 +151,10 @@ class MyUploadAdapter {
 
     const storage = JSON.parse(localStorage.getItem('sg-auth-storage'));
 
-    this.xhr.setRequestHeader('Authorization', storage?.state.access_token);
     this.xhr.setRequestHeader('Content-Type', 'multipart/form-data');
+    this.xhr.setRequestHeader('Authorization', storage?.state?.access_token);
     // Send the request.
+    console.log(data);
     this.xhr.send(data);
   }
 }
