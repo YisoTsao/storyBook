@@ -34342,8 +34342,7 @@
             }
             _initRequest(t, e) {
               const n = (this.xhr = new XMLHttpRequest());
-              (n.withCredentials = !0),
-                n.open('POST', 'https://dev-api-crm.sunggang.com.tw/events/poster');
+              (n.withCredentials = !0), n.open('POST', 'http://localhost:8010/proxy/events/poster');
             }
             _initListeners(t, e, n) {
               const { xhr: o } = this,

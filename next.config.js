@@ -2,10 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   serverRuntimeConfig: {
-    API_HOST: process.env.API_HOST,
+    SG_API: process.env.SG_API,
   },
   publicRuntimeConfig: {
-    API_HOST: process.env.API_HOST,
+    SG_API: process.env.SG_API,
   },
 };
 

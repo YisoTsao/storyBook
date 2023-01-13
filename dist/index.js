@@ -4,24 +4,13 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "BaseProgress", {
-  enumerable: true,
-  get: function get() {
-    return _ProgressBar["default"];
-  }
-});
-Object.defineProperty(exports, "CkEditor", {
-  enumerable: true,
-  get: function get() {
-    return _Ckeditor["default"];
-  }
-});
-Object.defineProperty(exports, "Step", {
-  enumerable: true,
-  get: function get() {
-    return _Step["default"];
-  }
-});
+exports["default"] = void 0;
 var _ProgressBar = _interopRequireDefault(require("./ProgressBar"));
 var _Step = _interopRequireDefault(require("./Step"));
 var _Ckeditor = _interopRequireDefault(require("./Ckeditor"));
+var _default = {
+  BaseProgress: _ProgressBar["default"],
+  Step: _Step["default"],
+  CkEditor: _Ckeditor["default"]
+};
+exports["default"] = _default;

@@ -8,7 +8,7 @@
 // const SG_API = "https://dev-api-crm.sunggang.com.tw";
 // const IMAGE_HOST = "https://onegobolineassert.s3.ap-northeast-1.amazonaws.com";
 // const token =
-//   "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJVZDA0ODQzZDcyNTlhMTAzOTVjNGNjODgwZTViNjlmYWYiLCJuYW1lIjoiXHU2YmM1XHU3ZDIyIiwiZXhwIjoxNjczNTMyNDc0fQ.GOuYhgbylvV3WYPAOtwcBLXnObcxLCdZtwPmI-koqvU";
+//   "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJVZDA0ODQzZDcyNTlhMTAzOTVjNGNjODgwZTViNjlmYWYiLCJuYW1lIjoiXHU2YmM1XHU3ZDIyIiwiZXhwIjoxNjczNjE3MTA5fQ.g7qLVLmsoz5WtWnVl2WzKVJ9MWS0xsPFN-MN72HVZpY";
 
 console.log(process.env.SG_API);
 console.log(process.env.IMAGE_HOST);
@@ -88,7 +88,9 @@ class MyUploadAdapter {
     xhr.open(
       'POST',
       `${
-        process.env.NODE_ENV === 'development' ? 'http://localhost:8010/proxy' : process.env.SG_API
+        process.env.NODE_ENV === 'development'
+          ? 'http://localhost:8010/proxy'
+          : 'http://localhost:8010/proxy'
       }/events/poster`
     );
     // xhr.responseType = "json";

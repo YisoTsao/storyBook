@@ -1,22 +1,23 @@
-import React from 'react';
-import getConfig from 'next/config';
+import React, { useState } from 'react';
+import dynamic from 'next/dynamic';
 
-import { BaseProgress, Step } from '../components';
+import Step from '../components/Step';
+import BaseProgress from '../components/ProgressBar';
+
+const CkEditor = dynamic(() => import('../components/Ckeditor'), {
+  ssr: false,
+});
 
 const Home = () => {
-  const { publicRuntimeConfig } = getConfig();
-  const { API_HOST } = publicRuntimeConfig;
+  const [content, setContent] = useState('');
 
   const fakeStep = [{ status: true }, { status: true }, { status: false }, { status: false }];
 
-  console.log(API_HOST);
   return (
-    <div>
-      <main className="p-8">main</main>
+    <div className="p-20">
       <Step className="p-8" stepList={fakeStep} />
       <BaseProgress type="step" value="28" max="100" size="large" />
-      <section>section</section>
-      <footer>footer</footer>
+      <CkEditor content={content} setContent={setContent} />
     </div>
   );
 };
