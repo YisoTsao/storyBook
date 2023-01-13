@@ -1,17 +1,6 @@
-// import {
-//   API_HOST,
-//   IMAGE_HOST,
-//   DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES,
-//   API_STATUS_CODE_SUCCESS,
-// } from '../../../constants';
+import './style.css';
 
-// const SG_API = "https://dev-api-crm.sunggang.com.tw";
-// const IMAGE_HOST = "https://onegobolineassert.s3.ap-northeast-1.amazonaws.com";
-// const token =
-//   "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJVZDA0ODQzZDcyNTlhMTAzOTVjNGNjODgwZTViNjlmYWYiLCJuYW1lIjoiXHU2YmM1XHU3ZDIyIiwiZXhwIjoxNjczNjE3MTA5fQ.g7qLVLmsoz5WtWnVl2WzKVJ9MWS0xsPFN-MN72HVZpY";
-
-console.log(process.env.SG_API);
-console.log(process.env.IMAGE_HOST);
+const DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES = 512000; // 500 KB
 
 class MyUploadAdapter {
   constructor(loader) {
@@ -38,62 +27,67 @@ class MyUploadAdapter {
     }
   }
 
+  _closeModal() {
+    const modal = document.querySelector('.ckEditorModal');
+    modal.remove();
+  }
+
+  _errorContent(file) {
+    const errorElement = `
+        <div class="ckEditorModalTitle">選擇的檔案大小超過限制!</div>
+        <hr />
+        <div class="ckEditorModalText">
+            選擇的檔案大小：
+            ${(file.size / 1024 / 1024).toFixed(3)}MB
+        </div>
+            
+        <div class="ckEditorModalText">
+            上限：
+            ${(DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES / 1024 / 1024).toFixed(3)}MB
+        </div>
+       
+    `;
+    return errorElement;
+  }
+
+  _renderModal(errorMsg) {
+    // create the background modal div
+    const modal = document.createElement('div');
+    modal.classList.add('ckEditorModal');
+    // create the inner modal div with appended argument
+    const child = document.createElement('div');
+    child.classList.add('ckEditorModalContent');
+    child.innerHTML = `<div class="ckEditorCloseButton">X</div><div>${errorMsg}</div>`;
+    // render the modal with child on DOM
+    modal.appendChild(child);
+    document.body.appendChild(modal);
+
+    const closeButton = document.querySelector('.ckEditorCloseButton');
+    closeButton.addEventListener('click', this._closeModal);
+  }
+
   // Initializes the XMLHttpRequest object using the URL passed to the constructor.
   _initRequest(reject, file) {
     const xhr = (this.xhr = new XMLHttpRequest());
-    xhr.withCredentials = true;
+    // xhr.withCredentials = true;
     // Note that your request may look different. It is up to you and your editor
     // integration to choose the right communication channel. This example uses
     // a POST request with JSON as a data structure but your configuration
     // could be different.
 
-    // if (file.size > DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES) {
-    //   Modal.error({
-    //     title: '選擇的檔案大小超過限制',
-    //     content: (
-    //       <span>
-    //         <hr />
-    //         選擇的檔案大小：
-    //         {String((file.size / 1024 / 1024).toFixed(3))}
-    //         {' MB'}
-    //         <br />
-    //         {'≈ '}
-    //         {String((file.size / 1024).toFixed(3))}
-    //         {' KB'}
-    //         <br />
-    //         {'≈ '}
-    //         {String(file.size)}
-    //         {' Bytes'}
-    //         <br />
-    //         <hr />
-    //         上限：
-    //         {String((DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES / 1024 / 1024).toFixed(3))}
-    //         {' MB'}
-    //         <br />
-    //         {'≈ '}
-    //         {String((DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES / 1024).toFixed(3))}
-    //         {' KB'}
-    //         <br />
-    //         {'≈ '}
-    //         {String(DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES)}
-    //         {' Bytes'}
-    //         <hr />
-    //       </span>
-    //     ),
-    //   });
-    //   reject();
-    //   return;
-    // }
+    if (file.size > DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES) {
+      this._renderModal(this._errorContent(file));
+      reject();
+      return;
+    }
 
     xhr.open(
       'POST',
       `${
-        process.env.NODE_ENV === 'development'
-          ? 'http://localhost:8010/proxy'
-          : 'http://localhost:8010/proxy'
+        process.env.NODE_ENV === 'development' ? 'http://localhost:8010/proxy' : process.env.SG_API
       }/events/poster`
     );
-    // xhr.responseType = "json";
+    xhr.responseType = 'json';
   }
   // Initializes XMLHttpRequest listeners.
   _initListeners(resolve, reject, file) {
@@ -123,7 +117,7 @@ class MyUploadAdapter {
       // UploadAdapter#upload documentation.
 
       resolve({
-        default: `${process.env.IMAGE_HOST}/events/${response.data}`,
+        default: response.data,
       });
     });
 
@@ -143,9 +137,9 @@ class MyUploadAdapter {
   // Prepares the data and sends the request.
   _sendRequest(file) {
     // Prepare the form data.
-    const data = new FormData();
+    const formData = new FormData();
+    formData.append('poster', file, file.name);
 
-    data.append('poster', file, file.name);
     // Important note: This is the right place to implement security mechanisms
     // like authentication and CSRF protection. For instance, you can use
     // XMLHttpRequest.setRequestHeader() to set the request headers containing
@@ -153,11 +147,9 @@ class MyUploadAdapter {
 
     const storage = JSON.parse(localStorage.getItem('sg-auth-storage'));
 
-    this.xhr.setRequestHeader('Content-Type', 'multipart/form-data');
-    this.xhr.setRequestHeader('Authorization', storage?.state?.access_token);
+    this.xhr.setRequestHeader('Authorization', storage?.state.access_token);
     // Send the request.
-    console.log(data);
-    this.xhr.send(data);
+    this.xhr.send(formData);
   }
 }
 
