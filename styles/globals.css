@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.ck-content > ol > li {
+  display: list-item;
+  list-style-type: decimal;
+  margin: 1rem;
+}
+
+.ck-content > ul > li {
+  display: list-item;
+  list-style-type: disc;
+  margin: 1rem;
+}

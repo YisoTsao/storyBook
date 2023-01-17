@@ -36,15 +36,18 @@ class MyUploadAdapter {
     const errorElement = `
         <div class="ckEditorModalTitle">選擇的檔案大小超過限制!</div>
         <hr />
-        <div class="ckEditorModalText">
-            選擇的檔案大小：
-            ${(file.size / 1024 / 1024).toFixed(3)}MB
+        <div  class="ckEditorModalTextArea">
+            <div class="ckEditorModalText">
+                選擇的檔案大小：
+                ${(file.size / 1024 / 1024).toFixed(3)}MB
+            </div>
+                
+            <div class="ckEditorModalText">
+                上限：
+                ${(DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES / 1024 / 1024).toFixed(3)}MB
+            </div>
         </div>
-            
-        <div class="ckEditorModalText">
-            上限：
-            ${(DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES / 1024 / 1024).toFixed(3)}MB
-        </div>
+       
        
     `;
     return errorElement;

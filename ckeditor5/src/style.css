@@ -5,6 +5,8 @@
   height: 100vh;
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  position: fixed;
 }
 
 .ckEditorModalContent {
@@ -22,6 +24,10 @@
 .ckEditorModalTitle {
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+.ckEditorModalTextArea {
+  padding: 1rem;
 }
 
 .ckEditorModalText {

@@ -17,8 +17,11 @@ import Heading from '@ckeditor/ckeditor5-heading/src/heading.js';
 import Image from '@ckeditor/ckeditor5-image/src/image.js';
 import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption.js';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle.js';
+import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar.js';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload.js';
+import ImageInsert from '@ckeditor/ckeditor5-image/src/ImageInsert.js';
+import AutoImage from '@ckeditor/ckeditor5-image/src/AutoImage.js';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent.js';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic.js';
 import Link from '@ckeditor/ckeditor5-link/src/link.js';
@@ -35,6 +38,7 @@ import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough.js';
 import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline.js';
 import ImportWord from '@ckeditor/ckeditor5-import-word/src/importword';
+import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
 
 import CustomUploadAdapterPlugin from './ckeditorPlugin';
 import { config } from './config';
@@ -56,8 +60,11 @@ Editor.builtinPlugins = [
   Image,
   ImageCaption,
   ImageStyle,
+  ImageResize,
   ImageToolbar,
   ImageUpload,
+  ImageInsert,
+  AutoImage,
   Indent,
   Italic,
   Link,
@@ -75,6 +82,7 @@ Editor.builtinPlugins = [
   FontSize,
   HorizontalLine,
   ImportWord,
+  RemoveFormat,
 ];
 
 // Editor configuration.
@@ -92,9 +100,10 @@ Editor.defaultConfig = {
       'fontBackgroundColor',
       'bold',
       'italic',
+      'removeFormat',
       'fontSize',
       '|',
-      'imageUpload',
+      'ImageInsert',
       'blockQuote',
       'insertTable',
       'mediaEmbed',
@@ -130,12 +139,24 @@ Editor.defaultConfig = {
   },
   image: {
     toolbar: [
-      'imageTextAlternative',
+      'imageStyle:alignLeft',
+      'imageStyle:alignCenter',
+      'imageStyle:alignRight',
+      '|',
       'toggleImageCaption',
-      'imageStyle:inline',
-      'imageStyle:block',
-      'imageStyle:side',
+      'imageTextAlternative',
     ],
+    resizeUnit: 'px',
+  },
+  mediaEmbed: {
+    previewsInData: true,
+  },
+  list: {
+    properties: {
+      styles: true,
+      startIndex: true,
+      reversed: true,
+    },
   },
   table: {
     contentToolbar: [
