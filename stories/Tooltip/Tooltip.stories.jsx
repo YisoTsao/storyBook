@@ -8,10 +8,17 @@ export default {
 
 const Template = (args) => <Tooltip {...args} />;
 
-export const BaseTooltip = Template.bind({});
+export const TopTooltip = Template.bind({});
+export const RightTooltip = Template.bind({});
 
-BaseTooltip.args = {
+TopTooltip.args = {
   direction: 'top',
-  content: 'toolTip content',
+  content: 'toolTip top content',
+  children: <div>hover me!</div>,
+};
+
+RightTooltip.args = {
+  direction: 'right',
+  content: 'toolTip right content',
   children: <div>hover me!</div>,
 };
