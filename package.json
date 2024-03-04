@@ -13,7 +13,8 @@
     "postcompile": "git add dist",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=chpt_cf8899c392e76ea"
   },
   "dependencies": {
     "next": "12.3.1",
@@ -40,6 +41,7 @@
     "autoprefixer": "^10.4.12",
     "babel-loader": "^8.2.5",
     "babel-plugin-styled-components": "^2.0.7",
+    "chromatic": "^11.0.0",
     "eslint": "^8.24.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "12.3.1",
