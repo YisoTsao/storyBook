@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@ckeditor/ckeditor5-react": "^5.0.6",
+    "@iconify/react": "^4.1.1",
     "ckeditor5-custom-build": "file:./ckeditor5",
     "next": "12.3.1",
     "next-images": "^1.8.4",
@@ -67,7 +68,8 @@
   "lint-staged": {
     "**/*.{js,jsx}": [
       "eslint --fix",
-      "yarn format"
+      "yarn format",
+      "yarn compile"
     ]
   },
   "ignore": [

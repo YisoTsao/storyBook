@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const Step = ({
+export const Step = ({
   className,
   stepList,
   completeColor,
@@ -32,7 +32,6 @@ const Step = ({
   </div>
 );
 
-export default Step;
 Step.propTypes = {
   className: PropTypes.string,
   stepList: PropTypes.arrayOf(PropTypes.shape({ status: PropTypes.bool })),

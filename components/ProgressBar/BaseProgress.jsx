@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Progress from './StyleBaseProgress';
 
-const BaseProgress = ({ type, value, max, size, valueColor, bgColor }) => {
+export const BaseProgress = ({ type, value, max, size, valueColor, bgColor }) => {
   const valueInt = Number(value);
   const maxInt = Number(max);
   const isLock = type === 'lock';
@@ -49,8 +49,6 @@ const BaseProgress = ({ type, value, max, size, valueColor, bgColor }) => {
     </>
   );
 };
-
-export default BaseProgress;
 
 BaseProgress.propTypes = {
   valueColor: PropTypes.string,

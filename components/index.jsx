@@ -1,5 +1,6 @@
-import BaseProgress from './ProgressBar';
-import Step from './Step';
-import CkEditor from './Ckeditor';
-
-export default { BaseProgress, Step, CkEditor };
+export * from './ProgressBar';
+export * from './Step';
+export * from './Sidebar';
+export * from './Spin';
+export * from './Tabs';
+export * from './Tooltip';

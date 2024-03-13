@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import dynamic from 'next/dynamic';
 
-import Step from '../components/Step';
-import BaseProgress from '../components/ProgressBar';
+import { Step, BaseProgress } from '../components';
 
 const CkEditor = dynamic(() => import('../components/Ckeditor'), {
   ssr: false,

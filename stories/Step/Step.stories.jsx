@@ -1,5 +1,5 @@
 import React from 'react';
-import Step from '../../components/Step';
+import { Step } from '../../components';
 
 const fakeStep = [{ status: true }, { status: true }, { status: false }, { status: false }];
 const fakeCompleteLineStep = [

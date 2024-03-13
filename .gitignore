@@ -13,6 +13,7 @@
 /out/
 
 /deploy
+/ckeditor5
 
 # production
 /build
