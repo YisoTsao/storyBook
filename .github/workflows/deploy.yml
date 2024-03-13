@@ -11,23 +11,15 @@ jobs:
       url: ${{ steps.build-publish.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-    - id: build-publish
-      uses: YisoTsao/UI-lib@v0.1.0
-      with:
-        path: storybook-static
-        build_command: yarn build-storybook
-  test:
-    # Operating System
-    runs-on: ubuntu-latest
-    # Job steps
-    steps:
-      - uses: actions/checkout@v1
-      - run: yarn
-        #👇 Adds Chromatic as a step in the workflow
-      - uses: chromaui/action@v1
-        # Options required for Chromatic's GitHub Action
+      - id: build-publish
+      - name: Install and Build
+        run: |
+          yarn install
+          yarn build-storybook
+      - name: Deploy
+        uses: YisoTsao/UI-lib-to-github-pages@v1.0.0
         with:
-          #👇 Chromatic projectToken, see https://storybook.js.org/tutorials/intro-to-storybook/react/zh-tw/deploy/ to obtain it
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: storybook-static 
+
         
