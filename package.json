@@ -68,8 +68,7 @@
   "lint-staged": {
     "**/*.{js,jsx}": [
       "eslint --fix",
-      "yarn format",
-      "yarn compile"
+      "yarn format"
     ]
   },
   "ignore": [
