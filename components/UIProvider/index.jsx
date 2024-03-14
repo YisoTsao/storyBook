@@ -1,9 +1,9 @@
 import React, { createContext, useContext, useState, useMemo } from 'react';
 import PropTypes from 'prop-types';
-import { Spin } from '@/components/Spin';
-import Modal from '@/components/Modal';
+import { Spin } from '../Spin';
+import Modal from '../Modal';
 
-import { commonStore } from '@/utils/store/common';
+import { commonStore } from '../../utils/store/common';
 
 const Context = createContext();
 
