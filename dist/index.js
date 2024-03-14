@@ -69,3 +69,14 @@ Object.keys(_Tooltip).forEach(function (key) {
     }
   });
 });
+var _UIProvider = require("./UIProvider");
+Object.keys(_UIProvider).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (key in exports && exports[key] === _UIProvider[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _UIProvider[key];
+    }
+  });
+});

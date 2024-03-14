@@ -7,7 +7,7 @@ exports.Tabs = void 0;
 var _react = _interopRequireDefault(require("react"));
 var _propTypes = _interopRequireDefault(require("prop-types"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-var Tabs = function Tabs(_ref) {
+var Tabs = exports.Tabs = function Tabs(_ref) {
   var _ref$className = _ref.className,
     className = _ref$className === void 0 ? 'leading-[18px] text-lg' : _ref$className,
     items = _ref.items,
@@ -30,7 +30,6 @@ var Tabs = function Tabs(_ref) {
     className: "bg-[#D9D9D9] min-h-[3px] w-full mt-0 mb-2"
   }));
 };
-exports.Tabs = Tabs;
 Tabs.propTypes = {
   items: _propTypes["default"].arrayOf(_propTypes["default"].shape()),
   activeTab: _propTypes["default"].number,

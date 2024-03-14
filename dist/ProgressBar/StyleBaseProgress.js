@@ -31,5 +31,4 @@ var Progress = _styledComponents["default"].progress.withConfig({
 }, function (props) {
   return props.height !== 'small' && props.value < props.max ? '5px 0px 0px 5px' : '5px';
 });
-var _default = Progress;
-exports["default"] = _default;
+var _default = exports["default"] = Progress;

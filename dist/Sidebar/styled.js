@@ -6,12 +6,11 @@ Object.defineProperty(exports, "__esModule", {
 exports.NavIcon = exports.Nav = void 0;
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-var Nav = _styledComponents["default"].div.withConfig({
+var Nav = exports.Nav = _styledComponents["default"].div.withConfig({
   displayName: "styled__Nav",
   componentId: "sc-18d2uux-0"
 })(["background:#15171c;height:80px;display:flex;justify-content:flex-start;align-items:center;"]);
-exports.Nav = Nav;
-var NavIcon = _styledComponents["default"].div.withConfig({
+var NavIcon = exports.NavIcon = _styledComponents["default"].div.withConfig({
   displayName: "styled__NavIcon",
   componentId: "sc-18d2uux-1"
 })(["margin-left:2rem;font-size:2rem;height:80px;display:flex;justify-content:flex-start;align-items:center;"]);
@@ -23,4 +22,3 @@ var NavIcon = _styledComponents["default"].div.withConfig({
 //   transition: 350ms;
 //   z-index: 10;
 // `;
-exports.NavIcon = NavIcon;

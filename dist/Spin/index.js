@@ -8,7 +8,7 @@ var _react = _interopRequireDefault(require("react"));
 var _propTypes = _interopRequireDefault(require("prop-types"));
 var _react2 = require("@iconify/react");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-var Spin = function Spin(props) {
+var Spin = exports.Spin = function Spin(props) {
   var icon = props.icon,
     show = props.show,
     overlayBackground = props.overlayBackground;
@@ -23,7 +23,6 @@ var Spin = function Spin(props) {
     className: "w-10 h-10 rounded-full border-4 border-solid border-[#ffffff33] border-t-[#dbdbdb] animate-spin"
   }))) : null;
 };
-exports.Spin = Spin;
 Spin.propTypes = {
   icon: _propTypes["default"].string,
   show: _propTypes["default"].bool,

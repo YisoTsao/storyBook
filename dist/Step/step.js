@@ -7,7 +7,7 @@ exports.Step = void 0;
 var _propTypes = _interopRequireDefault(require("prop-types"));
 var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-var Step = function Step(_ref) {
+var Step = exports.Step = function Step(_ref) {
   var className = _ref.className,
     stepList = _ref.stepList,
     completeColor = _ref.completeColor,
@@ -28,7 +28,6 @@ var Step = function Step(_ref) {
     }));
   }));
 };
-exports.Step = Step;
 Step.propTypes = {
   className: _propTypes["default"].string,
   stepList: _propTypes["default"].arrayOf(_propTypes["default"].shape({

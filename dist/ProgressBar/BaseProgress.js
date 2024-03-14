@@ -8,7 +8,7 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 var _react = _interopRequireDefault(require("react"));
 var _StyleBaseProgress = _interopRequireDefault(require("./StyleBaseProgress"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-var BaseProgress = function BaseProgress(_ref) {
+var BaseProgress = exports.BaseProgress = function BaseProgress(_ref) {
   var type = _ref.type,
     value = _ref.value,
     max = _ref.max,
@@ -41,7 +41,6 @@ var BaseProgress = function BaseProgress(_ref) {
     height: size
   })));
 };
-exports.BaseProgress = BaseProgress;
 BaseProgress.propTypes = {
   valueColor: _propTypes["default"].string,
   bgColor: _propTypes["default"].string,

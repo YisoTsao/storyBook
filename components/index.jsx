@@ -4,3 +4,4 @@ export * from './Sidebar';
 export * from './Spin';
 export * from './Tabs';
 export * from './Tooltip';
+export * from './UIProvider';
