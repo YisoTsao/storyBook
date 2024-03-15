@@ -19,7 +19,6 @@
   "dependencies": {
     "@ckeditor/ckeditor5-react": "^5.0.6",
     "@iconify/react": "^4.1.1",
-    "ckeditor5-custom-build": "file:./ckeditor5",
     "gh-pages": "^6.1.1",
     "next": "12.3.1",
     "next-images": "^1.8.4",
