@@ -1,13 +1,14 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
-// import ErrorContent from '../Modal/ErrorContent';
-// eslint-disable-next-line import/named
-// import { setModal } from '../UIProvider';
+import ErrorContent from '../Modal/ErrorContent';
+import Modal from '../Modal';
 import BaseTemplate from './BaseTemplate';
 
 const CustomUpload = ({ className, children, file, setFile, tempImage, setTempImage }) => {
   const imageMimeType = /image\/(png|jpg|jpeg)/i;
   const DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES = 5120000; // 5000 KB
+
+  const [modal, setModal] = useState(null);
 
   const hiddenFileInput = useRef(null);
 
@@ -18,35 +19,35 @@ const CustomUpload = ({ className, children, file, setFile, tempImage, setTempIm
   const handleImageChange = (event) => {
     const currentFile = event.target.files[0];
 
-    if (!currentFile) return;
+    if (!currentFile) {
+      setFile(null);
+      setTempImage(null);
+      return;
+    }
 
     if (currentFile && !currentFile.type?.match(imageMimeType)) {
-      alert('圖片僅支援 png、jpg、jpeg!');
-      // setModal(<ErrorContent setModal={setModal} errmsg="圖片僅支援 png、jpg、jpeg!" />);
+      setModal(<ErrorContent setModal={setModal} errmsg="圖片僅支援 png、jpg、jpeg!" />);
       return;
     }
 
     if (currentFile && currentFile.size > DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES) {
-      alert(
-        `選擇的檔案大小超過${String((DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES / 1024 / 1024).toFixed(3))}`
+      setModal(
+        <ErrorContent
+          setModal={setModal}
+          errmsg={
+            <span>
+              選擇的檔案大小：
+              {String((currentFile.size / 1024 / 1024).toFixed(3))}
+              {' MB'}
+              <br />
+              <hr />
+              上限：
+              {String((DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES / 1024 / 1024).toFixed(3))}
+              {' MB'}
+            </span>
+          }
+        />
       );
-      // setModal(
-      //   <ErrorContent
-      //     setModal={setModal}
-      //     errmsg={
-      //       <span>
-      //         選擇的檔案大小：
-      //         {String((currentFile.size / 1024 / 1024).toFixed(3))}
-      //         {' MB'}
-      //         <br />
-      //         <hr />
-      //         上限：
-      //         {String((DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES / 1024 / 1024).toFixed(3))}
-      //         {' MB'}
-      //       </span>
-      //     }
-      //   />
-      // );
       return;
     }
 
@@ -76,17 +77,20 @@ const CustomUpload = ({ className, children, file, setFile, tempImage, setTempIm
   }, [file]);
 
   return (
-    <button className={[className].join(' ')} type="button" onClick={handleImageClick}>
-      {children || <BaseTemplate tempImage={tempImage} />}
-      <input
-        type="file"
-        ref={hiddenFileInput}
-        accept=".png, .jpg, .jpeg"
-        onChange={handleImageChange}
-        className="hidden"
-        id="uploadImage"
-      />
-    </button>
+    <>
+      <button className={[className].join(' ')} type="button" onClick={handleImageClick}>
+        {children || <BaseTemplate tempImage={tempImage} />}
+        <input
+          type="file"
+          ref={hiddenFileInput}
+          accept=".png, .jpg, .jpeg"
+          onChange={handleImageChange}
+          className="hidden"
+          id="uploadImage"
+        />
+      </button>
+      {modal && <Modal modal={modal} unsetModal={setModal} />}
+    </>
   );
 };
 
