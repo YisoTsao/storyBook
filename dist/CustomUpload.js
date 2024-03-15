@@ -7,13 +7,13 @@ Object.defineProperty(exports, "__esModule", {
 exports["default"] = void 0;
 var _react = _interopRequireWildcard(require("react"));
 var _propTypes = _interopRequireDefault(require("prop-types"));
-var _ErrorContent = _interopRequireDefault(require("../Modal/ErrorContent"));
-var _UIProvider = require("../UIProvider");
 var _BaseTemplate = _interopRequireDefault(require("./BaseTemplate"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
 function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != _typeof(e) && "function" != typeof e) return { "default": e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && Object.prototype.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n["default"] = e, t && t.set(e, n), n; }
+// import ErrorContent from '../Modal/ErrorContent';
 // eslint-disable-next-line import/named
+// import { setModal } from '../UIProvider';
 
 var CustomUpload = function CustomUpload(_ref) {
   var className = _ref.className,
@@ -34,17 +34,29 @@ var CustomUpload = function CustomUpload(_ref) {
     var currentFile = event.target.files[0];
     if (!currentFile) return;
     if (currentFile && !((_currentFile$type = currentFile.type) !== null && _currentFile$type !== void 0 && _currentFile$type.match(imageMimeType))) {
-      (0, _UIProvider.setModal)( /*#__PURE__*/_react["default"].createElement(_ErrorContent["default"], {
-        setModal: _UIProvider.setModal,
-        errmsg: "\u5716\u7247\u50C5\u652F\u63F4 png\u3001jpg\u3001jpeg!"
-      }));
+      alert('圖片僅支援 png、jpg、jpeg!');
+      // setModal(<ErrorContent setModal={setModal} errmsg="圖片僅支援 png、jpg、jpeg!" />);
       return;
     }
     if (currentFile && currentFile.size > DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES) {
-      (0, _UIProvider.setModal)( /*#__PURE__*/_react["default"].createElement(_ErrorContent["default"], {
-        setModal: _UIProvider.setModal,
-        errmsg: /*#__PURE__*/_react["default"].createElement("span", null, "\u9078\u64C7\u7684\u6A94\u6848\u5927\u5C0F\uFF1A", String((currentFile.size / 1024 / 1024).toFixed(3)), ' MB', /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement("hr", null), "\u4E0A\u9650\uFF1A", String((DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES / 1024 / 1024).toFixed(3)), ' MB')
-      }));
+      alert("\u9078\u64C7\u7684\u6A94\u6848\u5927\u5C0F\u8D85\u904E".concat(String((DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES / 1024 / 1024).toFixed(3))));
+      // setModal(
+      //   <ErrorContent
+      //     setModal={setModal}
+      //     errmsg={
+      //       <span>
+      //         選擇的檔案大小：
+      //         {String((currentFile.size / 1024 / 1024).toFixed(3))}
+      //         {' MB'}
+      //         <br />
+      //         <hr />
+      //         上限：
+      //         {String((DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES / 1024 / 1024).toFixed(3))}
+      //         {' MB'}
+      //       </span>
+      //     }
+      //   />
+      // );
       return;
     }
     setFile(currentFile);
@@ -81,7 +93,8 @@ var CustomUpload = function CustomUpload(_ref) {
     ref: hiddenFileInput,
     accept: ".png, .jpg, .jpeg",
     onChange: handleImageChange,
-    className: "hidden"
+    className: "hidden",
+    id: "uploadImage"
   }));
 };
 CustomUpload.propTypes = {

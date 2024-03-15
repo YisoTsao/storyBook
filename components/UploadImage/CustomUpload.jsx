@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import ErrorContent from '../Modal/ErrorContent';
+// import ErrorContent from '../Modal/ErrorContent';
 // eslint-disable-next-line import/named
-import { setModal } from '../UIProvider';
+// import { setModal } from '../UIProvider';
 import BaseTemplate from './BaseTemplate';
 
 const CustomUpload = ({ className, children, file, setFile, tempImage, setTempImage }) => {
@@ -21,28 +21,32 @@ const CustomUpload = ({ className, children, file, setFile, tempImage, setTempIm
     if (!currentFile) return;
 
     if (currentFile && !currentFile.type?.match(imageMimeType)) {
-      setModal(<ErrorContent setModal={setModal} errmsg="圖片僅支援 png、jpg、jpeg!" />);
+      alert('圖片僅支援 png、jpg、jpeg!');
+      // setModal(<ErrorContent setModal={setModal} errmsg="圖片僅支援 png、jpg、jpeg!" />);
       return;
     }
 
     if (currentFile && currentFile.size > DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES) {
-      setModal(
-        <ErrorContent
-          setModal={setModal}
-          errmsg={
-            <span>
-              選擇的檔案大小：
-              {String((currentFile.size / 1024 / 1024).toFixed(3))}
-              {' MB'}
-              <br />
-              <hr />
-              上限：
-              {String((DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES / 1024 / 1024).toFixed(3))}
-              {' MB'}
-            </span>
-          }
-        />
+      alert(
+        `選擇的檔案大小超過${String((DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES / 1024 / 1024).toFixed(3))}`
       );
+      // setModal(
+      //   <ErrorContent
+      //     setModal={setModal}
+      //     errmsg={
+      //       <span>
+      //         選擇的檔案大小：
+      //         {String((currentFile.size / 1024 / 1024).toFixed(3))}
+      //         {' MB'}
+      //         <br />
+      //         <hr />
+      //         上限：
+      //         {String((DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES / 1024 / 1024).toFixed(3))}
+      //         {' MB'}
+      //       </span>
+      //     }
+      //   />
+      // );
       return;
     }
 
@@ -80,6 +84,7 @@ const CustomUpload = ({ className, children, file, setFile, tempImage, setTempIm
         accept=".png, .jpg, .jpeg"
         onChange={handleImageChange}
         className="hidden"
+        id="uploadImage"
       />
     </button>
   );
