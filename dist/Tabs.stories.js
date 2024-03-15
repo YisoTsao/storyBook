@@ -4,11 +4,9 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Sidebar = void 0;
+exports["default"] = exports.Base = void 0;
 var _react = _interopRequireWildcard(require("react"));
-var _propTypes = _interopRequireDefault(require("prop-types"));
-var _SubMenu = _interopRequireDefault(require("./SubMenu"));
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+var _components = require("../../components");
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
 function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != _typeof(e) && "function" != typeof e) return { "default": e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && Object.prototype.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n["default"] = e, t && t.set(e, n), n; }
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -17,24 +15,35 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-var Sidebar = exports.Sidebar = function Sidebar(_ref) {
-  var items = _ref.items,
-    _ref$className = _ref.className,
-    className = _ref$className === void 0 ? 'bg-[#F5F5F5] w-64 h-full' : _ref$className;
-  var _useState = (0, _react.useState)(true),
-    _useState2 = _slicedToArray(_useState, 1),
-    isClient = _useState2[0];
-  return isClient && /*#__PURE__*/_react["default"].createElement("aside", {
-    className: ['justify-center hidden lg:flex', className].join(' ')
-  }, /*#__PURE__*/_react["default"].createElement("div", {
-    className: "w-full"
-  }, items === null || items === void 0 ? void 0 : items.map(function (item) {
-    return /*#__PURE__*/_react["default"].createElement(_SubMenu["default"], {
-      item: item,
-      key: item === null || item === void 0 ? void 0 : item.path
-    });
-  })));
+var _default = exports["default"] = {
+  title: 'basic/Tabs',
+  component: _components.Tabs
 };
-Sidebar.propTypes = {
-  items: _propTypes["default"].arrayOf(_propTypes["default"].shape())
+var tabItems = [{
+  tabIndex: 0,
+  name: '即將發生'
+}, {
+  tabIndex: 1,
+  name: '等待付款'
+}, {
+  tabIndex: 2,
+  name: '歷史預約'
+}];
+var Template = function Template() {
+  var _useState = (0, _react.useState)(0),
+    _useState2 = _slicedToArray(_useState, 2),
+    activeTab = _useState2[0],
+    setActiveTab = _useState2[1];
+  var handleTabClick = function handleTabClick(tabIndex) {
+    setActiveTab(tabIndex);
+  };
+  return /*#__PURE__*/_react["default"].createElement(_components.Tabs, {
+    items: tabItems,
+    activeTab: activeTab,
+    handleTabClick: handleTabClick
+  });
+};
+var Base = exports.Base = Template.bind({});
+Base.args = {
+  items: tabItems
 };

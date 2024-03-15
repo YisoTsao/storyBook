@@ -8,9 +8,9 @@ export default {
 
 const Template = (args) => <Tooltip {...args} />;
 
-export const BaseTooltip = Template.bind({});
+export const Base = Template.bind({});
 
-BaseTooltip.args = {
+Base.args = {
   direction: 'top',
   content: 'toolTip content',
   children: <div>hover me!</div>,

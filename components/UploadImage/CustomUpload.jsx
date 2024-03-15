@@ -4,7 +4,7 @@ import ErrorContent from '../Modal/ErrorContent';
 import Modal from '../Modal';
 import BaseTemplate from './BaseTemplate';
 
-const CustomUpload = ({ className, children, file, setFile }) => {
+export const CustomUpload = ({ className, children, file, setFile }) => {
   const imageMimeType = /image\/(png|jpg|jpeg)/i;
   const DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES = 5120000; // 5000 KB
 
@@ -75,5 +75,3 @@ CustomUpload.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
 };
-
-export default CustomUpload;

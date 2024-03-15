@@ -29,14 +29,14 @@ LineStep.args = {
   stepList: fakeStep,
 };
 
-export const CompleteLineStep = Template.bind({});
-CompleteLineStep.args = {
+export const Complete = Template.bind({});
+Complete.args = {
   className: 'p-8',
   stepList: fakeCompleteLineStep,
 };
 
-export const overflowStep = OverFlowTemplate.bind({});
-overflowStep.args = {
+export const overflow = OverFlowTemplate.bind({});
+overflow.args = {
   className: 'p-12',
   stepList: [...fakeCompleteLineStep, ...fakeStep],
 };
