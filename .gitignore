@@ -15,8 +15,6 @@
 /deploy
 /ckeditor5
 
-/components
-
 # production
 /build
 
