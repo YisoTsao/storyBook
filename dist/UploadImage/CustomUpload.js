@@ -80,7 +80,8 @@ var CustomUpload = function CustomUpload(_ref) {
     type: "file",
     ref: hiddenFileInput,
     accept: ".png, .jpg, .jpeg",
-    onChange: handleImageChange
+    onChange: handleImageChange,
+    className: "hidden"
   }));
 };
 CustomUpload.propTypes = {

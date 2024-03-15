@@ -79,6 +79,7 @@ const CustomUpload = ({ className, children, file, setFile, tempImage, setTempIm
         ref={hiddenFileInput}
         accept=".png, .jpg, .jpeg"
         onChange={handleImageChange}
+        className="hidden"
       />
     </button>
   );
