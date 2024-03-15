@@ -1,10 +1,10 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import PropTypes from 'prop-types';
 import ErrorContent from '../Modal/ErrorContent';
 import Modal from '../Modal';
 import BaseTemplate from './BaseTemplate';
 
-const CustomUpload = ({ className, children, file, setFile, tempImage, setTempImage }) => {
+const CustomUpload = ({ className, children, file, setFile }) => {
   const imageMimeType = /image\/(png|jpg|jpeg)/i;
   const DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES = 5120000; // 5000 KB
 
@@ -21,7 +21,6 @@ const CustomUpload = ({ className, children, file, setFile, tempImage, setTempIm
 
     if (!currentFile) {
       setFile(null);
-      setTempImage(null);
       return;
     }
 
@@ -52,34 +51,12 @@ const CustomUpload = ({ className, children, file, setFile, tempImage, setTempIm
     }
 
     setFile(currentFile);
-    setTempImage(currentFile);
   };
-
-  useEffect(() => {
-    let fileReader;
-    let isCancel = false;
-    if (file) {
-      fileReader = new FileReader();
-      fileReader.onload = (e) => {
-        const { result } = e.target;
-        if (result && !isCancel) {
-          setTempImage(result);
-        }
-      };
-      fileReader.readAsDataURL(file);
-    }
-    return () => {
-      isCancel = true;
-      if (fileReader && fileReader.readyState === 1) {
-        fileReader.abort();
-      }
-    };
-  }, [file]);
 
   return (
     <>
       <button className={[className].join(' ')} type="button" onClick={handleImageClick}>
-        {children || <BaseTemplate tempImage={tempImage} />}
+        {children || <BaseTemplate file={file} />}
         <input
           type="file"
           ref={hiddenFileInput}

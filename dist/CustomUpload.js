@@ -23,9 +23,7 @@ var CustomUpload = function CustomUpload(_ref) {
   var className = _ref.className,
     children = _ref.children,
     file = _ref.file,
-    setFile = _ref.setFile,
-    tempImage = _ref.tempImage,
-    setTempImage = _ref.setTempImage;
+    setFile = _ref.setFile;
   var imageMimeType = /image\/(png|jpg|jpeg)/i;
   var DEFAULT_IMAGE_SIZE_LIMIT_IN_BYTES = 5120000; // 5000 KB
 
@@ -42,7 +40,6 @@ var CustomUpload = function CustomUpload(_ref) {
     var currentFile = event.target.files[0];
     if (!currentFile) {
       setFile(null);
-      setTempImage(null);
       return;
     }
     if (currentFile && !((_currentFile$type = currentFile.type) !== null && _currentFile$type !== void 0 && _currentFile$type.match(imageMimeType))) {
@@ -60,34 +57,13 @@ var CustomUpload = function CustomUpload(_ref) {
       return;
     }
     setFile(currentFile);
-    setTempImage(currentFile);
   };
-  (0, _react.useEffect)(function () {
-    var fileReader;
-    var isCancel = false;
-    if (file) {
-      fileReader = new FileReader();
-      fileReader.onload = function (e) {
-        var result = e.target.result;
-        if (result && !isCancel) {
-          setTempImage(result);
-        }
-      };
-      fileReader.readAsDataURL(file);
-    }
-    return function () {
-      isCancel = true;
-      if (fileReader && fileReader.readyState === 1) {
-        fileReader.abort();
-      }
-    };
-  }, [file]);
   return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("button", {
     className: [className].join(' '),
     type: "button",
     onClick: handleImageClick
   }, children || /*#__PURE__*/_react["default"].createElement(_BaseTemplate["default"], {
-    tempImage: tempImage
+    file: file
   }), /*#__PURE__*/_react["default"].createElement("input", {
     type: "file",
     ref: hiddenFileInput,

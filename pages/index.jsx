@@ -11,9 +11,8 @@ const CkEditor = dynamic(() => import('../components/Ckeditor'), {
 const Home = () => {
   const [content, setContent] = useState('');
   const [file, setFile] = useState(null);
-  const [tempImage, setTempImage] = useState(null);
 
-  const iconProps = { file, setFile, tempImage, setTempImage };
+  const iconProps = { file, setFile };
 
   const fakeStep = [{ status: true }, { status: true }, { status: false }, { status: false }];
 
