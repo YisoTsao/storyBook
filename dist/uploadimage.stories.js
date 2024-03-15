@@ -6,8 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = exports.Customer = exports.Base = void 0;
 var _react = _interopRequireWildcard(require("react"));
-var _CustomUpload = _interopRequireDefault(require("../components/UploadImage/CustomUpload"));
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+var _components = require("../components");
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
 function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != _typeof(e) && "function" != typeof e) return { "default": e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && Object.prototype.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n["default"] = e, t && t.set(e, n), n; }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
@@ -24,14 +23,14 @@ function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" !=
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 var _default = exports["default"] = {
   title: 'basic/uploadImage',
-  component: _CustomUpload["default"]
+  component: _components.CustomUpload
 };
 var Template = function Template(args) {
   var _useState = (0, _react.useState)(null),
     _useState2 = _slicedToArray(_useState, 2),
     file = _useState2[0],
     setFile = _useState2[1];
-  return /*#__PURE__*/_react["default"].createElement(_CustomUpload["default"], _extends({}, args, {
+  return /*#__PURE__*/_react["default"].createElement(_components.CustomUpload, _extends({}, args, {
     file: file,
     setFile: setFile
   }));
@@ -41,7 +40,7 @@ var CustomerTemplate = function CustomerTemplate(args) {
     _useState4 = _slicedToArray(_useState3, 2),
     file = _useState4[0],
     setFile = _useState4[1];
-  return /*#__PURE__*/_react["default"].createElement(_CustomUpload["default"], _extends({}, args, {
+  return /*#__PURE__*/_react["default"].createElement(_components.CustomUpload, _extends({}, args, {
     file: file,
     setFile: setFile
   }), /*#__PURE__*/_react["default"].createElement("div", {

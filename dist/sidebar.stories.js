@@ -5,14 +5,14 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = exports.Base = void 0;
 var _react = _interopRequireDefault(require("react"));
-var _Sidebar = require("../components/Sidebar");
+var _components = require("../components");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 var _default = exports["default"] = {
   title: 'basic/sidebar',
-  component: _Sidebar.Sidebar
+  component: _components.Sidebar
 };
 var Template = function Template(args) {
-  return /*#__PURE__*/_react["default"].createElement(_Sidebar.Sidebar, args);
+  return /*#__PURE__*/_react["default"].createElement(_components.Sidebar, args);
 };
 var backendSidebarItems = [{
   title: '場域管理',

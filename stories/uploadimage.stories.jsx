@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CustomUpload from '../components/UploadImage/CustomUpload';
+import { CustomUpload } from '../components';
 
 export default {
   title: 'basic/uploadImage',

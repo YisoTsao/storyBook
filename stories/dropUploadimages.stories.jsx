@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import DropImage from '../components/DropImage';
+import { DropImage } from '../components';
 
 export default {
   title: 'basic/dropImage',
